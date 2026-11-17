@@ -1,0 +1,9 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="InputActionBtn">
+<mask id="stroke0_0_255" fill="white">
+<path d="M12.1667 21.3333C17.2293 21.3333 21.3333 17.2293 21.3333 12.1667C21.3333 7.10406 17.2293 3 12.1667 3C7.10406 3 3 7.10406 3 12.1667C3 17.2293 7.10406 21.3333 12.1667 21.3333Z"/>
+</mask>
+<path id="Vector" d="M21.3333 12.1667C21.3333 17.2293 17.2293 21.3333 12.1667 21.3333C7.10406 21.3333 3 17.2293 3 12.1667C3 7.10406 7.10406 3 12.1667 3C17.2293 3 21.3333 7.10406 21.3333 12.1667Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke="#111111" mask="url(#stroke0_0_255)"/>
+<path id="Vector_2" d="M12.1667 6.66667V12.1667L15.8334 14" stroke-linecap="round" stroke-linejoin="round" stroke="#111111"/>
+</g>
+</svg>

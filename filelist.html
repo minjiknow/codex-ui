@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>파일리스트 | codex-design</title>
+	<link rel="stylesheet" href="css/filelist.css">
+</head>
+
+<body>
+	<main id="wrap" class="filelist">
+		<header id="header">
+			<h1>파일리스트 <span class="cntTotal">(총 <strong data-total-page-count>8</strong> pages)</span></h1>
+		</header>
+		<h2>코딩 목록 <span class="section-count" data-section-count>8개 화면</span></h2>
+		<table class="htmllist" aria-label="codex-design 작업 파일 목록">
+			<thead>
+				<tr class="head">
+					<th scope="col">No</th>
+					<th scope="col">Depth 1</th>
+					<th scope="col">Depth 2</th>
+					<th scope="col">Type</th>
+					<th scope="col">FileName</th>
+					<th scope="col">작업 날짜</th>
+					<th scope="col">간단한 내용</th>
+					<th scope="col">View</th>
+				</tr>
+			</thead>
+			<tbody>
+				<!-- 새 기록은 page-row 행을 복사하고 날짜, 내용, FileName과 View의 href를 함께 수정합니다. 번호와 건수는 자동 갱신됩니다. -->
+				<tr>
+					<th colspan="8" scope="colgroup">디자인 시안</th>
+				</tr>
+				<tr class="page-row v1">
+					<td>1</td>
+					<td>사용자</td>
+					<td>v1</td>
+					<td><span class="version-badge">v1</span></td>
+					<td>user/v1/index.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>impeccable 을 이용하여 사용자 화면 예시 디자인</td>
+					<td><a href="user/v1/index.html" target="_blank" rel="noopener" aria-label="사용자 v1 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v1">
+					<td>2</td>
+					<td>관리자</td>
+					<td>v1</td>
+					<td><span class="version-badge">v1</span></td>
+					<td>admin/v1/index.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>hallmark를 이용한 관리자 화면</td>
+					<td><a href="admin/v1/index.html" target="_blank" rel="noopener" aria-label="관리자 v1 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v2">
+					<td>3</td>
+					<td>관리자</td>
+					<td>v2</td>
+					<td><span class="version-badge">v2</span></td>
+					<td>admin/v2/index.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>hallmark 테마를 이용한 관리자 화면 ㅡ kws-ui 스킬 중 요소만 활용</td>
+					<td><a href="admin/v2/index.html" target="_blank" rel="noopener" aria-label="관리자 v2 화면 새 탭에서 보기">View</a>
+					</td>
+				</tr>
+				<tr>
+					<th colspan="8" scope="colgroup">CMS UI</th>
+				</tr>
+
+				<tr class="page-row v1">
+					<td>4</td>
+					<td>CMS UI</td>
+					<td>CMS · main1</td>
+					<td><span class="version-badge">CMS</span></td>
+					<td>codex-cms-ui/user/pages/main1.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>cms-test 메인시안 1 참고 페이지 </td>
+					<td><a href="codex-cms-ui/user/pages/main1.html" target="_blank" rel="noopener"
+							aria-label="CMS · main1 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v1">
+					<td>5</td>
+					<td>CMS UI</td>
+					<td>CMS · main2</td>
+					<td><span class="version-badge">CMS</span></td>
+					<td>codex-cms-ui/user/pages/main2.html</td>
+					<td><time datetime="2026-11-17">2026.11.16</time></td>
+					<td>cms-test 메인시안 2 참고 페이지</td>
+					<td><a href="codex-cms-ui/user/pages/main2.html" target="_blank" rel="noopener"
+							aria-label="CMS · main2 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v1">
+					<td>6</td>
+					<td>CMS UI</td>
+					<td>CMS · main1-other</td>
+					<td><span class="version-badge">CMS</span></td>
+					<td>codex-cms-ui/user/pages/main1-other.html</td>
+					<td><time datetime="2026-11-16">2026.11.16</time></td>
+					<td>cms-test 메인페이지 요소 조합한 페이지</td>
+					<td><a href="codex-cms-ui/user/pages/main1-other.html" target="_blank" rel="noopener"
+							aria-label="CMS · main1-other 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v1">
+					<td>7</td>
+					<td>CMS UI</td>
+					<td>CMS · sub1</td>
+					<td><span class="version-badge">CMS</span></td>
+					<td>codex-cms-ui/user/pages/sub1.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>cms-test 서브시안 1 참고 페이지</td>
+					<td><a href="codex-cms-ui/user/pages/sub1.html" target="_blank" rel="noopener"
+							aria-label="CMS · sub1 화면 새 탭에서 보기">View</a></td>
+				</tr>
+				<tr class="page-row v1">
+					<td>8</td>
+					<td>CMS UI</td>
+					<td>CMS · sub2</td>
+					<td><span class="version-badge">CMS</span></td>
+					<td>codex-cms-ui/user/pages/sub2.html</td>
+					<td><time datetime="2026-11-17">2026.11.17</time></td>
+					<td>cms-test 서브시안 2 참고 페이지</td>
+					<td><a href="codex-cms-ui/user/pages/sub2.html" target="_blank" rel="noopener"
+							aria-label="CMS · sub2 화면 새 탭에서 보기">View</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<p class="list-note">CMS UI에 해당하는 페이지는 cms-ui 스킬을 모두 활용하였습니다.</p>
+	</main>
+	<script src="js/filelist.js"></script>
+</body>
+
+</html>

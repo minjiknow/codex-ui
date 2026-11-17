@@ -1,0 +1,270 @@
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: custom
+ * idea: A recording ledger with organization context, derived from the supplied reference
+ * vibe: precise quiet compact operational · axes: light/grotesk-sans/cool · posture: restrained
+ * nav: rail and work menu · signature: organization-scoped recording ledger
+ * states: full empty validation-error · font: Pretendard · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: density, retained readable rows and scrollable table */
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    overflow-x: clip;
+}
+body {
+    margin: 0;
+    color: var(--text);
+    background: var(--background);
+    font: var(--text-medium)/1.5 var(--font);
+    font-synthesis: none;
+}
+button,
+input,
+select,
+textarea {
+    font: inherit;
+    color: inherit;
+}
+button,
+a,
+input,
+select,
+textarea,
+summary,
+[tabindex] {
+    border-radius: var(--radius);
+}
+button {
+    cursor: pointer;
+}
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+button {
+    border: 1px solid var(--transparent);
+    background: var(--transparent);
+}
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+h1,
+h2,
+h3 {
+    min-width: 0;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+}
+p {
+    text-wrap: pretty;
+}
+img {
+    display: block;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+[hidden] {
+    display: none !important;
+}
+:focus-visible {
+    outline: 2px solid var(--blue);
+    outline-offset: 2px;
+}
+button:active:not(:disabled) {
+    transform: translateY(1px);
+}
+.text {
+    font-size: var(--text-medium);
+    font-weight: 400;
+}
+.text.small {
+    font-size: var(--text-small);
+}
+.text.large {
+    font-size: var(--text-large);
+}
+.text.xlarge {
+    font-size: var(--text-xlarge);
+}
+.text.type1 {
+    font-weight: 500;
+}
+.text.type2 {
+    font-weight: 600;
+}
+.muted {
+    color: var(--muted);
+}
+.blue {
+    color: var(--blue);
+}
+.green {
+    color: var(--green);
+}
+.header,
+.container,
+.footer {
+    width: 100%;
+}
+.contents-wrap {
+    max-width: none;
+    margin-inline: auto;
+    width: 100%;
+}
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-8);
+    min-height: 36px;
+    padding: var(--space-4) var(--space-16);
+    border: 1px solid var(--field-line);
+    background: var(--surface);
+    font-weight: 500;
+    white-space: nowrap;
+}
+.button:hover:not(:disabled) {
+    background: var(--blue-soft);
+}
+.button.primary {
+    background: var(--green);
+    border-color: var(--green);
+    color: var(--surface);
+}
+.button.primary:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--green) 85%, var(--text));
+}
+.input {
+    height: 36px;
+    width: 100%;
+    min-width: 0;
+    padding: var(--space-4) var(--space-12);
+    border: 1px solid var(--field-line);
+    background: var(--surface);
+}
+.input::placeholder {
+    color: var(--muted);
+}
+.input[aria-invalid="true"] {
+    border-color: var(--error);
+}
+.control {
+    display: inline-flex;
+    gap: var(--space-8);
+    align-items: center;
+    min-height: 36px;
+    white-space: nowrap;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+}
+.skip-link {
+    position: fixed;
+    top: -80px;
+    left: 16px;
+    background: var(--surface);
+    padding: var(--space-12);
+    z-index: 100;
+}
+.skip-link:focus {
+    top: 8px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+.dialog {
+    width: 600px;
+    max-width: calc(100% - 32px);
+    max-height: 85dvh;
+    overflow: auto;
+    border: 1px solid var(--line);
+    padding: var(--space-24);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+}
+.dialog::backdrop {
+    background: var(--overlay);
+}
+.dialog-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-16);
+    margin-bottom: var(--space-24);
+}
+.dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-8);
+    margin-top: var(--space-24);
+}
+.field-label {
+    display: block;
+    margin-bottom: var(--space-8);
+}
+.error {
+    color: var(--error);
+}
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Input and select styles from kws-ui-v2; original component dimensions preserved. */
+.input::placeholder { color: var(--gray-600); opacity: 1; }
+.input:focus { border-color: var(--deep-blue); }
+.input:disabled, .input[readonly] { background: var(--gray-50); }
+.input:disabled { color: var(--gray-500); }
+.input[aria-invalid="true"] { border-color: var(--error); }
+
+.input { width: 100%; height: 36px; padding: 5px 12px; border: 1px solid var(--gray-300); border-radius: var(--radius-4); color: var(--gray-900); background: var(--white); }
+
+.select { appearance: none; padding-right: 36px; background-image: url('../assets/icons/chevron-down.svg'); background-repeat: no-repeat; background-position: right 8px center; background-size: 24px 24px; }
+
+.input.picker-input { padding-right:32px; }
+
+/* KWS selection controls: native state and original SVG assets. */
+.control { display: inline-flex; align-items: center; position: relative; gap: 4px; min-height: 36px; cursor: pointer; }
+.control-input { position: absolute; width: 20px; height: 20px; margin: 0; opacity: 0; }
+.control-icon { display: block; width: 20px; height: 20px; background: url('../assets/icons/checkbox.svg') center no-repeat; }
+.control-input:checked + .control-icon { background-image: url('../assets/icons/checkbox-checked.svg'); }
+.control-input:disabled + .control-icon { background-image: url('../assets/icons/checkbox-disabled.svg'); }
+.control-input:checked:disabled + .control-icon { background-image: url('../assets/icons/checkbox-checked-disabled.svg'); }
+.control-input[type="radio"] + .control-icon { background-image: url('../assets/icons/radio.svg'); }
+.control-input[type="radio"]:checked + .control-icon { background-image: url('../assets/icons/radio-checked.svg'); }
+.control-input[type="radio"]:disabled + .control-icon { background-image: url('../assets/icons/radio-disabled.svg'); }
+.control-input[type="radio"]:checked:disabled + .control-icon { background-image: url('../assets/icons/radio-checked-disabled.svg'); }
+.control-input:focus-visible + .control-icon { outline: none; border: 1px solid var(--deep-blue); }
+.control:has(:disabled) { color: var(--gray-600); cursor: not-allowed; }
+
+.control-input:focus-visible { outline: none; }
+.control-icon { flex-shrink: 0; }
+
+/* Mixed state uses the checked asset geometry: 20px, radius 4px, white 2px stroke. */
+.control-input[type="checkbox"]:indeterminate + .control-icon {
+    background-image: url('../assets/icons/checkbox-indeterminate.svg');
+}

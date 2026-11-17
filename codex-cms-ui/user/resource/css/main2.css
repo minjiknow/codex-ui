@@ -1,0 +1,10 @@
+/* main2 only: sizes measured from the rendered reference UI.
+   Shared tokens and breakpoints are retained; no shared component rules change. */
+@media screen and (max-width: 1280px) {
+    .main-titlearea > .tit.large {
+        font-size: var(--mobile-font-size-heading-medium);
+    }
+    .service-section .tit.count {
+        font-size: var(--mobile-font-size-heading-large);
+    }
+}

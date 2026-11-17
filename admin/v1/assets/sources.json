@@ -1,0 +1,83 @@
+{
+  "source": "kws-ui-v2 bundled Figma snapshot 2026-11-16",
+  "icons": {
+    "628-2795-4c5d6.svg": "chevron-down.svg",
+    "411-4215-10ea6.svg": "chart.svg",
+    "411-4215-9aa4d.svg": "grid.svg",
+    "527-3576-cb2c8.svg": "checkbox.svg",
+    "527-3576-47914.svg": "checkbox-checked.svg",
+    "527-3576-3cd83.svg": "checkbox-disabled.svg",
+    "527-3576-3199a.svg": "checkbox-checked-disabled.svg",
+    "527-3576-8f40e.svg": "radio.svg",
+    "527-3576-f7384.svg": "radio-checked.svg",
+    "527-3576-7df3b.svg": "radio-disabled.svg",
+    "527-3576-dd1b7.svg": "radio-checked-disabled.svg"
+  },
+  "logo": "Original vector wordmark created for this prototype at user request",
+  "components": {
+    "input/select": "kws-ui-v2/assets/template/css/components.css (input and select rules only)",
+    "pickers": "kws-ui-v2/assets/template/css/pickers.css and js/pickers.js; icon runtime path adjusted; behavior preserved",
+    "tokens": "kws-ui-v2/assets/template/css/tokens.css (missing tokens copied into css/theme.css)",
+    "selection": "kws-ui-v2 css/components.css .control rules and original 527:3576 assets",
+    "searchButton": "kws-ui-v2 button.type2; height and horizontal inset retained for existing search layout"
+  },
+  "pickerIcons": [
+    {
+      "sourceNode": "527:3618",
+      "variable": "calendar-previous-year",
+      "path": "assets/template/icons/calendar-previous-year.svg",
+      "originalFile": "c7d36.svg"
+    },
+    {
+      "sourceNode": "527:3618",
+      "variable": "calendar-previous-month",
+      "path": "assets/template/icons/calendar-previous-month.svg",
+      "originalFile": "9327c.svg"
+    },
+    {
+      "sourceNode": "527:3618",
+      "variable": "calendar-next-month",
+      "path": "assets/template/icons/calendar-next-month.svg",
+      "originalFile": "51800.svg"
+    },
+    {
+      "sourceNode": "527:3618",
+      "variable": "calendar-next-year",
+      "path": "assets/template/icons/calendar-next-year.svg",
+      "originalFile": "a7c21.svg"
+    },
+    {
+      "sourceNode": "527:3624",
+      "variable": "calendar-next-year-single",
+      "path": "assets/template/icons/calendar-next-year-single.svg",
+      "originalFile": "e0a01.svg"
+    },
+    {
+      "sourceNode": "527:3661",
+      "variable": "time-increase",
+      "path": "assets/template/icons/time-increase.svg",
+      "originalFile": "cc9c5.svg"
+    },
+    {
+      "sourceNode": "527:3661",
+      "variable": "time-decrease",
+      "path": "assets/template/icons/time-decrease.svg",
+      "originalFile": "47d73.svg"
+    },
+    {
+      "sourceNode": "618:4857",
+      "variable": "calendar",
+      "path": "assets/template/icons/calendar.svg",
+      "originalFile": "6eafe.svg"
+    },
+    {
+      "sourceNode": "618:4857",
+      "variable": "time",
+      "path": "assets/template/icons/time.svg",
+      "originalFile": "54e76.svg"
+    }
+  ],
+  "derivedIcons": {
+    "checkbox-indeterminate.svg": "Derived from checkbox-checked.svg at user request: same 20px box, rx=4, #457CE1 fill; opaque white 2px horizontal stroke."
+  }
+}

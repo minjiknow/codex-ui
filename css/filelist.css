@@ -1,0 +1,255 @@
+/* AI-ONE-Platform/filelist.html 양식에서 이식. */
+@font-face {
+  font-family: Pretendard;
+  src: url("../admin/v1/assets/fonts/pretendard-variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+* {
+	-webkit-text-size-adjust: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 800px;
+}
+
+html,
+body,
+div,
+h1,
+h2,
+table,
+tbody {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	font-family: Pretendard, sans-serif;
+	font-size: 13px;
+	color: #555;
+}
+
+body {
+	line-height: 1.2em;
+	border: 0;
+}
+
+strong,
+span,
+a {
+	display: inline-block;
+}
+
+span {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+table,
+tbody,
+thead,
+tr,
+th,
+td {
+	border: 0;
+}
+
+strong,
+th {
+	font-style: normal;
+}
+
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: #666;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+#wrap {
+	padding: 12px;
+}
+
+#header {
+	margin-bottom: 20px;
+}
+
+#header::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+#header>h1 {
+	float: left;
+	display: flex;
+	align-items: baseline;
+	gap: 8px;
+	font-size: 28px;
+	color: #1a1a1a;
+	padding-top: 15px;
+}
+
+h2 {
+	font-size: 14px;
+	color: #333;
+	margin: 25px 0 8px 5px;
+}
+
+table.htmllist th,
+table.htmllist td {
+	border: 1px solid #ccc;
+}
+
+table.htmllist thead th {
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #111 !important;
+	height: 30px;
+	color: #000 !important;
+	font-size: 13px !important;
+}
+
+table.htmllist tbody th {
+	padding: 5px 6px;
+	text-align: left;
+	border-bottom: 2px solid #0088ff !important;
+	height: 32px;
+	background-color: #f3f4f8;
+}
+
+table.htmllist td {
+	padding: 5px 6px;
+}
+
+table.htmllist td:first-child {
+	text-align: center;
+}
+
+table.htmllist td:last-child {
+	color: #666;
+	font-size: 12px;
+}
+
+table.htmllist td:nth-child(6) {
+	text-align: center;
+}
+
+table.htmllist td>a {
+	display: block;
+	width: 100%;
+	height: 26px;
+	line-height: 26px;
+	text-align: center;
+	color: #fff;
+	font-size: 11px;
+	font-weight: bold;
+	vertical-align: middle;
+	background-color: #0969da;
+	border: 1px solid #0969da;
+	border-radius: 3px;
+}
+
+table.htmllist tr td {
+	background-color: #fff;
+}
+
+.cntTotal {
+	position: static;
+	margin: 0;
+	color: #6e7781;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.cntTotal strong {
+	color: #0969da;
+	font-size: 16px;
+}
+
+.section-count {
+	margin-left: 6px;
+	color: #6e7781;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+.htmllist .page-row {
+	cursor: pointer;
+	transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.htmllist .page-row>td {
+	transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.htmllist .page-row:hover>td {
+	border-top-color: #8cbeef;
+	border-bottom-color: #8cbeef;
+	background-color: #eef6ff;
+	color: #1f2328;
+}
+
+.htmllist .page-row.is-selected>td {
+	border-top-color: #0969da;
+	border-bottom-color: #0969da;
+	background-color: #dbeafe;
+	color: #074c9c;
+}
+
+.htmllist .page-row:focus-visible {
+	outline: 2px solid #0969da;
+	outline-offset: -2px;
+}
+
+.version-badge {
+	min-width: 30px;
+	padding: 3px 7px;
+	border: 1px solid #8cbeef;
+	border-radius: 999px;
+	background: #eef6ff;
+	color: #0757b7;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 1;
+	text-align: center;
+}
+
+.v2 .version-badge {
+	border-color: #c7b5f4;
+	background: #f3efff;
+	color: #6639ba;
+}
+
+.htmllist td>a:hover,
+.htmllist td>a:focus-visible {
+	border-color: #0550ae;
+	background-color: #0550ae;
+	box-shadow: 0 2px 6px rgba(9, 105, 218, 0.24);
+	line-height: 26px;
+	transform: translateY(-1px);
+}
+
+.htmllist td>a:focus-visible {
+	outline: 2px solid #0969da;
+	outline-offset: 2px;
+}
+
+.htmllist td>a:active,
+.htmllist .page-row.is-selected td>a {
+	border-color: #033d8b;
+	background-color: #033d8b;
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+.htmllist { width: 100%; }
+.htmllist thead th { padding: 5px 6px; }
+.list-note { margin: 12px 0; line-height: 1.5; }
+

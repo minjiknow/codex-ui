@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>
+      운영 대시보드 | 워크데스크
+    </title>
+    <meta name="description" content="요청을 확인하고 처리하는 운영 관리자 대시보드. 샘플 데이터로 동작하는 로컬 프로토타입.">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      본문 바로가기
+    </a>
+    <div class="dashboard">
+      <canvas class="ambient-background" aria-hidden="true"></canvas>
+      <header class="header">
+        <div class="contents-wrap header-inner">
+          <a class="brand" href="index.html">
+            워크데스크
+            <span class="text small muted">
+              운영 관리
+            </span>
+          </a>
+          <nav class="navigation" aria-label="주 메뉴">
+            <a class="nav-link" href="#overview" aria-current="page">
+              대시보드
+            </a>
+            <a class="nav-link" href="#requests">
+              요청 관리
+            </a>
+            <a class="nav-link" href="#team">
+              팀 현황
+            </a>
+          </nav>
+          <button class="button motion-toggle" type="button" aria-pressed="false" hidden>배경 움직임 끄기</button>
+          <span class="profile text medium">
+            운영 관리자
+            <span class="avatar" aria-hidden="true">
+              관
+            </span>
+          </span>
+        </div>
+      </header>
+      <main id="main" class="contents-wrap">
+        <section class="page-heading" id="overview">
+          <div>
+            <h1 class="text xlarge">
+              운영 대시보드
+            </h1>
+            <p class="muted text medium">
+              오늘의 요청을 정리하고, 팀의 다음 업무를 확인하세요.
+            </p>
+          </div>
+          <div class="heading-actions">
+            <span class="badge">
+              샘플 데이터
+            </span>
+            <span class="date text medium">
+              <img class="icon" src="assets/icons/calendar.svg" alt="">
+              2026년 11월 17일
+            </span>
+            <button class="button primary new-request" type="button">
+              새 요청 등록
+            </button>
+          </div>
+        </section>
+        <section class="overview-grid" aria-label="운영 요약">
+          <div class="summary-board">
+            <div class="summary-label text medium">
+              처리가 필요한 요청
+            </div>
+            <p class="main-number">
+              <span class="open-count">
+                0
+              </span>
+              <span class="text large">
+                건
+              </span>
+            </p>
+            <p class="text medium board-caption">
+              작은 확인이 쌓여, 업무가 앞으로.
+            </p>
+            <button class="board-action text medium" type="button">
+              미처리 요청 확인
+            </button>
+          </div>
+          <div class="performance">
+            <div class="section-heading">
+              <h2 class="text large">
+                이번 주 요청 흐름
+              </h2>
+              <span class="text small muted">
+                11.11 ~ 11.17
+              </span>
+            </div>
+            <div class="stats">
+              <div>
+                <span class="text small muted">
+                  전체 요청
+                </span>
+                <p class="stat-number total-count">
+                  0
+                </p>
+              </div>
+              <div>
+                <span class="text small muted">
+                  처리 완료
+                </span>
+                <p class="stat-number done-count">
+                  0
+                </p>
+              </div>
+              <div>
+                <span class="text small muted">
+                  완료율
+                </span>
+                <p class="stat-number rate">
+                  0%
+                </p>
+              </div>
+            </div>
+            <div class="chart" role="img" aria-label="날짜별 접수와 처리 완료 요청 수">
+            </div>
+            <div class="chart-legend text small muted">
+              <span>
+                접수
+              </span>
+              <span>
+                처리 완료
+              </span>
+              <span>
+                막대 위 숫자: 접수 / 완료
+              </span>
+            </div>
+          </div>
+          <aside class="attention">
+            <div class="section-heading">
+              <h2 class="text large">
+                먼저 확인하세요
+              </h2>
+              <span class="urgent-count text small accent">
+              </span>
+            </div>
+            <div class="priority-list">
+            </div>
+            <p class="text small muted">
+              긴급 요청 중 미완료 항목을 표시합니다.
+            </p>
+          </aside>
+        </section>
+        <section class="workspace">
+          <div class="ledger" id="requests">
+            <div class="section-heading">
+              <div class="title-group">
+                <h2 class="text large">
+                  요청 목록
+                </h2>
+                <span class="result-count text small muted" role="status">
+                </span>
+              </div>
+              <button class="button export" type="button">
+                CSV 내보내기
+              </button>
+            </div>
+            <div class="filters">
+              <div class="filter-tabs" role="group" aria-label="요청 상태">
+                <button class="filter-button" data-filter="전체" aria-pressed="true">
+                  전체
+                </button>
+                <button class="filter-button" data-filter="대기" aria-pressed="false">
+                  대기
+                </button>
+                <button class="filter-button" data-filter="진행 중" aria-pressed="false">
+                  진행 중
+                </button>
+                <button class="filter-button" data-filter="완료" aria-pressed="false">
+                  완료
+                </button>
+              </div>
+              <label class="search-field">
+                <span class="text small muted">
+                  요청 검색
+                </span>
+                <input class="input search" type="search" placeholder="제목 또는 담당자">
+              </label>
+            </div>
+            <div class="table-wrap" tabindex="0" aria-label="요청 목록 가로 스크롤">
+              <table class="request-table">
+                <thead>
+                  <tr>
+                    <th scope="col">
+                      요청 / 접수번호
+                    </th>
+                    <th scope="col">
+                      담당자
+                    </th>
+                    <th scope="col">
+                      우선순위
+                    </th>
+                    <th scope="col">
+                      상태
+                    </th>
+                    <th scope="col">
+                      접수일
+                    </th>
+                  </tr>
+                </thead>
+                <tbody class="rows">
+                </tbody>
+              </table>
+            </div>
+            <div class="empty" hidden>
+              <h3 class="text large">
+                검색 결과가 없습니다
+              </h3>
+              <p class="muted text medium">
+                다른 검색어를 입력하거나 필터를 초기화하세요.
+              </p>
+              <button class="button reset" type="button">
+                필터 초기화
+              </button>
+            </div>
+            <div class="pagination">
+              <span class="page-label text small muted">
+              </span>
+              <div>
+                <button class="button previous" type="button">
+                  이전
+                </button>
+                <button class="button next" type="button">
+                  다음
+                </button>
+              </div>
+            </div>
+          </div>
+          <aside class="team" id="team">
+            <div class="section-heading">
+              <h2 class="text large">
+                팀 업무 현황
+              </h2>
+              <span class="text small muted">
+                미처리 기준
+              </span>
+            </div>
+            <div class="team-list">
+            </div>
+            <div class="team-note">
+              <h3 class="text medium type2">
+                함께 보는 업무 공간
+              </h3>
+              <p class="text small muted">
+                요청 제목을 선택해 담당자와 상태를 변경하세요.
+              </p>
+            </div>
+          </aside>
+        </section>
+        <section class="editor" hidden aria-labelledby="editor-title">
+          <div class="section-heading">
+            <h2 class="text large" id="editor-title">
+              요청 상세
+            </h2>
+            <button class="button close-editor" type="button">
+              닫기
+            </button>
+          </div>
+          <form class="request-form">
+            <label class="field">
+              요청 제목 (필수)
+              <input class="input" name="title" maxlength="80" required>
+            </label>
+            <label class="field">
+              담당자
+              <select class="input" name="owner">
+              </select>
+            </label>
+            <label class="field">
+              우선순위
+              <select class="input" name="priority">
+                <option>
+                  보통
+                </option>
+                <option>
+                  긴급
+                </option>
+              </select>
+            </label>
+            <label class="field">
+              처리 상태
+              <select class="input" name="status">
+                <option>
+                  대기
+                </option>
+                <option>
+                  진행 중
+                </option>
+                <option>
+                  완료
+                </option>
+              </select>
+            </label>
+            <label class="field description-field">
+              업무 메모
+              <textarea class="input" name="note" rows="3" maxlength="1000">
+              </textarea>
+            </label>
+            <p class="text small muted form-note">
+              변경 내용은 현재 화면에만 반영되며 새로고침하면 초기화됩니다.
+            </p>
+            <button class="button primary" type="submit">
+              화면에 적용
+            </button>
+          </form>
+        </section>
+        <noscript>
+          <p>
+            요청 목록과 통계에는 JavaScript가 필요합니다. 브라우저에서 JavaScript를 활성화하세요.
+          </p>
+        </noscript>
+        <p class="app-error" role="alert" hidden>
+        </p>
+      </main>
+      <footer class="footer">
+        <div class="contents-wrap">
+          <span class="text small muted">
+            워크데스크
+          </span>
+          <span class="text small muted">
+            데모 환경 / 모든 요청과 수치는 샘플입니다. 실제 서버와 연결되지 않습니다.
+          </span>
+        </div>
+      </footer>
+    </div>
+    <script src="js/dummydata.js">
+    </script>
+    <script src="js/main.js">
+    </script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

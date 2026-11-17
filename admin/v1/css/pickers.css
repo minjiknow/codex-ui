@@ -1,0 +1,194 @@
+/* Figma 527:3618, 527:3624, 527:3661, 527:3664. */
+.picker {
+  position: relative;
+  display: inline-block;
+  min-width: 0;
+  width: 135px;
+}
+.picker[data-picker="time"] {
+  width: 96px;
+}
+.picker-input {
+  padding-right: 32px;
+}
+.picker-toggle {
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  cursor: pointer;
+}
+.picker-toggle:not(:disabled):hover {
+  background: var(--gray-300);
+}
+.picker-range {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: var(--space-8);
+}
+.picker-separator {
+  line-height: 36px;
+}
+.picker-popover {
+  position: fixed;
+  z-index: 1000;
+  width: 300px;
+  max-width: calc(100vw - 16px);
+  padding: 8px 9px 12px;
+  border: 1px solid var(--gray-800);
+  border-radius: var(--radius-4);
+  background: var(--white);
+  color: var(--gray-900);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
+}
+.picker-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  height: 40px;
+  margin-bottom: 12px;
+}
+.picker-nav,
+.picker-title,
+.picker-day,
+.picker-month,
+.picker-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+.picker-nav,
+.picker-step {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.picker-title {
+  flex: 1;
+  height: 40px;
+}
+.picker-nav:not(:disabled):hover,
+.picker-step:not(:disabled):hover,
+.picker-title:hover {
+  background: var(--cool-50);
+}
+.picker-calendar {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+}
+.picker-weekday {
+  height: 24px;
+  padding: 0 0 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.picker-cell {
+  padding: 0;
+  text-align: center;
+}
+.picker-day {
+  width: 100%;
+  height: 40px;
+  border-radius: var(--radius-8);
+}
+.picker-months {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+.picker-month {
+  height: 48px;
+  border-radius: var(--radius-8);
+}
+.picker-outside {
+  color: var(--gray-600);
+}
+.picker-day:hover,
+.picker-month:hover,
+.picker-in-range,
+.picker-day[aria-current="date"] {
+  background: var(--deep-blue-100);
+}
+.picker-day[aria-pressed="true"],
+.picker-month[aria-pressed="true"] {
+  color: var(--white);
+  background: var(--deep-blue);
+}
+.picker-day:disabled,
+.picker-month:disabled,
+.picker-nav:disabled {
+  opacity: 0.4;
+  cursor: default;
+  background: transparent;
+}
+.picker-time {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-16);
+  width: 164px;
+  padding: 12px 24px;
+  border-color: var(--gray-900);
+  box-shadow: 0 4px 2px rgb(0 0 0 / 25%);
+}
+.picker-time-column {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-8);
+}
+.picker-spin {
+  width: 100%;
+  max-width: 40px;
+  min-width: 0;
+  height: 26px;
+  padding: 0;
+  border: 1px solid transparent;
+  background: transparent;
+  text-align: center;
+  color: var(--gray-900);
+}
+.picker-spin::placeholder {
+  color: var(--gray-600);
+}
+.picker-spin:focus {
+  border-color: var(--deep-blue);
+}
+.picker-error {
+  position: absolute;
+  top: calc(100% + 2px);
+  left: 0;
+  z-index: 1001;
+  margin: 0;
+  min-width: 0;
+  width: 100%;
+  max-width: calc(100vw - 16px);
+  background: var(--white);
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+.picker.has-error .picker-input,
+.picker.has-error .picker-input:focus-visible,
+.picker.has-error .picker-popover {
+  border-color: var(--error);
+}
+.picker-popover[hidden],
+.picker-error[hidden] {
+  display: none;
+}

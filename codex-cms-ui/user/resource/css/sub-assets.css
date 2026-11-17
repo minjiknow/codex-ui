@@ -1,0 +1,2 @@
+/* sub.css 원본 보존: 프로젝트의 기존 에셋 경로만 연결합니다. */
+.breadcrumb::after { background-image: url(../icons/arrow-right.svg); }

@@ -1,0 +1,85 @@
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: custom
+ * idea: A recording ledger with organization context, derived from the supplied reference
+ * vibe: precise quiet compact operational · axes: light/grotesk-sans/cool · posture: restrained
+ * nav: rail and work menu · signature: organization-scoped recording ledger
+ * states: full empty validation-error · font: Pretendard · v2.0.0 */
+/* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: density, retained readable rows and scrollable table */
+@font-face {
+    font-family: Pretendard;
+    src: url("../assets/fonts/pretendard-variable.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+:root {
+    --background: #f6f7f9;
+    --surface: #fff;
+    --text: #252b34;
+    --muted: #687280;
+    --line: #e4e8ed;
+    --field-line: #b5bec9;
+    --blue: #075cb7;
+    --blue-dark: #084b91;
+    --blue-soft: #e9f3fc;
+    --green: #12733a;
+    --green-soft: #edf7f0;
+    --error: #b62e35;
+    --overlay: rgb(20 34 50 / 28%);
+    --transparent: transparent;
+    --font: Pretendard, system-ui, sans-serif;
+    --space-4: 4px;
+    --space-8: 8px;
+    --space-12: 12px;
+    --space-16: 16px;
+    --space-24: 24px;
+    --space-32: 32px;
+    --radius: 4px;
+    --text-small: 12px;
+    --text-medium: 14px;
+    --text-large: 16px;
+    --text-xlarge: 20px;
+}
+
+:root {
+ --rail-width: 60px; --menu-rest: 16px;
+    --menu-width:180px; --menu-duration:240ms; --menu-easing:cubic-bezier(.2,.7,.2,1);
+ --blue-500: #339cd5;
+ --blue-300: rgb(51 156 213 / 30%);
+ --blue-100: rgb(51 156 213 / 10%);
+ --deep-blue: #457ce1;
+ --deep-blue-100: rgb(69 124 225 / 10%);
+ --deep-blue-20: rgb(69 124 225 / 2%);
+ --action: #005cb9;
+ --white: #fff;
+ --gray-900: #111;
+ --gray-800: #333;
+ --gray-700: #666;
+ --gray-600: #929292;
+ --gray-500: #bbb;
+ --gray-400: #d7d7d7;
+ --gray-300: #eee;
+ --gray-50: #f7f7f7;
+ --cool-50: #f9fafc;
+ --cool-100: rgb(233 236 243 / 50%);
+ --cool-200: #edf0f6;
+ --state-1: #339cd5;
+ --state-2: #0c8ce9;
+ --state-3: #31bb48;
+ --state-4: #f36d00;
+ --state-5: #ff4e4e;
+ --state-6: #18a3b9;
+ --state-7: #9d5eee;
+ --state-8: #3a79d8;
+ --state-9: #00a170;
+ --state-10: #8c939d;
+ --radius-0: 0;
+ --radius-4: 4px;
+ --radius-8: 8px;
+ --radius-10: 10px;
+ --radius-12: 12px;
+ --radius-16: 16px;
+ --radius-circle: 999px;
+ --space-20: 20px;
+ --space-40: 40px;
+ --space-48: 48px;
+}

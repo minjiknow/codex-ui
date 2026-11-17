@@ -1,0 +1,35 @@
+/* Hallmark · shape: app screen · genre: modern-minimal · theme: Coral (dealt 3/3) · nav: top bar · signature: actionable request ledger · states: full empty error · data: sample · axes: light/grotesk-sans/warm · posture: restrained · v2.0.0 */
+/* Hallmark · pre-emit critique: restrained operations workspace; density balanced with a wide ledger. */
+@font-face {
+  font-family: Pretendard;
+  src: url('../assets/fonts/pretendard-variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-display: swap;
+}
+:root {
+  --font-body: Pretendard, sans-serif;
+  --color-paper: #f5f3f0;
+  --color-paper-2: #eae7e2;
+  --color-surface: #fcfbf9;
+  --color-ink: #292722;
+  --color-muted: #625c54;
+  --color-rule: #ded9d1;
+  --color-accent: #ae4937;
+  --color-accent-ink: #fcfbf9;
+  --color-accent-soft: #f4e6de;
+  --color-focus: #ae4937;
+  --color-board: #302f2b;
+  --color-board-type: #faf7f1;
+  --color-error: #a83224;
+  --color-clear: transparent;
+  --color-petal: color-mix(in srgb, var(--color-accent) 38%, var(--color-paper));
+  --color-backdrop: #29272266;
+  --radius-card: 8px;
+  --radius-input: 6px;
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --space-2xl: 64px;
+}

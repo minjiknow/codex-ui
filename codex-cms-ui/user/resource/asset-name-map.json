@@ -1,0 +1,180 @@
+{
+  "description": "Asset provenance for user templates. path is relative to user/; originalPath preserves the source path.",
+  "assets": [
+    {
+      "originalPath": "resource/icons/arrow_right.svg",
+      "path": "resource/icons/arrow-right.svg",
+      "sha256": "b803e2acd4fab2627c507cd0738ff0490e4d628a9c171c050183bea04c946867"
+    },
+    {
+      "originalPath": "resource/icons/arrow_down.svg",
+      "path": "resource/icons/arrow-down.svg",
+      "sha256": "7399945bdbb3768c5db9d767a3aa182840dbd81433511b9ac07b49e2809f8e4c"
+    },
+    {
+      "originalPath": "resource/icons/gnb_info.svg",
+      "path": "resource/icons/gnb-info.svg",
+      "sha256": "16808854ff2f95dc95982ad7cdfc742ce871336241748ffa4fc345f698979edb"
+    },
+    {
+      "originalPath": "resource/icons/blank.svg",
+      "path": "resource/icons/external-link.svg",
+      "sha256": "98273e49f13efb84d2e3071aacf70820102c90bc432ba9a33cd20d3f70e8b657"
+    },
+    {
+      "originalPath": "resource/icons/pop-close.svg",
+      "path": "resource/icons/popup-close.svg",
+      "sha256": "a9f9bf6c1fefe39355985c32beccca6aa9c34ad918d941c7dc785a47a4db9b05"
+    },
+    {
+      "originalPath": "resource/icons/mypage.svg",
+      "path": "resource/icons/my-page.svg",
+      "sha256": "3f9ccc27f7ef39c36117cf5c90eb5d350baaf5e9c45427b21250e14c3460fadc"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu1.svg",
+      "path": "resource/icons/submenu-1-icon.svg",
+      "sha256": "0b7c34c6dcf156a582709fdf3cd487c78c726324c2013f16d5d7e50bea9e4d93"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu2.svg",
+      "path": "resource/icons/submenu-2-icon.svg",
+      "sha256": "7384f9dc9d130a04583c39ea7a740df3d653145edb1026315e980435fb323fae"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu3.svg",
+      "path": "resource/icons/submenu-3-icon.svg",
+      "sha256": "c814b2b87a7033725e4eb7f21729a8bb21303d3ada4346d2dbbfc44d8826870c"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu4.svg",
+      "path": "resource/icons/submenu-4-icon.svg",
+      "sha256": "d1a91939a16a467e581d1b70418c265324f7798acafdf180102e9f9e505ff8ce"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu5.svg",
+      "path": "resource/icons/submenu-5-icon.svg",
+      "sha256": "ce50d399dd7101c88eacd51a22e672a7254d137d9a5ece4d2c58d790ea41954d"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu6.svg",
+      "path": "resource/icons/submenu-6-icon.svg",
+      "sha256": "4819c57e856dffeb1414d26768804165138e4716d8af8842c0c133969decb954"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu7.svg",
+      "path": "resource/icons/submenu-7-icon.svg",
+      "sha256": "ad29f4769c644f60c37e53e488e12bc1fe4ca004c5bfad695c717320434264d4"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu8.svg",
+      "path": "resource/icons/submenu-8-icon.svg",
+      "sha256": "12a0a4417e50cb4a32a75ddada83acb45af3551f2dfc970e73487921ad3bc959"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu9.svg",
+      "path": "resource/icons/submenu-9-icon.svg",
+      "sha256": "1ea94d5b7f675e9de477c67791f11c64b0cc0583c46d76bb08d0f79997742238"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu10.svg",
+      "path": "resource/icons/submenu-10-icon.svg",
+      "sha256": "c8c03dd9144bee06afd1125c28dd72c1c246332741fd78adb5b8eb1c49a61525"
+    },
+    {
+      "originalPath": "resource/icons/main1-submenu11.svg",
+      "path": "resource/icons/submenu-11-icon.svg",
+      "sha256": "001f1960680bd303e6233e66bda8fd2085135bd0d1ce76efe524cd3e10a8104f"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu1.png",
+      "path": "resource/images/quick-menu-1-icon.png",
+      "sha256": "26cef4b3a3ef13e48c868af186e6cf14b914d1194fbdeeb1ff3b9de10829b923"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu2.png",
+      "path": "resource/images/quick-menu-2-icon.png",
+      "sha256": "20bbd8229aa058194c9ef8e2a45eb030e91d0c7925b84d6f7271960726e8d61f"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu3.png",
+      "path": "resource/images/quick-menu-3-icon.png",
+      "sha256": "be4f3f39cee3ffe13fa429c397b1a8163b0b8d78d0a76ed8a652c2a8b78240c9"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu4.png",
+      "path": "resource/images/quick-menu-4-icon.png",
+      "sha256": "c1eb976aaacfd74381551b0066755490dd23154532c9ac76972b0df567039952"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu5.png",
+      "path": "resource/images/quick-menu-5-icon.png",
+      "sha256": "62caa307d4d233862633fb84b8bc81583199266b1d38da207f02752fcb2a9aa1"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu6.png",
+      "path": "resource/images/quick-menu-6-icon.png",
+      "sha256": "770865020b0de69b170e3c44aa63cc8151a786cb1142968f94d3231d60f11d10"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu7.png",
+      "path": "resource/images/quick-menu-7-icon.png",
+      "sha256": "5048288b09007ce017dd54c053e5a213b4311dd5dae375139887081aa87a2146"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu8.png",
+      "path": "resource/images/quick-menu-8-icon.png",
+      "sha256": "8bd4eb41a6ff4dc5fa5addb3ac191843f2882dc2aa7f765de031643c8d85d224"
+    },
+    {
+      "originalPath": "resource/images/main1_quick_menu9.png",
+      "path": "resource/images/quick-menu-9-icon.png",
+      "sha256": "512e0f7a6aa567c4a3a9110c8aa95c4538a625f6cc807a9c95a4a16b529b46d5"
+    },
+    {
+      "originalPath": "resource/images/banner1.png",
+      "path": "resource/images/main1-hero-banner-1.png",
+      "sha256": "c2644c6a54702c91a25bad33084ef5c824497a820f3d997290f78c1ea402cc8e"
+    },
+    {
+      "originalPath": "resource/images/banner2.png",
+      "path": "resource/images/main1-hero-banner-2.png",
+      "sha256": "fa53b25e5e396243bd96cd1e99b465cfc53435cef6ae1c3224351a315c3b9614"
+    },
+    {
+      "originalPath": "resource/images/banner3.png",
+      "path": "resource/images/main1-hero-banner-3.png",
+      "sha256": "9928b615bb6bd50defdd74058903487bf5ce3c73da3cb5b0ea44e2a38c1ffb9e"
+    },
+    {
+      "originalPath": "resource/images/banner4.png",
+      "path": "resource/images/main1-hero-banner-4.png",
+      "sha256": "3175fcfc8ffe130b332a78f9c14ebb4d391eb531391ad2378dfe8b4869bb4b99"
+    },
+    {
+      "originalPath": "resource/images/banner5.png",
+      "path": "resource/images/main1-hero-banner-5.png",
+      "sha256": "37af2c76cef6759bdeda3dc550093b60f43d5cd11cb85c230c37bb5065ced170"
+    },
+    {
+      "originalPath": "resource/images/main1-pclogo.svg",
+      "path": "resource/images/site-logo.svg",
+      "sha256": "2bca643229d4a391d6e41a7662c67f51339a61868c9cf0e93204a2fc8388c7f6"
+    },
+    {
+      "originalPath": "resource/images/main2_gradientbg.svg",
+      "path": "resource/images/main2-search-gradient-bg.svg",
+      "sha256": "abe0e8786fa3d4c275a23ae513a412c9ab30350e13526ce24078ad3976fe3391"
+    },
+    {
+      "originalPath": "cms-test/resource/images/main2_bg_title.png",
+      "path": "resource/images/main2-facility-illustration.png",
+      "sha256": "e28980e24bc20b09d299d99c32483da612506b96913ee4b6061883209e9d9c5f"
+    },
+    {
+      "originalPath": "cms-test/resource/images/main2_wholebanner2-artwork.png",
+      "path": "resource/images/main2-culture-banner.png",
+      "sha256": "6d78b08b968af203314d3b2263c284ca940d9794e5e077995c429d605fbb42cb"
+    }
+  ]
+}

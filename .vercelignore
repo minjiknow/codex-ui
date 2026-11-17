@@ -1,0 +1,10 @@
+.git
+.impeccable
+**/.impeccable
+**/.hallmark
+**/qa
+codex-cms-ui/dist
+codex-cms-ui/docs
+codex-cms-ui/skills
+codex-cms-ui/excluded
+codex-cms-ui/qa

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>전시장 | 문화시설</title>
+        <link rel="stylesheet" href="../resource/css/theme.css">
+        <link rel="stylesheet" href="../resource/css/common.css">
+        <link rel="stylesheet" href="../resource/css/sub.css">
+        <link rel="stylesheet" href="../resource/css/main2.css">
+        <link rel="stylesheet" href="../resource/css/sub-assets.css">
+</head>
+    <body>
+        <a href="#main-content" class="skip-link">본문 바로가기</a>
+        <div class="wrap">
+            <header class="header type2">
+                <div class="contents-wrap">
+                    <ul class="topmenus">
+                        <li class="topmenu">
+                            <a href="#" class="none-sub blank">바로가기1</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="#" class="none-sub blank">바로가기2</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="./main2.html" class="none-sub">첫 화면</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="#" class="none-sub">English</a>
+                        </li>
+                    </ul>
+                    <div class="prev-menus">
+                        <div class="logo">
+                            <a class="logo-link" href="./main2.html" aria-label="문화·체육 첫 화면">
+                                <img src="../resource/images/site-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="utils">
+                            <div class="util search">
+                                <button type="button" class="btn transparent search-open" aria-haspopup="dialog" aria-controls="search-popup" aria-expanded="false">
+                                    <span class="icon searchicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">통합검색</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon loginicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">로그인</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon joinicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">회원가입</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon mypageicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">내 정보</span></button>
+                            </div>
+                            <div class="util hamburger">
+                                <button type="button" class="btn transparent btn-hamburger" aria-haspopup="dialog" aria-controls="menu-popup" aria-expanded="false">
+                                    <span class="icon hamburgericon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">전체메뉴</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="gnb" aria-label="주요 메뉴">
+                    <ul class="depth1-menus contents-wrap" data-navigation="mega">
+                    </ul>
+                </nav>
+            </header>
+            <div class="menupop" id="menu-popup">
+                <div class="pop-bg" aria-hidden="true">
+                </div>
+                <div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="menu-popup-title" tabindex="-1">
+                    <h2 class="sr-only" id="menu-popup-title">전체메뉴</h2>
+                    <div class="menu-head">
+                        <div class="topmenu-area">
+                            <div class="topmenus">
+                                <div class="util">
+                                    <button type="button" class="icobtn large round borderless" aria-label="지도">
+                                        <span class="icon mapicon" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <span class="util-tit tit xsmall ">지도</span>
+                                </div>
+                                <div class="util">
+                                    <div class="dropbox-wrap">
+                                        <span class="icon languageicon" aria-hidden="true">
+                                        </span>
+                                        <div class="dropbox none">
+                                            <button type="button" class="selected-text" data-label="언어 선택"
+                                            aria-label="언어 선택" aria-haspopup="listbox"
+                                            aria-expanded="false" data-content-text="shared.languages.0.label">
+                                            </button>
+                                            <ul class="dropbox-option" data-content-list="shared.languages">
+                                            </ul>
+                                            <template data-content-template="shared-language">
+                                                <li>
+                                                    <p class="option-text" data-field-text="label">
+                                                    </p>
+                                                </li>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="menu-close" aria-label="전체메뉴 닫기">
+                                <span class="pop-close" aria-hidden="true">
+                                </span>
+                            </button>
+                        </div>
+                        <button type="button" class="login" name="login">
+                            <span class="loginicon" aria-hidden="true">
+                            </span>로그인을 해주세요
+                        </button>
+                    </div>
+                    <div class="menu-body">
+                        <nav class="menu-tabs" aria-label="메뉴 영역 바로가기"></nav>
+                        <div class="menu-content" role="region" aria-label="전체 메뉴 목록" tabindex="0">
+                            <nav class="gnb" aria-label="전체메뉴 목록">
+                                <ul class="depth1-menus contents-wrap" data-navigation="mobile"></ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pop searchpop" id="search-popup">
+                <div class="pop-bg" aria-hidden="true">
+                </div>
+                <div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="search-popup-title"
+                tabindex="-1">
+                    <button type="button" class="icobtn  transparent search-close" aria-label="검색 닫기">
+                        <span class="icon pop-close" aria-hidden="true">
+                        </span>
+                    </button>
+                    <div class="contents-wrap">
+                        <div class="search-area">
+                            <div class="search-head">
+                                <h2 class="pop-maintit" id="search-popup-title">검색어를 입력해주세요.</h2>
+                            </div>
+                            <div class="search-formarea">
+                                <form class="search-group" role="search">
+                                    <div class="search-wrap">
+                                        <input type="text" id="search-keyword" name="keyword" maxlength="100"
+                                        autocomplete="off" aria-labelledby="search-popup-title" placeholder="검색"
+                                        role="combobox" aria-autocomplete="list" aria-controls="related-search-list"
+                                        aria-expanded="false">
+                                        <button type="button" class="icobtn round search-clear" aria-label="검색어 지우기">
+                                            <span class="icon xsmall delete-word" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="icobtn transparent" aria-label="검색 실행">
+                                        <span class="icon large searchicon" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                </form>
+                                <div class="related-searcharea">
+                                    <ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions">
+                                    </ul>
+                                    <template data-content-template="shared-suggestion">
+                                        <li class="related-search">
+                                            <em class="related-tit tit" data-field-text="highlight">
+                                            </em>
+                                            <span data-field-text="suffix">
+                                            </span>
+                                        </li>
+                                    </template>
+                                    <p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
+                                </div>
+                            </div>
+                            <div class="recent-searcharea" role="region" aria-labelledby="recent-search-title">
+                                <div class="recent-titlearea">
+                                    <h3 class="tit" id="recent-search-title">최근 검색어</h3>
+                                    <button type="button" class="btn delete transparent">전체삭제
+                                        <span class="icon xsmall delete-all" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                </div>
+                                <ul class="chip-group" data-content-list="shared.recentSearches">
+                                </ul>
+                                <template data-content-template="shared-recent-search">
+                                    <li class="chip bg">
+                                        <button type="button" class="recent-keyword" data-field-text="keyword">
+                                        </button>
+                                        <button type="button" class="icobtn transparent round chip-delete"
+                                        aria-label="검색어 삭제">
+                                            <span class="icon xsmall delete-word" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </li>
+                                </template>
+                                <p class="chip-empty">최근 검색어가 없습니다.</p>
+                            </div>
+                        </div>
+                        <p class="sr-only search-status" role="status" aria-live="polite">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <main class="container" id="main-content" tabindex="-1">
+			<section class="banner-section">
+				<div class="contents-wrap">
+					<p class="tit xlarge banner-tit" data-current-menu-title>문화시설</p>
+				</div>
+			</section>
+			<nav class="breadcrumbs type1" aria-label="현재 위치">
+				<div class="contents-wrap">
+					<div class="breadcrumb type1">
+						<a href="./main2.html" class="home">
+							<span class="btn transparent icobtn medium">
+								<span class="icon medium homeicon"></span>
+							</span>
+							<span class="sr-only">홈</span>
+						</a>
+					</div>
+					<div class="breadcrumb-wrap" data-current-menu="culture" data-current-submenu="exhibition">
+						<!-- Start: breadcrumb — 초기 선택은 메뉴 ID, 옵션/주소는 CMSData.menus에서 자동 생성 -->
+						<div class="breadcrumb type1">
+							<div class="dropbox none">
+								<button type="button" class="selected-text tit breadcrumb-tit" data-label="대메뉴"
+									aria-label="대메뉴선택" aria-haspopup="listbox" aria-expanded="false"></button>
+								<ul class="dropbox-option"><!-- sub.js에서 생성: 이곳에 옵션이나 a 태그를 직접 작성하지 않습니다. --></ul>
+							</div>
+						</div>
+						<div class="breadcrumb type1">
+							<div class="dropbox none">
+								<button type="button" class="selected-text tit breadcrumb-tit" data-label="하위메뉴"
+									aria-label="하위메뉴선택" aria-haspopup="listbox" aria-expanded="false"></button>
+								<ul class="dropbox-option"><!-- sub.js에서 생성: 이곳에 옵션이나 a 태그를 직접 작성하지 않습니다. --></ul>
+							</div>
+						</div>
+						<!-- End: breadcrumb -->
+					</div>
+
+				</div>
+			</nav>
+			<div class="contents-wrap">
+				<div class="subpg">
+					<div class="flex-contents type1">
+						<div class="contents-group sub">
+							<div class="sub-titlearea">
+								<h1 class="tit xlarge" data-current-page-title>전시장</h1>
+							</div>
+							<div class="bg-contents"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+            <footer class="footer">
+                <button type="button" class="btn scroll-top" aria-label="맨 위로 이동" hidden>
+                    <span class="icon" aria-hidden="true">
+                    </span>
+                    <span>위로</span>
+                </button>
+                <div class="footer-wrap">
+                    <div class="contents-wrap">
+                        <div class="footer-logo">
+                            <img src="../resource/images/site-logo.svg" alt="">
+                        </div>
+                        <ul class="footer-contents">
+                            <li class="footer-content">
+                                <p class="desc addr">주소를 입력해주세요</p>
+                                <div class="footer-infogroup">
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">기관명</span>
+                                        <span class="desc footer-desc">OOO기관</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">전화번호</span>
+                                        <span class="desc footer-desc">02-0000-0000</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">팩스번호</span>
+                                        <span class="desc footer-desc">02-0000-0000</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">사업자등록번호</span>
+                                        <span class="desc footer-desc">000-00-00000</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="footer-content">
+                                <a class="btn transparent more" href="#">유틸리티 링크</a>
+                                <a class="btn transparent more" href="#">유틸리티 링크</a>
+                            </li>
+                        </ul>
+                        <div class="footer-bottom">
+                            <div class="footer-links-group">
+                                <ul class="footer-links left">
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">개인정보처리방침</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">이용약관</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">위치기반서비스 이용약관</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">저작권정책</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">고객서비스현장</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">자주 묻는 질문</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트1</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트2</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트3</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트4</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links right">
+                                </ul>
+                            </div>
+                            <p class="footer-copyright desc">© 2026 Knowwheresoft All rights
+                                reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer>
+        </script>
+        <script src="../resource/js/main2-data.js" defer>
+        </script>
+        <script src="../resource/js/submenu-links.js" defer></script>
+    <script src="../resource/js/template-data.js" defer>
+        </script>
+        <script src="../resource/js/common.js" defer>
+        </script>
+        <script src="../resource/js/sub.js" defer></script>
+</body>
+</html>

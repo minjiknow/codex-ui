@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>문화·체육 | 메인2</title>
+        <link rel="stylesheet" href="../resource/css/theme.css">
+        <link rel="stylesheet" href="../resource/css/common.css">
+        <link rel="stylesheet" href="../resource/css/main.css">
+        <link rel="stylesheet" href="../resource/css/main2.css">
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">본문 바로가기</a>
+        <div class="wrap">
+            <header class="header type2">
+                <div class="contents-wrap">
+                    <ul class="topmenus">
+                        <li class="topmenu">
+                            <a href="#" class="none-sub blank">바로가기1</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="#" class="none-sub blank">바로가기2</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="./main2.html" class="none-sub">첫 화면</a>
+                        </li>
+                        <li class="topmenu">
+                            <a href="#" class="none-sub">English</a>
+                        </li>
+                    </ul>
+                    <div class="prev-menus">
+                        <div class="logo">
+                            <a class="logo-link" href="./main2.html" aria-label="문화·체육 첫 화면">
+                                <img src="../resource/images/site-logo.svg" alt="">
+                            </a>
+                        </div>
+                        <div class="utils">
+                            <div class="util search">
+                                <button type="button" class="btn transparent search-open" aria-haspopup="dialog" aria-controls="search-popup" aria-expanded="false">
+                                    <span class="icon searchicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">통합검색</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon loginicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">로그인</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon joinicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">회원가입</span></button>
+                            </div>
+                            <div class="util">
+                                <button type="button" class="btn transparent">
+                                    <span class="icon mypageicon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">내 정보</span></button>
+                            </div>
+                            <div class="util hamburger">
+                                <button type="button" class="btn transparent btn-hamburger" aria-haspopup="dialog" aria-controls="menu-popup" aria-expanded="false">
+                                    <span class="icon hamburgericon" aria-hidden="true">
+                                    </span><span class="tit xsmall util-tit">전체메뉴</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="gnb" aria-label="주요 메뉴">
+                    <ul class="depth1-menus contents-wrap" data-navigation="mega">
+                    </ul>
+                </nav>
+            </header>
+            <div class="menupop" id="menu-popup">
+                <div class="pop-bg" aria-hidden="true">
+                </div>
+                <div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="menu-popup-title" tabindex="-1">
+                    <h2 class="sr-only" id="menu-popup-title">전체메뉴</h2>
+                    <div class="menu-head">
+                        <div class="topmenu-area">
+                            <div class="topmenus">
+                                <div class="util">
+                                    <button type="button" class="icobtn large round borderless" aria-label="지도">
+                                        <span class="icon mapicon" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <span class="util-tit tit xsmall ">지도</span>
+                                </div>
+                                <div class="util">
+                                    <div class="dropbox-wrap">
+                                        <span class="icon languageicon" aria-hidden="true">
+                                        </span>
+                                        <div class="dropbox none">
+                                            <button type="button" class="selected-text" data-label="언어 선택"
+                                            aria-label="언어 선택" aria-haspopup="listbox"
+                                            aria-expanded="false" data-content-text="shared.languages.0.label">
+                                            </button>
+                                            <ul class="dropbox-option" data-content-list="shared.languages">
+                                            </ul>
+                                            <template data-content-template="shared-language">
+                                                <li>
+                                                    <p class="option-text" data-field-text="label">
+                                                    </p>
+                                                </li>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="menu-close" aria-label="전체메뉴 닫기">
+                                <span class="pop-close" aria-hidden="true">
+                                </span>
+                            </button>
+                        </div>
+                        <button type="button" class="login" name="login">
+                            <span class="loginicon" aria-hidden="true">
+                            </span>로그인을 해주세요
+                        </button>
+                    </div>
+                    <div class="menu-body">
+                        <nav class="menu-tabs" aria-label="메뉴 영역 바로가기"></nav>
+                        <div class="menu-content" role="region" aria-label="전체 메뉴 목록" tabindex="0">
+                            <nav class="gnb" aria-label="전체메뉴 목록">
+                                <ul class="depth1-menus contents-wrap" data-navigation="mobile"></ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="pop searchpop" id="search-popup">
+                <div class="pop-bg" aria-hidden="true">
+                </div>
+                <div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="search-popup-title"
+                tabindex="-1">
+                    <button type="button" class="icobtn  transparent search-close" aria-label="검색 닫기">
+                        <span class="icon pop-close" aria-hidden="true">
+                        </span>
+                    </button>
+                    <div class="contents-wrap">
+                        <div class="search-area">
+                            <div class="search-head">
+                                <h2 class="pop-maintit" id="search-popup-title">검색어를 입력해주세요.</h2>
+                            </div>
+                            <div class="search-formarea">
+                                <form class="search-group" role="search">
+                                    <div class="search-wrap">
+                                        <input type="text" id="search-keyword" name="keyword" maxlength="100"
+                                        autocomplete="off" aria-labelledby="search-popup-title" placeholder="검색"
+                                        role="combobox" aria-autocomplete="list" aria-controls="related-search-list"
+                                        aria-expanded="false">
+                                        <button type="button" class="icobtn round search-clear" aria-label="검색어 지우기">
+                                            <span class="icon xsmall delete-word" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <button type="submit" class="icobtn transparent" aria-label="검색 실행">
+                                        <span class="icon large searchicon" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                </form>
+                                <div class="related-searcharea">
+                                    <ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions">
+                                    </ul>
+                                    <template data-content-template="shared-suggestion">
+                                        <li class="related-search">
+                                            <em class="related-tit tit" data-field-text="highlight">
+                                            </em>
+                                            <span data-field-text="suffix">
+                                            </span>
+                                        </li>
+                                    </template>
+                                    <p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
+                                </div>
+                            </div>
+                            <div class="recent-searcharea" role="region" aria-labelledby="recent-search-title">
+                                <div class="recent-titlearea">
+                                    <h3 class="tit" id="recent-search-title">최근 검색어</h3>
+                                    <button type="button" class="btn delete transparent">전체삭제
+                                        <span class="icon xsmall delete-all" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                </div>
+                                <ul class="chip-group" data-content-list="shared.recentSearches">
+                                </ul>
+                                <template data-content-template="shared-recent-search">
+                                    <li class="chip bg">
+                                        <button type="button" class="recent-keyword" data-field-text="keyword">
+                                        </button>
+                                        <button type="button" class="icobtn transparent round chip-delete"
+                                        aria-label="검색어 삭제">
+                                            <span class="icon xsmall delete-word" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </li>
+                                </template>
+                                <p class="chip-empty">최근 검색어가 없습니다.</p>
+                            </div>
+                        </div>
+                        <p class="sr-only search-status" role="status" aria-live="polite">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <main class="container" id="main-content" tabindex="-1">
+                <section class="gradientbg">
+                    <div class="contents-wrap">
+                        <div class="main-titlearea">
+                            <h1 class="tit large txt-secondary">일상 가까이 만나는, <strong class="tit bigtit mo-type1 txt-secondary">문화·체육</strong>
+                            </h1>
+                            <div class="search-area">
+                                <div class="search-formarea">
+                                    <form class="search-group type1" role="search" aria-label="메인 통합검색">
+                                        <div class="dropbox none">
+                                            <button type="button" class="selected-text" data-label="검색 분류" aria-haspopup="listbox" aria-expanded="false">전체</button>
+                                            <ul class="dropbox-option">
+                                                <li>
+                                                    <p class="option-text">전체</p>
+                                                </li>
+                                                <li>
+                                                    <p class="option-text">문화</p>
+                                                </li>
+                                                <li>
+                                                    <p class="option-text">체육</p>
+                                                </li>
+                                                <li>
+                                                    <p class="option-text">행사</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="search-wrap">
+                                            <input id="main-search-keyword" name="keyword" aria-label="통합검색 검색어" placeholder="검색" maxlength="100" autocomplete="off">
+                                            <button type="button" class="icobtn round search-clear" aria-label="검색어 지우기">
+                                                <span class="icon xsmall delete-word" aria-hidden="true">
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <button type="submit" class="icobtn transparent" aria-label="검색 실행">
+                                            <span class="icon large searchicon" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </form>
+                                    <div class="related-searcharea">
+                                        <ul class="related-searchs" id="main-search-suggestions" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions">
+                                        </ul>
+                                        <p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
+                                    </div>
+                                </div>
+                                <p class="sr-only search-status" role="status" aria-live="polite">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="quickmenu-tabs" data-tabs>
+                            <div class="quicktabs" role="tablist" aria-label="퀵 메뉴 분류">
+                                <button type="button" class="tab type2 active" role="tab" id="quick-tab-0" aria-controls="quick-panel-0" aria-selected="true">전체</button>
+                                <button type="button" class="tab type2" role="tab" id="quick-tab-1" aria-controls="quick-panel-1" aria-selected="false">시설</button>
+                                <button type="button" class="tab type2" role="tab" id="quick-tab-2" aria-controls="quick-panel-2" aria-selected="false">문화·행사</button>
+                                <button type="button" class="tab type2" role="tab" id="quick-tab-3" aria-controls="quick-panel-3" aria-selected="false">체육·대관</button>
+                            </div>
+                            <div class="tabcontents" role="tabpanel" id="quick-panel-0" aria-labelledby="quick-tab-0" >
+                                <div class="swiper quickMenuSwiper" id="quick-swiper-0" aria-label="퀵 메뉴">
+                                    <div class="swiper-wrapper">
+                                        <ul class="quick-menus type1" data-content-list="pages.main2.quick-0">
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <div class="swiper-control-wrap quick-menu-controls">
+                                        <div class="page-btn type1">
+                                            <div class="swiper-pagination" aria-label="퀵 메뉴 페이지 선택">
+                                            </div>
+                                            <div class="slide-rolling">
+                                                <button type="button" class="slide-toggle icobtn transparent" aria-label="퀵 메뉴 자동 넘김 정지" aria-pressed="false">
+                                                    <span class="icon rolling-icon slide-pause" aria-hidden="true">
+                                                    </span>
+                                                    <span class="icon rolling-icon slide-play" aria-hidden="true">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcontents" role="tabpanel" id="quick-panel-1" aria-labelledby="quick-tab-1" hidden>
+                                <div class="swiper quickMenuSwiper" id="quick-swiper-1" aria-label="퀵 메뉴">
+                                    <div class="swiper-wrapper">
+                                        <ul class="quick-menus type1" data-content-list="pages.main2.quick-1">
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <div class="swiper-control-wrap quick-menu-controls">
+                                        <div class="page-btn type1">
+                                            <div class="swiper-pagination" aria-label="퀵 메뉴 페이지 선택">
+                                            </div>
+                                            <div class="slide-rolling">
+                                                <button type="button" class="slide-toggle icobtn transparent" aria-label="퀵 메뉴 자동 넘김 정지" aria-pressed="false">
+                                                    <span class="icon rolling-icon slide-pause" aria-hidden="true">
+                                                    </span>
+                                                    <span class="icon rolling-icon slide-play" aria-hidden="true">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcontents" role="tabpanel" id="quick-panel-2" aria-labelledby="quick-tab-2" hidden>
+                                <div class="swiper quickMenuSwiper" id="quick-swiper-2" aria-label="퀵 메뉴">
+                                    <div class="swiper-wrapper">
+                                        <ul class="quick-menus type1" data-content-list="pages.main2.quick-2">
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <div class="swiper-control-wrap quick-menu-controls">
+                                        <div class="page-btn type1">
+                                            <div class="swiper-pagination" aria-label="퀵 메뉴 페이지 선택">
+                                            </div>
+                                            <div class="slide-rolling">
+                                                <button type="button" class="slide-toggle icobtn transparent" aria-label="퀵 메뉴 자동 넘김 정지" aria-pressed="false">
+                                                    <span class="icon rolling-icon slide-pause" aria-hidden="true">
+                                                    </span>
+                                                    <span class="icon rolling-icon slide-play" aria-hidden="true">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcontents" role="tabpanel" id="quick-panel-3" aria-labelledby="quick-tab-3" hidden>
+                                <div class="swiper quickMenuSwiper" id="quick-swiper-3" aria-label="퀵 메뉴">
+                                    <div class="swiper-wrapper">
+                                        <ul class="quick-menus type1" data-content-list="pages.main2.quick-3">
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-prev icobtn round" aria-label="이전 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn left" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn type1 pc-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon medium slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <button type="button" class="swiper-btn mo-block swiper-button-next icobtn round" aria-label="다음 퀵 메뉴 페이지">
+                                        <span class="icon xsmall slide-btn right" aria-hidden="true">
+                                        </span>
+                                    </button>
+                                    <div class="swiper-control-wrap quick-menu-controls">
+                                        <div class="page-btn type1">
+                                            <div class="swiper-pagination" aria-label="퀵 메뉴 페이지 선택">
+                                            </div>
+                                            <div class="slide-rolling">
+                                                <button type="button" class="slide-toggle icobtn transparent" aria-label="퀵 메뉴 자동 넘김 정지" aria-pressed="false">
+                                                    <span class="icon rolling-icon slide-pause" aria-hidden="true">
+                                                    </span>
+                                                    <span class="icon rolling-icon slide-play" aria-hidden="true">
+                                                    </span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-section" aria-labelledby="facility-title">
+                            <div class="contents-group">
+                                <div class="flex-contents">
+                                    <div class="title">
+                                        <h2 class="tit large" id="facility-title">
+                                            <span class="tit large txt-secondary">문화시설</span>과 가까운<br>
+                                            <span class="tit large txt-secondary">체육시설</span>을 확인해보세요.</h2>
+                                        <div class="title-img">
+                                            <img src="../resource/images/main2-facility-illustration.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="flex-contents type1">
+                                        <div class="card type2">
+                                            <div class="card-contents">
+                                                <div>
+                                                    <h3 class="tit">문화시설 분류</h3>
+                                                    <p class="tit count large"><em class="tit bigtit mo-type2">9</em>종</p>
+                                                </div>
+                                                <ul class="direct-menus">
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>공연·전시시설<br class="mo-block"> 살펴보기</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>도서·문화공간<br class="mo-block"> 살펴보기</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>문화행사<br class="mo-block"> 일정 확인</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="card type2">
+                                            <div class="card-contents">
+                                                <div>
+                                                    <h3 class="tit">체육시설 분류</h3>
+                                                    <p class="tit count large"><em class="tit bigtit mo-type2">2</em>종</p>
+                                                </div>
+                                                <ul class="direct-menus">
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>체육센터<br class="mo-block"> 이용안내</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>종합운동장<br class="mo-block"> 이용안내</span></a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="direct-link"><span>생활체육<br class="mo-block"> 프로그램</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section aria-label="문화·체육 서비스">
+                    <div class="contents-wrap">
+                        <div class="contents-group border">
+                            <div class="card-heading">
+                                <h2 class="tit large">문화·체육 서비스</h2>
+                                <button type="button" class="btn transparent more txt-black" aria-label="문화·체육 서비스 더보기">더보기</button>
+                            </div>
+                            <ul class="cards x-auto" data-content-list="pages.main2.services">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section aria-label="이용가이드">
+                    <div class="contents-wrap">
+                        <div class="contents-group border">
+                            <div class="card-heading">
+                                <h2 class="tit large">이용가이드</h2>
+                                <button type="button" class="btn transparent more txt-black" aria-label="이용가이드 더보기">더보기</button>
+                            </div>
+                            <ul class="cards mo-column" data-content-list="pages.main2.guides">
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section class="board-section" aria-label="문화·체육 소식과 공지사항">
+                    <div class="contents-wrap">
+                        <div class="contents-group border">
+                            <div class="flex-contents">
+                                <div class="card-contents">
+                                    <div class="card-heading">
+                                        <h2 class="tit large">문화·체육 소식</h2>
+                                        <a href="#" class="btn transparent more txt-black" aria-label="문화·체육 소식 더보기">더보기</a>
+                                    </div>
+                                    <ul class="cards" data-content-list="pages.main2.news-1">
+                                    </ul>
+                                </div>
+                                <div class="card-contents notice-area">
+                                    <div class="card-heading">
+                                        <h2 class="tit large">공지사항</h2>
+                                        <a href="#" class="btn transparent more txt-black" aria-label="공지사항 더보기">더보기</a>
+                                    </div>
+                                    <ul class="notice-lists" data-content-list="pages.main2.notice-1">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section aria-label="문화·체육 안내 배너">
+                    <div class="contents-wrap">
+                        <div class="swiper wholeBannerSwiper" role="region" aria-roledescription="캐러셀" aria-label="문화·체육 안내">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a class="card-banner-link sports-banner" href="#">
+                                        <span class="sports-banner-copy">
+                                            <strong>생활체육,<br>오늘부터 함께</strong>
+                                            <span>가까운 체육시설과 프로그램을 찾아보세요.</span>
+                                            <span class="sports-banner-more">자세히</span>
+                                        </span>
+                                        <img class="sports-banner-image" src="../resource/images/main1-hero-banner-5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a class="card-banner-link sports-banner sports-banner-culture" href="#">
+                                        <span class="sports-banner-copy">
+                                            <strong>문화·체육을<br>더 가까이</strong>
+                                            <span>우리 동네 문화시설과 생활체육 정보를 만나보세요.</span>
+                                            <span class="sports-banner-more">자세히</span>
+                                        </span>
+                                        <img class="sports-banner-image" src="../resource/images/main2-culture-banner.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-control-wrap">
+                                <div class="page-btn">
+                                    <div class="swiper-pagination" aria-live="off">
+                                    </div>
+                                    <div class="slide-rolling">
+                                        <button type="button" class="slide-toggle icobtn transparent" aria-label="전체 배너 롤링 정지" aria-pressed="false">
+                                            <span class="icon rolling-icon slide-pause" aria-hidden="true">
+                                            </span>
+                                            <span class="icon rolling-icon slide-play" aria-hidden="true">
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <template data-content-template="main2-quick-1">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick1" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-2">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick2" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-3">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick3" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-4">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick4" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-5">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick5" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-6">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick6" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-7">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick7" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-8">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick9" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-quick-9">
+                    <li class="quick-menu">
+                        <a class="quick-link" data-field-href="href">
+                            <span class="quick-icon icobtn">
+                                <span class="quick-img quick8" aria-hidden="true">
+                                </span>
+                            </span>
+                            <span class="tit small quick-tit" data-field-text="title">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-service">
+                    <li class="card type3 bg">
+                        <a class="card-contents" data-field-href="href">
+                            <span class="card-thumbnail type1">
+                                <img data-field-src="image" alt="">
+                            </span>
+                            <div class="card-title-wrap type1">
+                                <h3 class="tit small card-title" data-field-text="title">
+                                </h3>
+                                <p class="desc card-description" data-field-text="description">
+                                </p>
+                            </div>
+                            <span class="btn transparent more type1 txt-black">바로가기</span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-guide-lightredbg">
+                    <li class="card type1 lightredbg">
+                        <a class="card-contents" data-field-href="href">
+                            <div class="card-title-wrap type1">
+                                <h3 class="tit small card-title" data-field-text="title">
+                                </h3>
+                                <p class="desc card-description"><span data-field-text="line1"></span><br class="pc-block"><span data-field-text="line2"></span></p>
+                            </div>
+                            <span class="btn transparent more type1 txt-black">바로가기</span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-guide-lightgreenbg">
+                    <li class="card type1 lightgreenbg">
+                        <a class="card-contents" data-field-href="href">
+                            <div class="card-title-wrap type1">
+                                <h3 class="tit small card-title" data-field-text="title">
+                                </h3>
+                                <p class="desc card-description"><span data-field-text="line1"></span><br class="pc-block"><span data-field-text="line2"></span></p>
+                            </div>
+                            <span class="btn transparent more type1 txt-black">바로가기</span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-guide-lightprimarybg">
+                    <li class="card type1 lightprimarybg">
+                        <a class="card-contents" data-field-href="href">
+                            <div class="card-title-wrap type1">
+                                <h3 class="tit small card-title" data-field-text="title">
+                                </h3>
+                                <p class="desc card-description"><span data-field-text="line1"></span><br class="pc-block"><span data-field-text="line2"></span></p>
+                            </div>
+                            <span class="btn transparent more type1 txt-black">바로가기</span>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-news-1">
+                    <li class="card type1 news">
+                        <a class="card-link" data-field-href="href">
+                            <strong role="heading" aria-level="3" class="tit small" data-field-text="title">
+                            </strong>
+                            <div class="card-description">
+                                <p class="date desc" data-field-text="date">
+                                </p>
+                                <p class="desc" data-field-text="description">
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </template>
+                <template data-content-template="main2-notice-1">
+                    <li class="notice-list">
+                        <a class="notice-link" data-field-href="href">
+                            <span class="tit xsmall" data-field-text="title">
+                            </span>
+                            <span class="date desc" data-field-text="date">
+                            </span>
+                        </a>
+                    </li>
+                </template>
+            </main>
+            <footer class="footer">
+                <button type="button" class="btn scroll-top" aria-label="맨 위로 이동" hidden>
+                    <span class="icon" aria-hidden="true">
+                    </span>
+                    <span>위로</span>
+                </button>
+                <div class="footer-wrap">
+                    <div class="contents-wrap">
+                        <div class="footer-logo">
+                            <img src="../resource/images/site-logo.svg" alt="">
+                        </div>
+                        <ul class="footer-contents">
+                            <li class="footer-content">
+                                <p class="desc addr">주소를 입력해주세요</p>
+                                <div class="footer-infogroup">
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">기관명</span>
+                                        <span class="desc footer-desc">OOO기관</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">전화번호</span>
+                                        <span class="desc footer-desc">02-0000-0000</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">팩스번호</span>
+                                        <span class="desc footer-desc">02-0000-0000</span>
+                                    </p>
+                                    <p class="footer-info">
+                                        <span class="tit footer-tit">사업자등록번호</span>
+                                        <span class="desc footer-desc">000-00-00000</span>
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="footer-content">
+                                <a class="btn transparent more" href="#">유틸리티 링크</a>
+                                <a class="btn transparent more" href="#">유틸리티 링크</a>
+                            </li>
+                        </ul>
+                        <div class="footer-bottom">
+                            <div class="footer-links-group">
+                                <ul class="footer-links left">
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">개인정보처리방침</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">이용약관</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">위치기반서비스 이용약관</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">저작권정책</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">고객서비스현장</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">자주 묻는 질문</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트1</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트2</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트3</a>
+                                    </li>
+                                    <li class="footer-link">
+                                        <a href="" class="footer-desc">테스트4</a>
+                                    </li>
+                                </ul>
+                                <ul class="footer-links right">
+                                </ul>
+                            </div>
+                            <p class="footer-copyright desc">© 2026 Knowwheresoft All rights
+                                reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer>
+        </script>
+        <script src="../resource/js/main2-data.js" defer>
+        </script>
+        <script src="../resource/js/submenu-links.js" defer></script>
+    <script src="../resource/js/template-data.js" defer>
+        </script>
+        <script src="../resource/js/common.js" defer>
+        </script>
+        <script src="../resource/js/main.js" defer>
+        </script>
+    </body>
+</html>

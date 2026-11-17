@@ -1,0 +1,265 @@
+@charset "utf-8";
+
+.contents-group.sub {
+    flex: 1;
+    min-width: 0;
+}
+.sub .contents-wrap {
+    max-width: 100%;
+}
+.subpg {
+    padding: var(--gap-7) 0;
+}
+.breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    row-gap: 12px;
+    margin-left: auto;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+}
+.breadcrumb::after {
+    display: inline-block;
+    content: "";
+    width: var(--size-icon-xsmall);
+    height: var(--size-icon-xsmall);
+    background: url(../icons/arrow_right.svg) no-repeat;
+    background-size: cover;
+    margin: 0 var(--gap-2);
+}
+.breadcrumb:last-child::after {
+    content: none;
+}
+.breadcrumb-tit {
+    font-size: var(--pc-font-size-navigation-depth-small);
+    font-weight: 500;
+}
+.breadcrumb:last-child .breadcrumb-tit {
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+}
+
+.sub-titlearea {
+    margin-top: var(--gap-7);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--gap-5);
+    margin-bottom: var(--gap-6);
+}
+.bg-contents {
+    width: 100%;
+    min-height: 1000px;
+    background-color: var(--light-color-surface-gray-subtle);
+}
+.contents-group.sub:only-child {
+    padding: 0;
+}
+/***************************************
+Start: 서브 시안 2
+*****************************************/
+.wrap:has(.breadcrumbs.type1) > .header.type2 {
+    top: var(--header-breadcrumb-top, 0px);
+    transform: none;
+    /* GNB와 breadcrumb가 만나는 구간은 스크롤 위치에 지연 없이 맞춥니다. */
+    transition: none;
+}
+.wrap:has(.breadcrumbs.type1) > .header.type2:is(.is-breadcrumb-revealed, .is-breadcrumb-hiding) {
+    clip-path: inset(0 0 var(--header-hidden-navigation-height, 0px));
+    transition: top 0.36s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header.type2:is(.is-breadcrumb-revealed, .is-breadcrumb-hiding) > .gnb {
+    visibility: hidden;
+}
+@media (prefers-reduced-motion: reduce) {
+    .wrap:has(.breadcrumbs.type1) > .header.type2:is(.is-breadcrumb-revealed, .is-breadcrumb-hiding) {
+        transition: none;
+    }
+}
+
+.banner-section {
+    width: 100%;
+    height: 320px;
+    background-color: var(--color-light-gray-40);
+    position: relative;
+}
+.banner-section > .contents-wrap {
+    position: relative;
+    height: 100%;
+}
+.banner-section .banner-tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--light-color-text-inverse-static);
+}
+.breadcrumbs.type1 {
+    justify-content: flex-start;
+    margin-left: 0;
+    height: var(--number-17);
+    background-color: var(--light-color-surface-white-static);
+    border-bottom: 0.5px solid var(--light-color-border-gray-light);
+    position: sticky;
+    /* CSS 지정값 우선, 미지정 시 JS가 측정한 헤더 하단 위치 사용 */
+    top: var(--breadcrumbs-top, var(--breadcrumbs-auto-top, 0px));
+    z-index: 99;
+}
+
+/* start: 헤더 밑에 붙었을 때 */
+.breadcrumbs.type1.is-fixed {
+    box-shadow: 1px 1px 6px rgba(26, 26, 26, 0.12);
+    border-bottom-color: transparent;
+}
+.header.has-fixed {
+    box-shadow: none;
+}
+
+.header.has-fixed::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: 0.5px solid var(--light-color-border-gray-light);
+    pointer-events: none;
+}
+.header.has-fixed:is(.is-breadcrumb-revealed, .is-breadcrumb-hiding)::after {
+    bottom: var(--header-hidden-navigation-height, 0px);
+}
+/* end: 헤더 밑에 붙었을 때 */
+.breadcrumbs > .contents-wrap {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.breadcrumb.type1 {
+    display: flex;
+    align-items: center;
+    border-left: 0.5px solid var(--light-color-border-gray-light);
+}
+.breadcrumb.type1:last-child {
+    border-right: 0.5px solid var(--light-color-border-gray-light);
+}
+.breadcrumb.type1::after {
+    display: inline-block;
+    content: none;
+}
+.breadcrumb.type1 .breadcrumb-tit {
+    font-size: var(--pc-font-size-navigation-depth-medium-bold);
+}
+
+.breadcrumb.type1:last-child .breadcrumb-tit {
+    text-decoration: none;
+}
+
+.breadcrumb.type1 > .home {
+    width: var(--number-17);
+    height: var(--number-17);
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+}
+.breadcrumb-wrap {
+    width: calc(100% - 60px);
+    display: flex;
+}
+.breadcrumb-wrap > .breadcrumb {
+    width: 260px;
+}
+.breadcrumb-wrap > .breadcrumb[hidden] {
+    display: none;
+}
+.breadcrumb-wrap.has-no-submenu > .breadcrumb:not([hidden]) {
+    width: 100%;
+}
+.breadcrumb.type1 .dropbox {
+    width: 100%;
+    max-width: 100%;
+}
+.breadcrumb.type1 .dropbox-option {
+    padding: var(--padding-2) 0;
+}
+.breadcrumb.type1 .dropbox-option li {
+    padding: var(--padding-4) var(--padding-5);
+}
+.breadcrumb.type1 .option-text {
+    font-size: var(--pc-font-size-navigation-depth-medium);
+}
+
+/***************************************
+End: 서브 시안2
+*****************************************/
+
+@media (max-width: 1280px) {
+    .contents-wrap {
+        padding: var(--padding-5) var(--padding-6) var(--padding-9);
+    }
+    .header:not(.type2) > .contents-wrap {
+        padding: var(--padding-5) var(--padding-6);
+    }
+    .subpg {
+        padding: 0;
+    }
+    .subpg .flex-contents.type1 {
+        flex-direction: column;
+    }
+    .contents-group.sub {
+        width: 100%;
+        padding: 0;
+    }
+    .sub-titlearea {
+        margin-top: var(--gap-6);
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: var(--gap-5);
+    }
+    .sub-titlearea > .tit {
+        font-size: var(--mobile-font-size-heading-large);
+    }
+    .breadcrumbs {
+        justify-content: flex-start;
+        order: 2;
+        margin-left: 0;
+    }
+    .banner-section {
+        height: 160px;
+    }
+    .breadcrumbs > .contents-wrap {
+        height: 48px;
+    }
+    .breadcrumb-tit,
+    .breadcrumb.type1 .option-text {
+        font-size: var(--mobile-font-size-navigation-depth-small);
+    }
+    .banner-section .banner-tit {
+        font-size: var(--mobile-font-size-display-small);
+    }
+    .breadcrumb.type1 > .home {
+        width: var(--number-16);
+        height: var(--number-16);
+        border-left: none;
+    }
+    .breadcrumb.type1 .homeicon {
+        width: var(--size-icon-small);
+        height: var(--size-icon-small);
+    }
+    .breadcrumb.type1:has(.home) {
+        border-left: none;
+    }
+    .breadcrumb.type1:last-child {
+        border-right: none;
+    }
+    .breadcrumb-wrap {
+        width: calc(100% - 48px);
+    }
+    .breadcrumb-wrap > .breadcrumb {
+        width: 100%;
+    }
+}

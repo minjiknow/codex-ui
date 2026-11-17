@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>문화·체육 | 메인1 버전에서 일부만 변경한 페이지</title>
+	<link rel="stylesheet" href="../resource/css/theme.css">
+	<link rel="stylesheet" href="../resource/css/common.css">
+	<link rel="stylesheet" href="../resource/css/main.css">
+</head>
+
+<body>
+	<a href="#main-content" class="skip-link">본문 바로가기</a>
+	<div class="wrap">
+		<header class="header">
+			<div class="contents-wrap">
+
+				<div class="logo">
+					<a href="./main1-other.html" class="logo-link" aria-label="문화·체육 첫 화면">
+						<img src="../resource/images/site-logo.svg" alt="">
+					</a>
+				</div>
+				<nav class="gnb" aria-label="주요 메뉴">
+
+					<ul class="depth1-menus" data-navigation="standard"></ul>
+				</nav>
+
+				<div class="utils">
+					<div class="util search">
+						<button type="button" class="icobtn large primarybg round borderless search-open"
+							aria-label="검색" aria-haspopup="dialog" aria-controls="search-popup" aria-expanded="false">
+							<span class="icon small searchicon" aria-hidden="true"></span>
+						</button>
+						<span class="util-tit tit xsmall hidden">검색</span>
+					</div>
+					<div class="util hamburger">
+						<button type="button" class="icobtn large round transparent btn-hamburger hamburgericon"
+							aria-label="전체메뉴" aria-haspopup="dialog" aria-controls="menu-popup" aria-expanded="false">
+							<span class="util-tit tit xsmall hidden">전체메뉴</span>
+						</button>
+					</div>
+					<div class="utils-sub">
+						<div class="util">
+							<button type="button" class="icobtn large round borderless" aria-label="가이드">
+								<span class="icon gnbinfoicon" aria-hidden="true"></span>
+							</button>
+							<span class="util-tit tit xsmall hidden">가이드</span>
+						</div>
+						<div class="util">
+							<button type="button" class="icobtn large round borderless" aria-label="로그인">
+								<span class="icon loginicon" aria-hidden="true"></span>
+							</button>
+							<span class="util-tit tit xsmall hidden">로그인</span>
+						</div>
+						<div class="util">
+							<button type="button" class="icobtn large round borderless" aria-label="지도">
+								<span class="icon mapicon" aria-hidden="true"></span>
+							</button>
+						</div>
+						<div class="util">
+
+							<div class="dropbox-wrap">
+								<span class="icon languageicon" aria-hidden="true"></span>
+								<div class="dropbox none">
+									<button type="button" class="selected-text" data-label="언어 선택" aria-label="언어 선택"
+										aria-haspopup="listbox" aria-expanded="false"
+										data-content-text="shared.languages.0.label"></button>
+									<ul class="dropbox-option" data-content-list="shared.languages"></ul>
+									<template data-content-template="shared-language">
+										<li>
+											<p class="option-text" data-field-text="label"></p>
+										</li>
+									</template>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+
+		<div class="menupop" id="menu-popup">
+			<div class="pop-bg" aria-hidden="true"></div>
+			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="menu-popup-title" tabindex="-1">
+				<h2 class="sr-only" id="menu-popup-title">전체메뉴</h2>
+				<div class="menu-head">
+					<div class="topmenu-area">
+						<div class="topmenus">
+							<div class="util">
+								<button type="button" class="icobtn large round borderless" aria-label="지도">
+									<span class="icon mapicon" aria-hidden="true"></span>
+								</button>
+								<span class="util-tit tit xsmall ">지도</span>
+							</div>
+							<div class="util">
+								<div class="dropbox-wrap">
+									<span class="icon languageicon" aria-hidden="true"></span>
+									<div class="dropbox none">
+										<button type="button" class="selected-text" data-label="언어 선택"
+											aria-label="언어 선택" aria-haspopup="listbox" aria-expanded="false"
+											data-content-text="shared.languages.0.label"></button>
+										<ul class="dropbox-option" data-content-list="shared.languages"></ul>
+										<template data-content-template="shared-language">
+											<li>
+												<p class="option-text" data-field-text="label"></p>
+											</li>
+										</template>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="menu-close" aria-label="전체메뉴 닫기">
+							<span class="pop-close" aria-hidden="true"></span>
+						</button>
+					</div>
+					<button type="button" class="login" name="login">
+						<span class="loginicon" aria-hidden="true"></span>로그인을 해주세요
+					</button>
+
+
+
+				</div>
+
+
+
+				<nav class="gnb" aria-label="전체메뉴 목록">
+					<ul class="depth1-menus" data-navigation="mobile"></ul>
+				</nav>
+				<div class="menu-foot">
+					<a class="submenu" href="#"><span class="badge primarybg">공지사항</span>공지사항 바로가기</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="pop searchpop" id="search-popup">
+			<div class="pop-bg" aria-hidden="true"></div>
+
+			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="search-popup-title"
+				tabindex="-1">
+				<button type="button" class="icobtn  transparent search-close" aria-label="검색 닫기">
+					<span class="icon pop-close" aria-hidden="true"></span>
+				</button>
+				<div class="contents-wrap">
+					<div class="search-area">
+						<div class="search-head">
+							<h2 class="pop-maintit" id="search-popup-title">검색어를 입력해주세요.</h2>
+						</div>
+						<div class="search-formarea">
+							<form class="search-group" role="search">
+								<div class="search-wrap">
+									<input type="text" id="search-keyword" name="keyword" maxlength="100"
+										autocomplete="off" aria-labelledby="search-popup-title" placeholder="검색"
+										role="combobox" aria-autocomplete="list" aria-controls="related-search-list"
+										aria-expanded="false">
+									<button type="button" class="icobtn round search-clear" aria-label="검색어 지우기">
+										<span class="icon xsmall delete-word" aria-hidden="true"></span>
+									</button>
+								</div>
+								<button type="submit" class="icobtn transparent" aria-label="검색 실행">
+									<span class="icon large searchicon" aria-hidden="true"></span>
+								</button>
+							</form>
+
+							<div class="related-searcharea">
+
+								<ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어"
+									data-content-list="pages.main1.search.suggestions"></ul>
+								<template data-content-template="shared-suggestion">
+									<li class="related-search"><em class="related-tit tit"
+											data-field-text="highlight"></em><span data-field-text="suffix"></span></li>
+								</template>
+								<p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
+							</div>
+
+						</div>
+
+
+						<section class="recent-searcharea" aria-labelledby="recent-search-title">
+							<div class="recent-titlearea">
+								<h3 class="tit" id="recent-search-title">최근 검색어</h3>
+								<button type="button" class="btn delete transparent">전체삭제
+									<span class="icon xsmall delete-all" aria-hidden="true"></span>
+								</button>
+							</div>
+							<ul class="chip-group" data-content-list="shared.recentSearches"></ul>
+							<template data-content-template="shared-recent-search">
+								<li class="chip bg">
+									<button type="button" class="recent-keyword" data-field-text="keyword"></button>
+									<button type="button" class="icobtn transparent round chip-delete"
+										aria-label="검색어 삭제">
+										<span class="icon xsmall delete-word" aria-hidden="true"></span>
+									</button>
+								</li>
+							</template>
+							<p class="chip-empty">최근 검색어가 없습니다.</p>
+						</section>
+
+					</div>
+					<p class="sr-only search-status" role="status" aria-live="polite"></p>
+				</div>
+
+			</div>
+
+		</div>
+		<main class="container" id="main-content" tabindex="-1">
+			<h1 class="sr-only">문화·체육</h1>
+			<!-- 이미지 배너: 중앙 슬라이드와 양쪽 미리보기 -->
+			<section class="banner-section" aria-label="문화·체육 주요 소식">
+				<div class="swiper centerBannerSwiper">
+					<div class="swiper-wrapper" data-content-list="pages.main1.banner-1"></div>
+					<button type="button" class="swiper-button-prev swiper-btn icobtn round borderless"
+						aria-label="이전 슬라이드"><span class="icon medium slide-btn left"
+							aria-hidden="true"></span></button>
+					<button type="button" class="swiper-button-next swiper-btn icobtn round borderless"
+						aria-label="다음 슬라이드"><span class="icon medium slide-btn right"
+							aria-hidden="true"></span></button>
+					<div class="swiper-control-wrap">
+						<div class="page-btn">
+							<div class="swiper-pagination"></div>
+							<div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent"
+									aria-label="메인 배너 롤링 정지" aria-pressed="false"><span
+										class="icon rolling-icon slide-pause" aria-hidden="true"></span><span
+										class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
+						</div>
+						<div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
+
+					</div>
+				</div>
+			</section>
+			<!-- cms-ui references/examples/main3.html: type2 퀵메뉴, 이용안내, 오늘의 선택 재사용 (2026-11-16) -->
+			<section aria-label="자주 찾는 메뉴">
+				<div class="contents-wrap">
+					<div class="card-heading type1">
+						<h2 class="tit large">
+							자주 찾는 메뉴
+						</h2>
+					</div>
+					<div class="contents-group type1">
+						<div class="flex-contents">
+							<ul class="quick-menus type2" data-content-list="pages.main3.quick-1">
+								<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></ul>
+							<div class="card type2 bg holiday-card" role="group" aria-label="시설 이용안내">
+								<div class="card-contents">
+									<div class="dropbox-wrap" aria-label="이용안내 연도와 월 선택">
+										<div class="dropbox type1">
+											<button type="button" class="selected-text" data-label="연도 선택"
+												aria-haspopup="listbox" aria-expanded="false"
+												data-content-text="pages.main3.info.year"></button>
+											<ul class="dropbox-option" data-content-list="pages.main3.year-1">
+												<!-- dummy.js에서 생성 --></ul>
+										</div>
+										<div class="dropbox type2">
+											<button type="button" class="selected-text" data-label="월 선택"
+												aria-haspopup="listbox" aria-expanded="false"
+												data-content-text="pages.main3.info.month"></button>
+											<ul class="dropbox-option" data-content-list="pages.main3.month-1">
+												<!-- dummy.js에서 생성 --></ul>
+										</div>
+									</div>
+									<h3 class="tit xlarge today" data-content-text="pages.main3.info.date"></h3>
+									<p class="desc medium txt-primary info-time"><span
+											class="icon small infoicon"></span><span
+											data-content-text="pages.main3.info.hours"></span></p>
+									<div class="holiday-dates">
+										<p class="desc medium txt-black">휴관일</p>
+										<ul class="holiday-dates" data-content-list="pages.main3.holiday-1">
+											<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="today-section" id="today-selection" tabindex="-1" aria-label="오늘의 선택">
+				<div class="contents-wrap">
+					<div class="card-heading type1">
+						<h2 class="tit large">
+							오늘의 선택
+						</h2>
+					</div>
+					<div class="contents-group type1">
+						<div class="card-contents" data-tabs="">
+							<div class="card-heading">
+								<div class="tabs type1" role="tablist" aria-label="오늘의 선택">
+									<button type="button" class="tab type3 active" role="tab" aria-selected="true"
+										tabindex="0" data-content-record="pages.main3.tabs.today.0"
+										data-field-text="label" data-field-data-more-href="href"></button>
+									<button type="button" class="tab type3" role="tab" aria-selected="false"
+										tabindex="-1" data-content-record="pages.main3.tabs.today.1"
+										data-field-text="label" data-field-data-more-href="href"></button>
+									<button type="button" class="tab type3" role="tab" aria-selected="false"
+										tabindex="-1" data-content-record="pages.main3.tabs.today.2"
+										data-field-text="label" data-field-data-more-href="href"></button>
+									<button type="button" class="tab type3" role="tab" aria-selected="false"
+										tabindex="-1" data-content-record="pages.main3.tabs.today.3"
+										data-field-text="label" data-field-data-more-href="href"></button>
+								</div>
+								<a class="btn transparent more txt-black" data-tab-more="" aria-label="공연·전시 더보기"
+									data-content-record="pages.main3.tabs.today.0" data-field-href="href">더보기</a>
+							</div>
+							<div class="tabcontents" role="tabpanel" tabindex="0"
+								data-content-record="pages.main3.tabs.today.0" data-field-aria-label="label">
+								<div class="contents-group type1">
+									<div class="flex-contents">
+										<div class="card-contents">
+											<div class="card-heading type1">
+												<h3 class="tit" data-content-text="pages.main3.today-1.0.ariaLabel">
+												</h3>
+											</div>
+											<p class="desc large"
+												data-content-text="pages.main3.today-1.0.selectionDescription"></p>
+											<a class="btn transparent more txt-black "
+												data-content-record="pages.main3.today-1.0" data-field-href="href">
+												더보기
+											</a>
+											<div class="swiper-control-wrap type1">
+												<div class="page-btn">
+													<div class="swiper-pagination fraction-pagination"
+														aria-live="polite">
+													</div>
+													<div class="slide-rolling">
+														<button type="button" class="slide-toggle icobtn transparent"
+															aria-label="공연·전시 정지" aria-pressed="false">
+															<span class="icon rolling-icon slide-pause"
+																aria-hidden="true">
+															</span>
+															<span class="icon rolling-icon slide-play"
+																aria-hidden="true">
+															</span>
+														</button>
+													</div>
+												</div>
+												<div class="swiper-progress" aria-hidden="true">
+													<span class="swiper-progress-bar"></span>
+												</div>
+												<button type="button"
+													class="swiper-button-prev swiper-btn icobtn medium round"
+													aria-label="공연·전시 이전">
+													<span class="icon xsmall slide-btn left" aria-hidden="true"></span>
+												</button>
+												<button type="button"
+													class="swiper-button-next swiper-btn icobtn medium round"
+													aria-label="공연·전시 다음">
+													<span class="icon xsmall slide-btn right" aria-hidden="true"></span>
+												</button>
+											</div>
+										</div>
+										<div class="swiper cardSwiper type1" role="region" aria-roledescription="캐러셀"
+											data-content-record="pages.main3.tabs.today.0"
+											data-field-aria-label="label">
+											<div class="swiper-wrapper" data-content-list="pages.main3.today-1">
+												<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabcontents" role="tabpanel" tabindex="0" hidden=""
+								data-content-record="pages.main3.tabs.today.1" data-field-aria-label="label">
+								<div class="contents-group type1">
+									<div class="flex-contents">
+										<div class="card-contents">
+											<div class="card-heading type1">
+												<h3 class="tit" data-content-text="pages.main3.today-2.0.ariaLabel">
+												</h3>
+											</div>
+											<p class="desc large"
+												data-content-text="pages.main3.today-2.0.selectionDescription"></p>
+											<a class="btn transparent more txt-black "
+												data-content-record="pages.main3.today-2.0" data-field-href="href">
+												더보기
+											</a>
+											<div class="swiper-control-wrap type1">
+												<div class="page-btn">
+													<div class="swiper-pagination fraction-pagination"
+														aria-live="polite">
+													</div>
+													<div class="slide-rolling">
+														<button type="button" class="slide-toggle icobtn transparent"
+															aria-label="생활체육 정지" aria-pressed="false">
+															<span class="icon rolling-icon slide-pause"
+																aria-hidden="true">
+															</span>
+															<span class="icon rolling-icon slide-play"
+																aria-hidden="true">
+															</span>
+														</button>
+													</div>
+												</div>
+												<div class="swiper-progress" aria-hidden="true">
+													<span class="swiper-progress-bar"></span>
+												</div>
+												<button type="button"
+													class="swiper-button-prev swiper-btn icobtn medium round"
+													aria-label="생활체육 이전">
+													<span class="icon xsmall slide-btn left" aria-hidden="true"></span>
+												</button>
+												<button type="button"
+													class="swiper-button-next swiper-btn icobtn medium round"
+													aria-label="생활체육 다음">
+													<span class="icon xsmall slide-btn right" aria-hidden="true"></span>
+												</button>
+											</div>
+										</div>
+										<div class="swiper cardSwiper type1" role="region" aria-roledescription="캐러셀"
+											data-content-record="pages.main3.tabs.today.1"
+											data-field-aria-label="label">
+											<div class="swiper-wrapper" data-content-list="pages.main3.today-2">
+												<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabcontents" role="tabpanel" tabindex="0" hidden=""
+								data-content-record="pages.main3.tabs.today.2" data-field-aria-label="label">
+								<div class="contents-group type1">
+									<div class="flex-contents">
+										<div class="card-contents">
+											<div class="card-heading type1">
+												<h3 class="tit" data-content-text="pages.main3.today-3.0.ariaLabel">
+												</h3>
+											</div>
+											<p class="desc large"
+												data-content-text="pages.main3.today-3.0.selectionDescription"></p>
+											<a class="btn transparent more txt-black "
+												data-content-record="pages.main3.today-3.0" data-field-href="href">
+												더보기
+											</a>
+											<div class="swiper-control-wrap type1">
+												<div class="page-btn">
+													<div class="swiper-pagination fraction-pagination"
+														aria-live="polite">
+													</div>
+													<div class="slide-rolling">
+														<button type="button" class="slide-toggle icobtn transparent"
+															aria-label="독서·문화 정지" aria-pressed="false">
+															<span class="icon rolling-icon slide-pause"
+																aria-hidden="true">
+															</span>
+															<span class="icon rolling-icon slide-play"
+																aria-hidden="true">
+															</span>
+														</button>
+													</div>
+												</div>
+												<div class="swiper-progress" aria-hidden="true">
+													<span class="swiper-progress-bar"></span>
+												</div>
+												<button type="button"
+													class="swiper-button-prev swiper-btn icobtn medium round"
+													aria-label="독서·문화 이전">
+													<span class="icon xsmall slide-btn left" aria-hidden="true"></span>
+												</button>
+												<button type="button"
+													class="swiper-button-next swiper-btn icobtn medium round"
+													aria-label="독서·문화 다음">
+													<span class="icon xsmall slide-btn right" aria-hidden="true"></span>
+												</button>
+											</div>
+										</div>
+										<div class="swiper cardSwiper type1" role="region" aria-roledescription="캐러셀"
+											data-content-record="pages.main3.tabs.today.2"
+											data-field-aria-label="label">
+											<div class="swiper-wrapper" data-content-list="pages.main3.today-3">
+												<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tabcontents" role="tabpanel" tabindex="0" hidden=""
+								data-content-record="pages.main3.tabs.today.3" data-field-aria-label="label">
+								<div class="contents-group type1">
+									<div class="flex-contents">
+										<div class="card-contents">
+											<div class="card-heading type1">
+												<h3 class="tit" data-content-text="pages.main3.today-4.0.ariaLabel">
+												</h3>
+											</div>
+											<p class="desc large"
+												data-content-text="pages.main3.today-4.0.selectionDescription"></p>
+											<a class="btn transparent more txt-black "
+												data-content-record="pages.main3.today-4.0" data-field-href="href">
+												더보기
+											</a>
+											<div class="swiper-control-wrap type1">
+												<div class="page-btn">
+													<div class="swiper-pagination fraction-pagination"
+														aria-live="polite">
+													</div>
+													<div class="slide-rolling">
+														<button type="button" class="slide-toggle icobtn transparent"
+															aria-label="시설·이용안내 정지" aria-pressed="false">
+															<span class="icon rolling-icon slide-pause"
+																aria-hidden="true">
+															</span>
+															<span class="icon rolling-icon slide-play"
+																aria-hidden="true">
+															</span>
+														</button>
+													</div>
+												</div>
+												<div class="swiper-progress" aria-hidden="true">
+													<span class="swiper-progress-bar"></span>
+												</div>
+												<button type="button"
+													class="swiper-button-prev swiper-btn icobtn medium round"
+													aria-label="시설·이용안내 이전">
+													<span class="icon xsmall slide-btn left" aria-hidden="true"></span>
+												</button>
+												<button type="button"
+													class="swiper-button-next swiper-btn icobtn medium round"
+													aria-label="시설·이용안내 다음">
+													<span class="icon xsmall slide-btn right" aria-hidden="true"></span>
+												</button>
+											</div>
+										</div>
+										<div class="swiper cardSwiper type1" role="region" aria-roledescription="캐러셀"
+											data-content-record="pages.main3.tabs.today.3"
+											data-field-aria-label="label">
+											<div class="swiper-wrapper" data-content-list="pages.main3.today-4">
+												<!-- dummy.js 목록을 아래 template으로 렌더링합니다. --></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="board-section" aria-label="문화·체육 소식과 공지사항">
+
+				<div class="contents-wrap">
+					<div class="contents-group border">
+						<div class="flex-contents">
+							<div class="card-contents">
+								<div class="card-heading">
+									<h2 class="tit large">문화·체육 소식</h2>
+									<a href="#" class="btn transparent more txt-black" aria-label="문화·체육 소식 더보기">더보기</a>
+								</div>
+								<ul class="cards" data-content-list="pages.main2.news-1">
+								</ul>
+							</div>
+							<div class="card-contents notice-area">
+								<div class="card-heading">
+									<h2 class="tit large">공지사항</h2>
+									<a href="#" class="btn transparent more txt-black" aria-label="공지사항 더보기">더보기</a>
+								</div>
+								<ul class="notice-lists" data-content-list="pages.main2.notice-1">
+								</ul>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</section>
+
+			<template data-content-template="main2-news-1">
+				<li class="card type1 news">
+					<a class="card-link" data-field-href="href">
+						<strong class="tit small" data-field-text="title"></strong>
+						<div class="card-description">
+							<p class="date desc" data-field-text="date"></p>
+							<p class="desc" data-field-text="description"></p>
+						</div>
+					</a>
+				</li>
+			</template>
+			<template data-content-template="main2-notice-1">
+				<li class="notice-list">
+					<a class="notice-link" data-field-href="href">
+						<span class="tit xsmall" data-field-text="title"></span>
+						<span class="date desc" data-field-text="date"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main1-banner-1">
+				<div class="swiper-slide hero-slide1" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-2">
+				<div class="swiper-slide hero-slide2" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-3">
+				<div class="swiper-slide hero-slide3" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-4">
+				<div class="swiper-slide hero-slide4" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-5">
+				<div class="swiper-slide hero-slide5" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-event-1">
+				<li class="card-banner swiper-slide">
+					<a class="card-banner-link" data-field-href="href">
+						<!-- 원본에도 행사 이미지가 없어 빈 시각 영역으로 유지합니다. -->
+						<span class="card-banner-img" aria-hidden="true"></span>
+						<div class="card-banner-contents">
+							<h3 class="tit small card-title" data-field-text="title"></h3>
+							<p class="desc" data-field-text="description"></p>
+						</div>
+					</a>
+				</li>
+			</template>
+			<template data-content-template="main3-quick-1">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick1" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-2">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick2" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-3">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick3" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-4">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick4" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-5">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick5" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-6">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick6" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-7">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick7" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-quick-8">
+				<li class="quick-menu">
+					<a class="quick-link type1" data-field-href="href">
+						<span class="quick-icon type1 icobtn">
+							<span class="quick-img quick8" aria-hidden="true">
+							</span>
+						</span>
+						<span class="tit xxsmall quick-tit" data-field-text="title"></span>
+					</a>
+				</li>
+			</template>
+
+			<template data-content-template="main3-holiday-1">
+				<li class="badge secondarybg holiday-date" data-field-text="category"></li>
+			</template>
+
+			<template data-content-template="main3-today-1">
+				<div class="swiper-slide card-banner" data-field-data-selection-description="selectionDescription">
+					<a class="card-banner-link" data-field-href="href" data-field-aria-label="ariaLabel">
+						<span class="card-banner-img" aria-hidden="true"></span>
+					</a>
+				</div>
+			</template>
+
+			<template data-content-template="main3-today-2">
+				<div class="swiper-slide card-banner" data-field-data-selection-description="selectionDescription">
+					<a class="card-banner-link" data-field-href="href" data-field-aria-label="ariaLabel">
+						<span class="card-banner-img" aria-hidden="true"></span>
+					</a>
+				</div>
+			</template>
+
+			<template data-content-template="main3-today-3">
+				<div class="swiper-slide card-banner" data-field-data-selection-description="selectionDescription">
+					<a class="card-banner-link" data-field-href="href" data-field-aria-label="ariaLabel">
+						<span class="card-banner-img" aria-hidden="true"></span>
+					</a>
+				</div>
+			</template>
+
+			<template data-content-template="main3-today-4">
+				<div class="swiper-slide card-banner" data-field-data-selection-description="selectionDescription">
+					<a class="card-banner-link" data-field-href="href" data-field-aria-label="ariaLabel">
+						<span class="card-banner-img" aria-hidden="true"></span>
+					</a>
+				</div>
+			</template>
+
+			<template data-content-template="main3-option-1">
+				<li>
+					<p class="option-text" data-field-text="label"></p>
+				</li>
+			</template>
+		</main>
+		<footer class="footer">
+			<button type="button" class="btn scroll-top" aria-label="맨 위로 이동" hidden>
+				<span class="icon" aria-hidden="true"></span>
+				<span>위로</span>
+			</button>
+
+			<div class="footer-wrap">
+				<div class="contents-wrap">
+					<div class="footer-logo">
+						<img src="../resource/images/site-logo.svg" alt="">
+					</div>
+					<ul class="footer-contents">
+						<li class="footer-content">
+							<p class="desc addr">주소를 입력해주세요</p>
+							<div class="footer-infogroup">
+								<p class="footer-info"><span class="tit footer-tit">기관명</span>
+									<span class="desc footer-desc">OOO기관</span>
+								</p>
+								<p class="footer-info"><span class="tit footer-tit">전화번호</span>
+									<span class="desc footer-desc">02-0000-0000</span>
+								</p>
+								<p class="footer-info"><span class="tit footer-tit">팩스번호</span>
+									<span class="desc footer-desc">02-0000-0000</span>
+								</p>
+								<p class="footer-info"><span class="tit footer-tit">사업자등록번호</span>
+									<span class="desc footer-desc">000-00-00000</span>
+								</p>
+							</div>
+						</li>
+						<li class="footer-content">
+							<a class="btn transparent more" href="#">유틸리티 링크</a>
+							<a class="btn transparent more" href="#">유틸리티 링크</a>
+						</li>
+					</ul>
+					<div class="footer-bottom">
+						<div class="footer-links-group">
+							<ul class="footer-links left">
+								<li class="footer-link">
+									<a href="" class="footer-desc">개인정보처리방침</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">이용약관</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">위치기반서비스 이용약관</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">저작권정책</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">고객서비스현장</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">자주 묻는 질문</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트1</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트2</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트3</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트4</a>
+								</li>
+							</ul>
+							<ul class="footer-links right">
+
+							</ul>
+						</div>
+						<p class="footer-copyright desc">© 2026 Knowwheresoft All rights
+							reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+	<script src="../resource/js/main1-data.js" defer></script>
+	<script src="../resource/js/main1-board-data.js" defer></script>
+	<script src="../resource/js/main1-other-data.js" defer></script>
+	<script src="../resource/js/submenu-links.js" defer></script>
+    <script src="../resource/js/template-data.js" defer></script>
+	<script src="../resource/js/common.js" defer></script>
+	<script src="../resource/js/main.js" defer></script>
+</body>
+
+</html>
