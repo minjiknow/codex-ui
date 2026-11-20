@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문화·체육 | 메인 화면</title>
-    <link rel="stylesheet" href="../resource/css/theme.css">
-    <link rel="stylesheet" href="../resource/css/common.css">
-    <link rel="stylesheet" href="../resource/css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>문화·체육 | 메인 화면</title>
+	<link rel="stylesheet" href="../resource/css/theme.css">
+	<link rel="stylesheet" href="../resource/css/common.css">
+	<link rel="stylesheet" href="../resource/css/main.css">
 </head>
+
 <body>
-    <a href="#main-content" class="skip-link">본문 바로가기</a>
-    <div class="wrap">
-        <header class="header">
+	<a href="#main-content" class="skip-link">본문 바로가기</a>
+	<div class="wrap">
+		<header class="header">
 			<div class="contents-wrap">
-				
+
 				<div class="logo">
 					<a href="./main1.html" class="logo-link" aria-label="문화·체육 첫 화면">
-						<img src="../resource/images/site-logo.svg" alt="">
+						<img src="../assets/images/site-logo.svg" alt="">
 					</a>
 				</div>
 				<nav class="gnb" aria-label="주요 메뉴">
-					
+
 					<ul class="depth1-menus" data-navigation="standard"></ul>
 				</nav>
-				
+
 				<div class="utils">
 					<div class="util search">
 						<button type="button" class="icobtn large primarybg round borderless search-open"
@@ -57,16 +59,18 @@
 							</button>
 						</div>
 						<div class="util">
-							
+
 							<div class="dropbox-wrap">
 								<span class="icon languageicon" aria-hidden="true"></span>
 								<div class="dropbox none">
-									<button type="button" class="selected-text" data-label="언어 선택"
-										aria-label="언어 선택" aria-haspopup="listbox"
-										aria-expanded="false" data-content-text="shared.languages.0.label"></button>
+									<button type="button" class="selected-text" data-label="언어 선택" aria-label="언어 선택"
+										aria-haspopup="listbox" aria-expanded="false"
+										data-content-text="shared.languages.0.label"></button>
 									<ul class="dropbox-option" data-content-list="shared.languages"></ul>
 									<template data-content-template="shared-language">
-										<li><p class="option-text" data-field-text="label"></p></li>
+										<li>
+											<p class="option-text" data-field-text="label"></p>
+										</li>
 									</template>
 								</div>
 							</div>
@@ -76,8 +80,8 @@
 				</div>
 			</div>
 		</header>
-		
-		
+
+
 		<div class="menupop" id="menu-popup">
 			<div class="pop-bg" aria-hidden="true"></div>
 			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="menu-popup-title" tabindex="-1">
@@ -96,12 +100,14 @@
 									<span class="icon languageicon" aria-hidden="true"></span>
 									<div class="dropbox none">
 										<button type="button" class="selected-text" data-label="언어 선택"
-											aria-label="언어 선택" aria-haspopup="listbox"
-											aria-expanded="false" data-content-text="shared.languages.0.label"></button>
+											aria-label="언어 선택" aria-haspopup="listbox" aria-expanded="false"
+											data-content-text="shared.languages.0.label"></button>
 										<ul class="dropbox-option" data-content-list="shared.languages"></ul>
-									<template data-content-template="shared-language">
-										<li><p class="option-text" data-field-text="label"></p></li>
-									</template>
+										<template data-content-template="shared-language">
+											<li>
+												<p class="option-text" data-field-text="label"></p>
+											</li>
+										</template>
 									</div>
 								</div>
 							</div>
@@ -113,13 +119,13 @@
 					<button type="button" class="login" name="login">
 						<span class="loginicon" aria-hidden="true"></span>로그인을 해주세요
 					</button>
-					
-					
-					
+
+
+
 				</div>
-				
-				
-				
+
+
+
 				<nav class="gnb" aria-label="전체메뉴 목록">
 					<ul class="depth1-menus" data-navigation="mobile"></ul>
 				</nav>
@@ -128,13 +134,13 @@
 				</div>
 			</div>
 		</div>
-		
 
-		
-		
+
+
+
 		<div class="pop searchpop" id="search-popup">
 			<div class="pop-bg" aria-hidden="true"></div>
-			
+
 			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="search-popup-title"
 				tabindex="-1">
 				<button type="button" class="icobtn  transparent search-close" aria-label="검색 닫기">
@@ -160,19 +166,21 @@
 									<span class="icon large searchicon" aria-hidden="true"></span>
 								</button>
 							</form>
-							
+
 							<div class="related-searcharea">
-								
-								<ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions"></ul>
+
+								<ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어"
+									data-content-list="pages.main1.search.suggestions"></ul>
 								<template data-content-template="shared-suggestion">
-									<li class="related-search"><em class="related-tit tit" data-field-text="highlight"></em><span data-field-text="suffix"></span></li>
+									<li class="related-search"><em class="related-tit tit"
+											data-field-text="highlight"></em><span data-field-text="suffix"></span></li>
 								</template>
 								<p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
 							</div>
-							
+
 						</div>
 
-						
+
 						<section class="recent-searcharea" aria-labelledby="recent-search-title">
 							<div class="recent-titlearea">
 								<h3 class="tit" id="recent-search-title">최근 검색어</h3>
@@ -192,171 +200,257 @@
 							</template>
 							<p class="chip-empty">최근 검색어가 없습니다.</p>
 						</section>
-						
+
 					</div>
 					<p class="sr-only search-status" role="status" aria-live="polite"></p>
 				</div>
 
 			</div>
-			
+
 		</div>
-            <main class="container" id="main-content" tabindex="-1">
-                <h1 class="sr-only">문화·체육</h1>
-                <!-- 이미지 배너: 중앙 슬라이드와 양쪽 미리보기 -->
-                <section class="banner-section" aria-label="문화·체육 주요 소식">
-                    <div class="swiper centerBannerSwiper">
-                        <div class="swiper-wrapper" data-content-list="pages.main1.banner-1"></div>
-                        <button type="button" class="swiper-button-prev swiper-btn icobtn round borderless" aria-label="이전 슬라이드" ><span class="icon medium slide-btn left" aria-hidden="true"></span></button>
-                        <button type="button" class="swiper-button-next swiper-btn icobtn round borderless" aria-label="다음 슬라이드" ><span class="icon medium slide-btn right" aria-hidden="true"></span></button>
-                        <div class="swiper-control-wrap">
-                            <div class="page-btn">
-                                <div class="swiper-pagination"></div>
-                                <div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent" aria-label="메인 배너 롤링 정지" aria-pressed="false"><span class="icon rolling-icon slide-pause" aria-hidden="true"></span><span class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
-                            </div>
-                            <div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
+		<main class="container" id="main-content" tabindex="-1">
+			<h1 class="sr-only">문화·체육</h1>
+			<!-- 이미지 배너: 중앙 슬라이드와 양쪽 미리보기 -->
+			<section class="banner-section" aria-label="문화·체육 주요 소식">
+				<div class="swiper centerBannerSwiper">
+					<div class="swiper-wrapper" data-content-list="pages.main1.banner-1"></div>
+					<button type="button" class="swiper-button-prev swiper-btn icobtn round borderless"
+						aria-label="이전 슬라이드"><span class="icon medium slide-btn left"
+							aria-hidden="true"></span></button>
+					<button type="button" class="swiper-button-next swiper-btn icobtn round borderless"
+						aria-label="다음 슬라이드"><span class="icon medium slide-btn right"
+							aria-hidden="true"></span></button>
+					<div class="swiper-control-wrap">
+						<div class="page-btn">
+							<div class="swiper-pagination"></div>
+							<div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent"
+									aria-label="메인 배너 롤링 정지" aria-pressed="false"><span
+										class="icon rolling-icon slide-pause" aria-hidden="true"></span><span
+										class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
+						</div>
+						<div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
 
-                        </div>
-                    </div>
-                </section>
-                <!-- 서비스 바로가기: 모바일 가로 스크롤 -->
-                <section aria-labelledby="quick-title">
-                    <div class="contents-wrap">
-                        <h2 class="tit txt-regular" id="quick-title">문화와 체육을 더 가까이, <br class="mo-block"><strong class="tit">주요 서비스를 만나보세요</strong></h2>
-                        <ul class="quick-menus x-auto" data-content-list="pages.main1.quick-1"></ul>
-                    </div>
-                </section>
-                <!-- 기사와 후기 요약 카드 -->
-                <section class="card-section bg" aria-labelledby="card-title">
-                    <div class="contents-wrap card-heading"><h2 class="tit medium txt-regular" id="card-title">AI가 지금 막, <br class="mo-block"><strong class="txt-bold">문화·체육 기사 · 사용자 후기를 요약했어요.</strong></h2></div>
-                    <div class="swiper cardSwiper" role="region" aria-label="AI 문화·체육 요약 카드 모음">
-                        <div class="swiper-wrapper" data-content-list="pages.main1.card-1"></div>
-                        <button type="button" class="swiper-button-prev swiper-btn icobtn round card-swiper-btn" aria-label="이전 AI 요약 카드" ><span class="icon medium slide-btn left" aria-hidden="true"></span></button>
-                        <button type="button" class="swiper-button-next swiper-btn icobtn round card-swiper-btn" aria-label="다음 AI 요약 카드" ><span class="icon medium slide-btn right" aria-hidden="true"></span></button>
-                        <div class="swiper-control-wrap">
-                            <div class="page-btn">
-                                <div class="swiper-pagination fraction-pagination"></div>
-                                <div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent" aria-label="AI 요약 카드 롤링 정지" aria-pressed="false"><span class="icon rolling-icon slide-pause" aria-hidden="true"></span><span class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
-                            </div>
-                            <div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
+					</div>
+				</div>
+			</section>
+			<!-- 서비스 바로가기: 모바일 가로 스크롤 -->
+			<section aria-labelledby="quick-title">
+				<div class="contents-wrap">
+					<h2 class="tit txt-regular" id="quick-title">문화와 체육을 더 가까이, <br class="mo-block"><strong
+							class="tit">주요 서비스를 만나보세요</strong></h2>
+					<ul class="quick-menus x-auto" data-content-list="pages.main1.quick-1"></ul>
+				</div>
+			</section>
+			<!-- 기사와 후기 요약 카드 -->
+			<section class="card-section bg" aria-labelledby="card-title">
+				<div class="contents-wrap card-heading">
+					<h2 class="tit medium txt-regular" id="card-title">AI가 지금 막, <br class="mo-block"><strong
+							class="txt-bold">문화·체육 기사 · 사용자 후기를 요약했어요.</strong></h2>
+				</div>
+				<div class="swiper cardSwiper" role="region" aria-label="AI 문화·체육 요약 카드 모음">
+					<div class="swiper-wrapper" data-content-list="pages.main1.card-1"></div>
+					<button type="button" class="swiper-button-prev swiper-btn icobtn round card-swiper-btn"
+						aria-label="이전 AI 요약 카드"><span class="icon medium slide-btn left"
+							aria-hidden="true"></span></button>
+					<button type="button" class="swiper-button-next swiper-btn icobtn round card-swiper-btn"
+						aria-label="다음 AI 요약 카드"><span class="icon medium slide-btn right"
+							aria-hidden="true"></span></button>
+					<div class="swiper-control-wrap">
+						<div class="page-btn">
+							<div class="swiper-pagination fraction-pagination"></div>
+							<div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent"
+									aria-label="AI 요약 카드 롤링 정지" aria-pressed="false"><span
+										class="icon rolling-icon slide-pause" aria-hidden="true"></span><span
+										class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
+						</div>
+						<div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
 
-                        </div>
-                    </div>
-                </section>
-                <!-- 행사 목록 -->
-                <section class="event-section" aria-labelledby="event-title">
-                    <div class="contents-wrap">
-                        <div class="card-heading"><h2 class="tit txt-regular" id="event-title">진행 중인 <strong class="txt-bold">문화 · 체육 행사</strong></h2><button type="button" class="btn transparent more">더보기</button></div>
-                        <div class="card-body swiper eventSwiper">
-                            <ul class="card-banners type1 swiper-wrapper" data-content-list="pages.main1.event-1"></ul>
-                            <div class="swiper-control-wrap type1">
-                                <div class="page-btn">
-                                    <div class="swiper-pagination fraction-pagination" aria-live="polite"></div>
-                                    <div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent" aria-label="문화·체육 행사 롤링 정지" aria-pressed="false"><span class="icon rolling-icon slide-pause" aria-hidden="true"></span><span class="icon rolling-icon slide-play" aria-hidden="true"></span></button></div>
-                                </div>
-                                <div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span></div>
-                                <button type="button" class="swiper-button-prev swiper-btn icobtn medium round" aria-label="이전 행사" ><span class="icon xsmall slide-btn left" aria-hidden="true"></span></button>
-                                <button type="button" class="swiper-button-next swiper-btn icobtn medium round" aria-label="다음 행사" ><span class="icon xsmall slide-btn right" aria-hidden="true"></span></button>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+					</div>
+				</div>
+			</section>
+			<!-- 행사 목록 -->
+			<section class="event-section" aria-labelledby="event-title">
+				<div class="contents-wrap">
+					<div class="card-heading">
+						<h2 class="tit txt-regular" id="event-title">진행 중인 <strong class="txt-bold">문화 · 체육 행사</strong>
+						</h2><button type="button" class="btn transparent more">더보기</button>
+					</div>
+					<div class="card-body swiper eventSwiper">
+						<ul class="card-banners type1 swiper-wrapper" data-content-list="pages.main1.event-1"></ul>
+						<div class="swiper-control-wrap type1">
+							<div class="page-btn">
+								<div class="swiper-pagination fraction-pagination" aria-live="polite"></div>
+								<div class="slide-rolling"><button type="button" class="slide-toggle icobtn transparent"
+										aria-label="문화·체육 행사 롤링 정지" aria-pressed="false"><span
+											class="icon rolling-icon slide-pause" aria-hidden="true"></span><span
+											class="icon rolling-icon slide-play" aria-hidden="true"></span></button>
+								</div>
+							</div>
+							<div class="swiper-progress" aria-hidden="true"><span class="swiper-progress-bar"></span>
+							</div>
+							<button type="button" class="swiper-button-prev swiper-btn icobtn medium round"
+								aria-label="이전 행사"><span class="icon xsmall slide-btn left"
+									aria-hidden="true"></span></button>
+							<button type="button" class="swiper-button-next swiper-btn icobtn medium round"
+								aria-label="다음 행사"><span class="icon xsmall slide-btn right"
+									aria-hidden="true"></span></button>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                <template data-content-template="main1-banner-1">
-                    <div class="swiper-slide hero-slide1" data-field-hero-image="heroImage">
-                        <a class="slide-link" data-field-href="href">
-                            <span class="slide-visual" aria-hidden="true"></span>
-                            <span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히 보기</span></span>
-                        </a>
-                    </div>
-                </template>
-                <template data-content-template="main1-banner-2">
-                    <div class="swiper-slide hero-slide2" data-field-hero-image="heroImage">
-                        <a class="slide-link" data-field-href="href">
-                            <span class="slide-visual" aria-hidden="true"></span>
-                            <span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히 보기</span></span>
-                        </a>
-                    </div>
-                </template>
-                <template data-content-template="main1-banner-3">
-                    <div class="swiper-slide hero-slide3" data-field-hero-image="heroImage">
-                        <a class="slide-link" data-field-href="href">
-                            <span class="slide-visual" aria-hidden="true"></span>
-                            <span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히 보기</span></span>
-                        </a>
-                    </div>
-                </template>
-                <template data-content-template="main1-banner-4">
-                    <div class="swiper-slide hero-slide4" data-field-hero-image="heroImage">
-                        <a class="slide-link" data-field-href="href">
-                            <span class="slide-visual" aria-hidden="true"></span>
-                            <span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히 보기</span></span>
-                        </a>
-                    </div>
-                </template>
-                <template data-content-template="main1-banner-5">
-                    <div class="swiper-slide hero-slide5" data-field-hero-image="heroImage">
-                        <a class="slide-link" data-field-href="href">
-                            <span class="slide-visual" aria-hidden="true"></span>
-                            <span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히 보기</span></span>
-                        </a>
-                    </div>
-                </template>
-                <template data-content-template="main1-quick-1">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick1" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-2">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick2" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-3">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick3" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-4">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick4" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-5">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick5" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-6">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick6" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-7">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick8" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-quick-8">
-                    <li class="quick-menu"><a class="quick-link" data-field-href="href"><div class="quick-icon icobtn"><div class="quick-img quick9" aria-hidden="true"></div></div><p class="tit xsmall quick-tit" data-field-text="title"></p></a></li>
-                </template>
-                <template data-content-template="main1-card-1">
-                    <div class="swiper-slide">
-                        <article class="card type1">
-                            <a class="card-contents" data-field-href="href" data-field-aria-label="title" data-aria-label-suffix=" 바로가기">
-                                <span class="badge primarybg card-category" data-field-text="category"></span>
-                                <div class="card-title-wrap"><span class="card-thumbnail" aria-hidden="true"></span><h3 class="tit small card-title" data-field-text="title"></h3></div>
-                                <p class="desc card-description type1" data-field-text="description"></p>
-                                <span class="btn round card-link" aria-hidden="true">바로가기</span>
-                            </a>
-                        </article>
-                    </div>
-                </template>
-                <template data-content-template="main1-event-1">
-                    <li class="card-banner swiper-slide">
-                        <a class="card-banner-link" data-field-href="href">
-                            <!-- 원본에도 행사 이미지가 없어 빈 시각 영역으로 유지합니다. -->
-                            <span class="card-banner-img" aria-hidden="true"></span>
-                            <div class="card-banner-contents"><h3 class="tit small card-title" data-field-text="title"></h3><p class="desc" data-field-text="description"></p></div>
-                        </a>
-                    </li>
-                </template>
-            </main>
-        <footer class="footer">
+			<template data-content-template="main1-banner-1">
+				<div class="swiper-slide hero-slide1" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-2">
+				<div class="swiper-slide hero-slide2" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-3">
+				<div class="swiper-slide hero-slide3" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-4">
+				<div class="swiper-slide hero-slide4" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-banner-5">
+				<div class="swiper-slide hero-slide5" data-field-hero-image="heroImage">
+					<a class="slide-link" data-field-href="href">
+						<span class="slide-visual" aria-hidden="true"></span>
+						<span class="slide-contents"><strong class="slide-maintit" data-field-text="title"></strong><em
+								class="slide-subtit" data-field-text="description"></em><span class="btn more">자세히
+								보기</span></span>
+					</a>
+				</div>
+			</template>
+			<template data-content-template="main1-quick-1">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick1" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-2">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick2" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-3">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick3" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-4">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick4" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-5">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick5" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-6">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick6" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-7">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick8" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-quick-8">
+				<li class="quick-menu"><a class="quick-link" data-field-href="href">
+						<div class="quick-icon icobtn">
+							<div class="quick-img quick9" aria-hidden="true"></div>
+						</div>
+						<p class="tit xsmall quick-tit" data-field-text="title"></p>
+					</a></li>
+			</template>
+			<template data-content-template="main1-card-1">
+				<div class="swiper-slide">
+					<article class="card type1">
+						<a class="card-contents" data-field-href="href" data-field-aria-label="title"
+							data-aria-label-suffix=" 바로가기">
+							<span class="badge primarybg card-category" data-field-text="category"></span>
+							<div class="card-title-wrap"><span class="card-thumbnail" aria-hidden="true"></span>
+								<h3 class="tit small card-title" data-field-text="title"></h3>
+							</div>
+							<p class="desc card-description type1" data-field-text="description"></p>
+							<span class="btn round card-link" aria-hidden="true">바로가기</span>
+						</a>
+					</article>
+				</div>
+			</template>
+			<template data-content-template="main1-event-1">
+				<li class="card-banner swiper-slide">
+					<a class="card-banner-link" data-field-href="href">
+						<!-- 원본에도 행사 이미지가 없어 빈 시각 영역으로 유지합니다. -->
+						<span class="card-banner-img" aria-hidden="true"></span>
+						<div class="card-banner-contents">
+							<h3 class="tit small card-title" data-field-text="title"></h3>
+							<p class="desc" data-field-text="description"></p>
+						</div>
+					</a>
+				</li>
+			</template>
+		</main>
+		<footer class="footer">
 			<button type="button" class="btn scroll-top" aria-label="맨 위로 이동" hidden>
 				<span class="icon" aria-hidden="true"></span>
 				<span>위로</span>
 			</button>
-			
+
 			<div class="footer-wrap">
 				<div class="contents-wrap">
 					<div class="footer-logo">
-						<img src="../resource/images/site-logo.svg" alt="">
+						<img src="../assets/images/site-logo.svg" alt="">
 					</div>
 					<ul class="footer-contents">
 						<li class="footer-content">
@@ -416,7 +510,7 @@
 								</li>
 							</ul>
 							<ul class="footer-links right">
-								
+
 							</ul>
 						</div>
 						<p class="footer-copyright desc">© 2026 Knowwheresoft All rights
@@ -425,12 +519,13 @@
 				</div>
 			</div>
 		</footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
-    <script src="../resource/js/main1-data.js" defer></script>
-    <script src="../resource/js/submenu-links.js" defer></script>
-    <script src="../resource/js/template-data.js" defer></script>
-    <script src="../resource/js/common.js" defer></script>
-    <script src="../resource/js/main.js" defer></script>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js" defer></script>
+	<script src="../resource/js/main1-data.js" defer></script>
+	<script src="../resource/js/submenu-links.js" defer></script>
+	<script src="../resource/js/template-data.js" defer></script>
+	<script src="../resource/js/common.js" defer></script>
+	<script src="../resource/js/main.js" defer></script>
 </body>
+
 </html>

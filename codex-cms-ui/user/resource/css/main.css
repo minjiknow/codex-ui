@@ -185,7 +185,7 @@ Start: 메인 공통 스타일
 }
 
 .slide-btn {
-    background: url(../icons/slide-right.svg) center / contain no-repeat;
+    background: url(../../assets/icons/slide-right.svg) center / contain no-repeat;
     filter: invert(1);
 }
 
@@ -228,7 +228,7 @@ Start: 메인 공통 스타일
 }
 
 .swiper-control-wrap.type1 .slide-btn {
-    background-image: url(../icons/arrow-right.svg);
+    background-image: url(../../assets/icons/arrow-right.svg);
     filter: none;
 }
 
@@ -324,11 +324,11 @@ Start: 메인 공통 스타일
 
 .slide-play {
     display: none;
-    background-image: url(../icons/play.svg);
+    background-image: url(../../assets/icons/play.svg);
 }
 
 .slide-pause {
-    background-image: url(../icons/pause.svg);
+    background-image: url(../../assets/icons/pause.svg);
 }
 
 .slide-toggle.is-paused .slide-play {
@@ -893,7 +893,7 @@ Start: 메인 시안 2
 *****************************************/
 
 /* Start: 메인 시안 2 통합검색·상단 영역 */
-.search-group.type1 {
+.main-titlearea .search-group.type1 {
     border: 4px solid var(--light-color-border-secondary);
     border-radius: var(--radius-max);
     width: 760px;
@@ -909,7 +909,7 @@ Start: 메인 시안 2
     box-shadow: none;
 }
 
-.search-group.type1 .search-wrap input {
+.main-titlearea .search-group.type1 .search-wrap input {
     font-size: var(--pc-font-size-label-large);
 }
 
@@ -984,7 +984,7 @@ Start: 메인 시안 2
 }
 
 .gradientbg {
-    background: url(../images/main2-search-gradient-bg.svg) no-repeat;
+    background: url(../../assets/images/main2-search-gradient-bg.svg) no-repeat;
     background-size: cover;
     background-position: center -250px;
     padding-top: var(--gap-11);
@@ -1359,7 +1359,7 @@ Start: 메인 시안 2
         grid-column: 4;
     }
     .quickMenuSwiper > .swiper-btn.mo-block .slide-btn {
-        background-image: url(../icons/arrow-right.svg);
+        background-image: url(../../assets/icons/arrow-right.svg);
         filter: none;
     }
     .quickmenu-tabs .quicktabs {
@@ -1446,7 +1446,7 @@ Start: 메인 시안 2
     width: var(--size-icon-xsmall);
     height: var(--size-icon-xsmall);
     transform: translateY(-50%);
-    background: url(../icons/arrow-right.svg) center / contain no-repeat;
+    background: url(../../assets/icons/arrow-right.svg) center / contain no-repeat;
 }
 
 .direct-link:hover {
@@ -1478,7 +1478,7 @@ Start: 메인 시안 2
         align-items: center;
         padding: 5px 8px 5px 12px;
     }
-    .search-group.type1 .search-wrap input {
+    .main-titlearea .search-group.type1 .search-wrap input {
         font-size: var(--mobile-font-size-body-small);
         line-height: 24px;
     }

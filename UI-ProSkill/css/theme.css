@@ -1,0 +1,140 @@
+/******************************
+Start: 글꼴
+******************************/
+@font-face {
+  font-family: Pretendard;
+  font-display: swap;
+  src: url("../assets/fonts/pretendard-regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: Pretendard;
+  font-display: swap;
+  src: url("../assets/fonts/pretendard-medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: Pretendard;
+  font-display: swap;
+  src: url("../assets/fonts/pretendard-semibold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: Pretendard;
+  font-display: swap;
+  src: url("../assets/fonts/pretendard-bold.woff2") format("woff2");
+  font-weight: 700;
+}
+/******************************
+End: 글꼴
+******************************/
+/******************************
+Start: color
+******************************/
+/******************************
+Start: pure
+******************************/
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #246beb;
+  --navy: #003675;
+}
+/******************************
+End: pure
+******************************/
+
+/******************************
+Start: gray
+******************************/
+:root {
+  --gray-100: #f5f7fa;
+  --gray-150: #f0f0f0;
+  --gray-200: #edf1f5;
+  --gray-300: #d8d8d8;
+  --gray-400: #aaa;
+  --gray-500: #909090;
+  --gray-600: #585858;
+  --gray-700: #50555b;
+  --gray-800: #444;
+  --gray-900: #1d1d1d;
+}
+/******************************
+End: gray
+******************************/
+
+/******************************
+Start: semantic
+******************************/
+:root {
+  --error: #b42318;
+  --basket-emphasis: var(--error);
+  --central-guide-emphasis: #db201c;
+  --choice-accent: #1d56bc;
+  --cover-shade: rgb(0 0 0 / 42%);
+  --news-surface: #f8f8f8;
+  --news-border: #efefef;
+  --footer-surface: var(--gray-150);
+  --light-color-input-border-active: var(--navy);
+  --text: var(--gray-900);
+  --line: var(--gray-300);
+  --button-disabled-bg: var(--gray-150);
+  --button-disabled-text: var(--gray-600);
+  --surface-muted: var(--gray-200);
+  --menu-accent: #003675;
+  --backdrop: rgb(0 0 0 / 50%);
+  --panel-shadow: rgb(0 0 0 / 13%);
+  --control-shadow: rgb(0 0 0 / 20%);
+}
+/******************************
+End: semantic
+******************************/
+/******************************
+End: color
+******************************/
+
+/******************************
+Start: spacing
+******************************/
+:root {
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+}
+/******************************
+End: spacing
+******************************/
+
+/******************************
+Start: border-radius
+******************************/
+:root {
+  --radius-4: 4px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-24: 24px;
+}
+/******************************
+End: border-radius
+******************************/
+
+/******************************
+Start: font-size
+******************************/
+:root {
+  --font-size-tiny: 15px;
+  --font-size-small: 17px;
+  --font-size-medium: 19px;
+  --font-size-large: 21px;
+  --font-size-xl: 23px;
+  --font-size-2xl: 25px;
+}
+/******************************
+End: font-size
+******************************/

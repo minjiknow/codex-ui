@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>국립중앙도서관</title>
+	<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+	<link href="css/theme.css" rel="stylesheet" />
+	<link href="css/common.css" rel="stylesheet" />
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+	<a class="skip" href="#main">본문 바로가기</a>
+	<!-- Start: 헤더 -->
+	<header class="site-header">
+		<div class="government">
+			<div class="contents-wrap">
+				<img class="flag-icon" alt="태극기" src="assets/icons/korean-flag.png" />이 누리집은 대한민국 공식 전자정부
+				누리집입니다.
+			</div>
+		</div>
+		<div class="contents-wrap">
+			<div class="utility-links">
+				<a class="utility-link">국립어린이청소년도서관</a>
+				<a class="utility-link">국립세종도서관</a>
+				<a class="utility-link" href="main.html">첫 화면</a>
+				<a class="utility-link">English</a>
+			</div>
+			<div class="masthead">
+				<h1 class="tit">
+					<a class="brand-link" href="main.html">
+						<img class="brand-logo" alt="국립중앙도서관" src="assets/images/library-logo.png" />
+					</a>
+				</h1>
+				<div class="actions">
+					<button aria-controls="search-box" aria-expanded="false" class="utility-toggle">
+						<img class="action-icon" alt="" src="assets/icons/search.png" />
+						<span class="action-label toggle-label">통합검색</span>
+					</button>
+					<a class="action-link">
+						<img class="action-icon" alt="" src="assets/icons/login.png" />
+						<span class="action-label">로그인</span>
+					</a>
+					<a class="action-link">
+						<img class="action-icon" alt="" src="assets/icons/join.png" />
+						<span class="action-label">회원가입</span>
+					</a>
+					<a class="action-link" href="sub.html">
+						<img class="action-icon" alt="" src="assets/icons/basket.png" />
+						<span class="action-label">바구니</span>
+					</a>
+					<button aria-controls="directory" aria-expanded="false" class="utility-toggle">
+						<img class="action-icon" alt="" src="assets/icons/menu.png" />
+						<span class="action-label toggle-label">전체메뉴</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- Start: Gnb -->
+		<nav class="main-nav" aria-label="주 메뉴">
+			<div class="contents-wrap nav-list">
+				<div class="nav-item">
+					<button aria-controls="menu-0" aria-expanded="false" class="nav-toggle" type="button">
+						자료검색
+					</button>
+					<section aria-label="자료검색" class="menu-panel" hidden="" id="menu-0">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">자료검색</h2>
+								<p class="desc panel-desc">도서관 소장자료와 국내외 학술 데이터베이스를 검색할 수 있습니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list search-menu-list">
+									<a class="menu-link">소장자료</a>
+									<div class="group">
+										<button aria-controls="group-0-1" aria-expanded="false"
+											class="menu-link group-toggle">
+											Web DB
+										</button>
+										<div class="children" hidden="" id="group-0-1">
+											<a class="child-link">통합검색</a>
+											<a class="child-link">국외DB</a>
+											<a class="child-link">국내DB</a>
+										</div>
+									</div>
+									<a class="menu-link">지식정보 통합검색</a>
+									<a class="menu-link">오아시스(OASIS)</a>
+									<a class="menu-link">OAK국가리포지터리</a>
+									<a class="menu-link">국가서지 LOD</a>
+									<a class="menu-link">국가자료종합목록</a>
+									<a class="menu-link">국가전자도서관</a>
+									<a class="menu-link">한국고문헌종합목록</a>
+									<div class="group">
+										<button aria-controls="group-0-9" aria-expanded="false"
+											class="menu-link group-toggle">
+											근대문학종합목록
+										</button>
+										<div class="children" hidden="" id="group-0-9">
+											<a class="child-link">서비스 소개</a>
+											<a class="child-link">작가/작품정보</a>
+											<a class="child-link">자료검색</a>
+										</div>
+									</div>
+									<a class="menu-link">본문검색 서비스</a>
+									<a class="menu-link">디지털화 자료</a>
+									<a class="menu-link">AI 학습데이터(공유서재)</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="nav-item">
+					<button aria-controls="menu-1" aria-expanded="false" class="nav-toggle" type="button">
+						컬렉션
+					</button>
+					<section aria-label="컬렉션" class="menu-panel" hidden="" id="menu-1">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">컬렉션</h2>
+								<p class="desc panel-desc">신착·추천도서와 주제별 디지털 컬렉션을 만날 수 있습니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list group-list">
+									<div class="group">
+										<button aria-controls="group-1-0" aria-expanded="false"
+											class="menu-link group-toggle">
+											신착·추천
+										</button>
+										<div class="children" hidden="" id="group-1-0">
+											<a class="child-link">신착도서</a>
+											<a class="child-link">사서추천도서</a>
+											<a class="child-link">노벨상 x 한강</a>
+											<a class="child-link">책 읽어주는 도서관</a>
+											<a class="child-link">영상자료목록</a>
+											<a class="child-link">멀티미디어목록</a>
+											<a class="child-link">영상배움터</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-1-1" aria-expanded="false"
+											class="menu-link group-toggle">
+											디지털 컬렉션
+										</button>
+										<div class="children" hidden="" id="group-1-1">
+											<a class="child-link">주제별 컬렉션</a>
+											<a class="child-link">대한민국신문아카이브</a>
+											<a class="child-link">관보</a>
+											<a class="child-link">전시컬렉션(온라인전시)</a>
+											<a class="child-link">코리안 메모리</a>
+											<a class="child-link">해외 한국관련자료</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-1-2" aria-expanded="false"
+											class="menu-link group-toggle">
+											발간자료
+										</button>
+										<div class="children" hidden="" id="group-1-2">
+											<a class="child-link">월간 납본 동향</a>
+											<a class="child-link">오늘의 도서관</a>
+											<a class="child-link">도서관</a>
+											<a class="child-link">연보</a>
+											<a class="child-link">대한민국 국가서지</a>
+											<a class="child-link">월드라이브러리</a>
+											<a class="child-link">라이브러리+</a>
+											<a class="child-link">연구자료</a>
+											<a class="child-link">IFLA 보존복원(PAC) 한국센터</a>
+											<a class="child-link">국립중앙도서관 이슈페이퍼</a>
+											<a class="child-link">INKSLIB Webzine</a>
+											<a class="child-link">기타자료</a>
+											<a class="child-link">NLK 리포지터리</a>
+											<a class="child-link">세계의 도서관</a>
+											<a class="child-link">ISNI NEWS</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="nav-item">
+					<button aria-controls="menu-2" aria-expanded="false" class="nav-toggle" type="button">
+						도서관 서비스
+					</button>
+					<section aria-label="도서관 서비스" class="menu-panel" hidden="" id="menu-2">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">도서관 서비스</h2>
+								<p class="desc panel-desc">이용자와 사서, 출판사를 위한 도서관 서비스를 안내합니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list group-list">
+									<div class="group">
+										<button aria-controls="group-2-0" aria-expanded="false"
+											class="menu-link group-toggle">
+											이용자
+										</button>
+										<div class="children" hidden="" id="group-2-0">
+											<a class="child-link">사서에게 물어보세요</a>
+											<a class="child-link">연구정보서비스</a>
+											<a class="child-link">정책정보서비스</a>
+											<a class="child-link">상호대차</a>
+											<a class="child-link">책이음서비스</a>
+											<a class="child-link">Open API</a>
+											<a class="child-link">ISNI-KOREA</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-2-1" aria-expanded="false"
+											class="menu-link group-toggle">
+											사서
+										</button>
+										<div class="children" hidden="" id="group-2-1">
+											<a class="child-link">사서교육</a>
+											<a class="child-link">사서지원서비스</a>
+											<a class="child-link">공공도서관기술지원</a>
+											<a class="child-link">도서관 정보나루</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-2-2" aria-expanded="false"
+											class="menu-link group-toggle">
+											출판사
+										</button>
+										<div class="children" hidden="" id="group-2-2">
+											<a class="child-link">ISBN.ISSN.납본시스템</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="nav-item">
+					<button aria-controls="menu-3" aria-expanded="false" class="nav-toggle" type="button">
+						교육·문화행사
+					</button>
+					<section aria-label="교육·문화행사" class="menu-panel" hidden="" id="menu-3">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">교육·문화행사</h2>
+								<p class="desc panel-desc">도서관 교육프로그램과 전시·문화행사를 확인할 수 있습니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list group-list">
+									<div class="group">
+										<button aria-controls="group-3-0" aria-expanded="false"
+											class="menu-link group-toggle">
+											교육프로그램
+										</button>
+										<div class="children" hidden="" id="group-3-0">
+											<a class="child-link">디지털 미디어 창작 활용 교육</a>
+											<a class="child-link">인문학 프로그램</a>
+											<a class="child-link">강연·세미나</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-3-1" aria-expanded="false"
+											class="menu-link group-toggle">
+											문화행사
+										</button>
+										<div class="children" hidden="" id="group-3-1">
+											<a class="child-link">영화 상영</a>
+											<a class="child-link">해설이 있는 K 컬처</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-3-2" aria-expanded="false"
+											class="menu-link group-toggle">
+											전시·체험
+										</button>
+										<div class="children" hidden="" id="group-3-2">
+											<a class="child-link">전시</a>
+											<a class="child-link">기록매체박물관</a>
+											<a class="child-link">실감체험관</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="nav-item">
+					<button aria-controls="menu-4" aria-expanded="false" class="nav-toggle" type="button">
+						도서관 이용
+					</button>
+					<section aria-label="도서관 이용" class="menu-panel" hidden="" id="menu-4">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">도서관 이용</h2>
+								<p class="desc panel-desc">이용시간과 자료 신청, 시설 이용 방법을 안내합니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list">
+									<a class="menu-link">이용안내</a>
+									<a class="menu-link">자료상담·신청</a>
+									<a class="menu-link">도서관 일정</a>
+									<a class="menu-link">편의시설</a>
+									<a class="menu-link">신청·참여</a>
+									<a class="menu-link">자주하는 질문</a>
+									<a class="menu-link">오류신고</a>
+									<a class="menu-link">분실물찾기</a>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="nav-item">
+					<button aria-controls="menu-5" aria-expanded="false" class="nav-toggle" type="button">
+						도서관 소개
+					</button>
+					<section aria-label="도서관 소개" class="menu-panel" hidden="" id="menu-5">
+						<div class="contents-wrap panel-inner">
+							<div class="panel-intro">
+								<h2 class="tit panel-tit">도서관 소개</h2>
+								<p class="desc panel-desc">국립중앙도서관의 주요 업무와 소식을 소개합니다.</p>
+							</div>
+							<div class="panel-content">
+								<div class="menu-list group-list">
+									<div class="group">
+										<button aria-controls="group-5-0" aria-expanded="false"
+											class="menu-link group-toggle">
+											국립중앙도서관
+										</button>
+										<div class="children" hidden="" id="group-5-0">
+											<a class="child-link">인사말</a>
+											<a class="child-link">사명과 비전</a>
+											<a class="child-link">연혁</a>
+											<a class="child-link">조직·기구</a>
+											<a class="child-link">도서관 업무</a>
+											<a class="child-link">장서현황</a>
+											<a class="child-link">시설현황</a>
+											<a class="child-link">찾아오시는 길</a>
+											<a class="child-link">주차안내</a>
+											<a class="child-link">도서관 주요현황</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-5-1" aria-expanded="false"
+											class="menu-link group-toggle">
+											소속도서관
+										</button>
+										<div class="children" hidden="" id="group-5-1">
+											<a class="child-link">국립어린이청소년도서관</a>
+											<a class="child-link">국립세종도서관</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-5-2" aria-expanded="false"
+											class="menu-link group-toggle">
+											도서관 협력
+										</button>
+										<div class="children" hidden="" id="group-5-2">
+											<a class="child-link">사서에게 물어보세요</a>
+											<a class="child-link">국가정책정보협의회</a>
+											<a class="child-link">한국고전적보존협의회</a>
+											<a class="child-link">국가지식자원공유서비스</a>
+											<a class="child-link">IFLA 보존복원(PAC) 한국센터</a>
+											<a class="child-link">도서관 협력 활동</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-5-3" aria-expanded="false"
+											class="menu-link group-toggle">
+											도서관 홍보
+										</button>
+										<div class="children" hidden="" id="group-5-3">
+											<a class="child-link">보도자료</a>
+											<a class="child-link">카드뉴스</a>
+											<a class="child-link">포토뉴스</a>
+											<a class="child-link">영상뉴스</a>
+											<a class="child-link">도서관 사진</a>
+											<a class="child-link">로고·슬로건·도서관체</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-5-4" aria-expanded="false"
+											class="menu-link group-toggle">
+											도서관 소식
+										</button>
+										<div class="children" hidden="" id="group-5-4">
+											<a class="child-link">공지공고</a>
+											<a class="child-link">인재채용</a>
+											<a class="child-link">행사안내</a>
+											<a class="child-link">설문조사</a>
+										</div>
+									</div>
+									<div class="group">
+										<button aria-controls="group-5-5" aria-expanded="false"
+											class="menu-link group-toggle">
+											정보공개
+										</button>
+										<div class="children" hidden="" id="group-5-5">
+											<a class="child-link">정보공개제도 안내</a>
+											<a class="child-link">정보공개목록</a>
+											<a class="child-link">사전정보공표</a>
+											<a class="child-link">정보공개시스템</a>
+											<a class="child-link">공공데이터 개방</a>
+											<a class="child-link">공공데이터오류신고</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</nav>
+		<!-- End: Gnb -->
+		<!-- Start: 통합검색 -->
+		<section aria-label="통합검색" class="utility-panel" hidden="" id="search-box">
+			<button class="close" type="button" aria-label="통합검색 닫기">
+				<img class="close-icon" src="assets/icons/close.svg" alt="" width="24" height="24" />
+			</button>
+			<div class="contents-wrap">
+				<h2 class="tit search-tit">통합검색</h2>
+				<form class="preview-search">
+					<div class="dropbox" data-value="catalog">
+						<button type="button" class="selected-text" aria-label="검색 범위: 소장자료" aria-haspopup="listbox"
+							aria-expanded="false" aria-controls="search-options">
+							소장자료
+						</button>
+						<ul class="dropbox-option" id="search-options" role="listbox" aria-label="검색 범위" hidden>
+							<li role="option" aria-selected="true" class="selected option-item" data-value="catalog"
+								tabindex="-1">
+								소장자료
+							</li>
+							<li class="option-item" role="option" aria-selected="false" data-value="site" tabindex="-1">
+								누리집</li>
+						</ul>
+					</div>
+					<div class="search-field">
+						<input class="field search-input" aria-label="검색어" id="keyword" name="kwd"
+							placeholder="검색어를 입력해 주세요" required="" type="search" /><button type="button"
+							class="clear-search" aria-label="검색어 지우기" hidden>
+							<span class="search-close" aria-hidden="true"></span>
+						</button>
+					</div>
+					<button class="search-submit" type="submit">검색</button>
+				</form>
+				<p class="desc search-status" role="status"></p>
+				<section class="recent-search" aria-labelledby="recent-title">
+					<div class="recent-heading">
+						<h3 class="tit recent-tit" id="recent-title">최근 검색어</h3>
+						<button type="button" class="clear-history">전체삭제 <img src="assets/icons/delete-all.svg"
+								width="16" height="16" alt="" /></button>
+					</div>
+					<ul class="recent-chips"></ul>
+					<p class="desc chip-empty" hidden>최근 검색어가 없습니다.</p>
+					<template class="chip-template">
+						<li class="search-chip">
+							<button type="button" class="recent-keyword"></button>
+							<button type="button" class="chip-delete"><img src="assets/icons/delete-word.svg" width="16"
+									height="16" alt="" /></button>
+						</li>
+					</template>
+				</section>
+			</div>
+		</section>
+		<!-- End: 통합검색 -->
+		<!-- Start: 모바일 전체메뉴 -->
+		<div class="mobile-directory" role="dialog" aria-modal="true" aria-label="전체메뉴" hidden id="directory">
+			<div class="directory-top">
+				<div class="directory-shortcuts">
+					<a class="directory-top-link">누리집안내지도</a>
+					<a class="directory-top-link">English</a>
+					<a class="directory-top-link" href="main.html">첫 화면</a>
+				</div>
+				<button class="close" type="button" aria-label="전체메뉴 닫기">
+					<img class="close-icon" src="assets/icons/close.svg" alt="" />
+				</button>
+				<a class="directory-login"><img class="login-icon" src="assets/icons/login.png" alt="" />로그인을 해주세요.</a>
+				<form class="directory-search" role="search" aria-label="홈페이지 내 검색">
+					<input class="directory-field search-input" type="search" aria-label="홈페이지 내 검색"
+						placeholder="홈페이지 내 검색" required />
+					<button type="button" class="clear-search" aria-label="검색어 지우기" hidden>
+						<span class="search-close" aria-hidden="true"></span>
+					</button>
+					<button class="directory-search-btn" type="submit" aria-label="검색"><img class="search-icon"
+							src="assets/icons/search.png" alt="" /></button>
+				</form>
+				<p class="desc directory-search-status" role="status"></p>
+			</div>
+			<div class="directory-body">
+				<div class="directory-index" role="navigation" aria-label="전체메뉴 대분류">
+					<a class="directory-index-link" href="#directory-section-1">자료검색</a>
+					<a class="directory-index-link" href="#directory-section-2">컬렉션</a>
+					<a class="directory-index-link" href="#directory-section-3">도서관 서비스</a>
+					<a class="directory-index-link" href="#directory-section-4">교육·문화행사</a>
+					<a class="directory-index-link" href="#directory-section-5">도서관 이용</a>
+					<a class="directory-index-link" href="#directory-section-6">도서관 소개</a>
+					<a class="directory-index-link" href="#directory-section-7">내 서재</a>
+				</div>
+				<div class="directory">
+					<section class="directory-section" id="directory-section-1">
+						<h3 class="tit directory-tit" tabindex="-1">자료검색</h3>
+						<button class="directory-link" type="button" aria-pressed="false">소장자료</button>
+						<button class="directory-link" type="button" aria-pressed="false">Web DB</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">통합검색</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국외DB</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국내DB</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">지식정보 통합검색</button>
+						<button class="directory-link" type="button" aria-pressed="false">오아시스(OASIS)</button>
+						<button class="directory-link" type="button" aria-pressed="false">OAK국가리포지터리</button>
+						<button class="directory-link" type="button" aria-pressed="false">국가서지 LOD</button>
+						<button class="directory-link" type="button" aria-pressed="false">국가자료종합목록</button>
+						<button class="directory-link" type="button" aria-pressed="false">국가전자도서관</button>
+						<button class="directory-link" type="button" aria-pressed="false">한국고문헌종합목록</button>
+						<button class="directory-link" type="button" aria-pressed="false">근대문학종합목록</button>
+						<ul class="directory-children">
+							<li>
+								<button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">서비스 소개</button>
+							</li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">작가/작품정보</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">자료검색</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">본문검색 서비스</button>
+						<button class="directory-link" type="button" aria-pressed="false">디지털화 자료</button>
+						<button class="directory-link" type="button" aria-pressed="false">AI 학습데이터(공유서재)</button>
+					</section>
+					<section class="directory-section" id="directory-section-2">
+						<h3 class="tit directory-tit" tabindex="-1">컬렉션</h3>
+						<button class="directory-link" type="button" aria-pressed="false">신착·추천</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">신착도서</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사서추천도서</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">노벨상 x 한강</button></li>
+							<li><button class="directory-link directory-child-link" type="button" aria-pressed="false">책
+									읽어주는 도서관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">영상자료목록</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">멀티미디어목록</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">영상배움터</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">디지털 컬렉션</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">주제별 컬렉션</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">대한민국신문아카이브</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">관보</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">전시컬렉션(온라인전시)</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">코리안 메모리</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">해외 한국관련자료</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">발간자료</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">월간 납본 동향</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">오늘의 도서관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">연보</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">대한민국 국가서지</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">월드라이브러리</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">라이브러리+</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">연구자료</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">IFLA 보존복원(PAC) 한국센터</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국립중앙도서관 이슈페이퍼</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">INKSLIB Webzine</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">기타자료</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">NLK 리포지터리</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">세계의 도서관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">ISNI NEWS</button></li>
+						</ul>
+					</section>
+					<section class="directory-section" id="directory-section-3">
+						<h3 class="tit directory-tit" tabindex="-1">도서관 서비스</h3>
+						<button class="directory-link" type="button" aria-pressed="false">이용자</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사서에게 물어보세요</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">연구정보서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">정책정보서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">상호대차</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">책이음서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">Open API</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">ISNI-KOREA</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">사서</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사서교육</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사서지원서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">공공도서관기술지원</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관 정보나루</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">출판사</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">ISBN.ISSN.납본시스템</button></li>
+						</ul>
+					</section>
+					<section class="directory-section" id="directory-section-4">
+						<h3 class="tit directory-tit" tabindex="-1">교육·문화행사</h3>
+						<button class="directory-link" type="button" aria-pressed="false">교육프로그램</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">디지털 미디어 창작 활용 교육</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">인문학 프로그램</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">강연·세미나</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">문화행사</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">영화 상영</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">해설이 있는 K 컬처</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">전시·체험</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">전시</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">기록매체박물관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">실감체험관</button></li>
+						</ul>
+					</section>
+					<section class="directory-section" id="directory-section-5">
+						<h3 class="tit directory-tit" tabindex="-1">도서관 이용</h3>
+						<button class="directory-link" type="button" aria-pressed="false">이용안내</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">이용시간</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">이용증 발급</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">물품보관함</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">자료실 이용</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">자료복사·출력</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">견학</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">관람증</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">자료상담·신청</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">자료상담</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">자료신청안내</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">외국자료 비치희망</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">디지털도서관 예약</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">도서관 일정</button>
+						<button class="directory-link" type="button" aria-pressed="false">편의시설</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">식당</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">북카페</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">편의점</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">주차안내</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">무선 인터넷</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">신청·참여</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">저작권 이용허락</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">책다모아(기증)</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">메일링 서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">공공예식장</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국민신문고</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">자주하는 질문</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">본관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">디지털도서관</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">오류신고</button>
+						<button class="directory-link" type="button" aria-pressed="false">분실물찾기</button>
+					</section>
+					<section class="directory-section" id="directory-section-6">
+						<h3 class="tit directory-tit" tabindex="-1">도서관 소개</h3>
+						<button class="directory-link" type="button" aria-pressed="false">국립중앙도서관</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">인사말</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사명과 비전</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">연혁</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">조직·기구</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관 업무</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">장서현황</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">시설현황</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">찾아오시는 길</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">주차안내</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관 주요현황</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">소속도서관</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국립어린이청소년도서관</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국립세종도서관</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">도서관 협력</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사서에게 물어보세요</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국가정책정보협의회</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">한국고전적보존협의회</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">국가지식자원공유서비스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">IFLA 보존복원(PAC) 한국센터</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관 협력 활동</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">도서관 홍보</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">보도자료</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">카드뉴스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">포토뉴스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">영상뉴스</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">도서관 사진</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">로고·슬로건·도서관체</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">도서관 소식</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">공지공고</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">인재채용</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">행사안내</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">설문조사</button></li>
+						</ul>
+						<button class="directory-link" type="button" aria-pressed="false">정보공개</button>
+						<ul class="directory-children">
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">정보공개제도 안내</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">정보공개목록</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">사전정보공표</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">정보공개시스템</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">공공데이터 개방</button></li>
+							<li><button class="directory-link directory-child-link" type="button"
+									aria-pressed="false">공공데이터오류신고</button></li>
+						</ul>
+					</section>
+					<section class="directory-section" id="directory-section-7">
+						<h3 class="tit directory-tit" tabindex="-1">내 서재</h3>
+						<button class="directory-link" type="button" aria-pressed="false">디지털도서관 예약 확인</button>
+						<button class="directory-link" type="button" aria-pressed="false">연구정보서비스</button>
+						<button class="directory-link" type="button" aria-pressed="false">연구정보서비스(데이터지원)</button>
+						<button class="directory-link" type="button" aria-pressed="false">자료 신청내역</button>
+						<button class="directory-link" type="button" aria-pressed="false">견학·교육 신청내역</button>
+						<button class="directory-link" type="button" aria-pressed="false">전자우편 구독</button>
+						<a class="directory-link" href="sub.html">바구니</a>
+						<button class="directory-link" type="button" aria-pressed="false">내가 이용한 자료</button>
+						<button class="directory-link" type="button" aria-pressed="false">스크랩</button>
+						<button class="directory-link" type="button" aria-pressed="false">사서에게물어보세요 질문내역</button>
+						<button class="directory-link" type="button" aria-pressed="false">학술지 목차 구독</button>
+						<button class="directory-link" type="button" aria-pressed="false">우리집 e서재</button>
+						<button class="directory-link" type="button" aria-pressed="false">복사·출력 사이버머니 환급</button>
+					</section>
+				</div>
+			</div>
+		</div>
+		<!-- End: 모바일 전체메뉴 -->
+	</header>
+	<!-- End: 헤더 -->
+	<main id="main">
+		<!-- Start: 메인 배너 -->
+		<section aria-label="도서관 주요 소식" class="hero contents-wrap">
+			<div class="stage">
+				<div class="swiper">
+					<div class="swiper-wrapper"></div>
+				</div>
+				<button aria-label="이전 배너" class="prev arrow">
+					<img class="arrow-icon" alt="" src="assets/icons/arrow-prev.svg" />
+				</button>
+				<button aria-label="다음 배너" class="next arrow">
+					<img class="arrow-icon" alt="" src="assets/icons/arrow-next.svg" />
+				</button>
+			</div>
+			<div class="controls">
+				<div class="dots"></div>
+				<span aria-live="polite" class="count"></span>
+				<button aria-label="자동 재생" class="play">▶</button>
+			</div>
+		</section>
+		<!-- End: 메인 배너 -->
+		<!-- Start: 바로가기 및 운영시간 -->
+		<section class="home-section contents-wrap">
+			<div class="heading">
+				<h2 class="tit section-tit">자주찾는 메뉴</h2>
+				<a> <img class="settings-icon" alt="" src="assets/icons/settings.svg" />설정하기</a>
+			</div>
+			<div class="quick-layout">
+				<div class="quick"></div>
+				<div class="hours"></div>
+			</div>
+		</section>
+		<!-- End: 바로가기 및 운영시간 -->
+		<!-- Start: 오늘의 선택 -->
+		<section class="home-section choice">
+			<div class="contents-wrap">
+				<h2 class="tit section-tit">오늘의 선택</h2>
+				<a class="section-more" href="sub2.html"><span class="more-label">더보기 </span>+</a>
+				<div class="tab-set">
+					<div class="tabs type1" role="tablist" aria-label="오늘의 선택">
+						<button id="tab-books0" role="tab" aria-controls="books0" aria-selected="true" tabindex="0"
+							class="tab type3">
+							신착자료
+						</button>
+						<button id="tab-books1" role="tab" aria-controls="books1" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							사서추천도서
+						</button>
+						<button id="tab-books2" role="tab" aria-controls="books2" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							책 읽어주는 도서관
+						</button>
+						<button id="tab-books3" role="tab" aria-controls="books3" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							WEB DB
+						</button>
+					</div>
+					<div class="cards books" id="books0" role="tabpanel" aria-labelledby="tab-books0" tabindex="0"
+						data-collection="books0"></div>
+					<div class="cards books" hidden="" id="books1" role="tabpanel" aria-labelledby="tab-books1"
+						tabindex="0" data-collection="books1"></div>
+					<div class="cards books" hidden="" id="books2" role="tabpanel" aria-labelledby="tab-books2"
+						tabindex="0" data-collection="books2"></div>
+					<div class="cards books" hidden="" id="books3" role="tabpanel" aria-labelledby="tab-books3"
+						tabindex="0" data-collection="books3"></div>
+				</div>
+			</div>
+		</section>
+		<!-- End: 오늘의 선택 -->
+		<!-- Start: 도서관 소식 -->
+		<section class="home-section contents-wrap">
+			<h2 class="tit section-tit">도서관 소식</h2>
+			<div class="news-grid">
+				<div class="tab-set">
+					<a class="section-more" href="sub2.html"><span class="more-label">더보기 </span>+</a>
+					<div class="tabs type1" role="tablist" aria-label="도서관 공지">
+						<button id="tab-news0" role="tab" aria-controls="news0" aria-selected="true" tabindex="0"
+							class="tab type3">
+							공지사항
+						</button>
+						<button id="tab-news1" role="tab" aria-controls="news1" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							행사안내
+						</button>
+						<button id="tab-news2" role="tab" aria-controls="news2" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							인재채용
+						</button>
+					</div>
+					<div class="cards news" id="news0" role="tabpanel" aria-labelledby="tab-news0" tabindex="0"
+						data-collection="news0"></div>
+					<div class="cards news" hidden="" id="news1" role="tabpanel" aria-labelledby="tab-news1"
+						tabindex="0" data-collection="news1"></div>
+					<div class="cards news" hidden="" id="news2" role="tabpanel" aria-labelledby="tab-news2"
+						tabindex="0" data-collection="news2"></div>
+				</div>
+				<div class="tab-set">
+					<a class="section-more" href="sub2.html"><span class="more-label">더보기 </span>+</a>
+					<div class="tabs type1" role="tablist" aria-label="도서관 보도·소식">
+						<button id="tab-press0" role="tab" aria-controls="press0" aria-selected="true" tabindex="0"
+							class="tab type3">
+							보도자료
+						</button>
+						<button id="tab-press1" role="tab" aria-controls="press1" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							카드뉴스
+						</button>
+						<button id="tab-press2" role="tab" aria-controls="press2" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							포토뉴스
+						</button>
+						<button id="tab-press3" role="tab" aria-controls="press3" aria-selected="false" tabindex="-1"
+							class="tab type3">
+							영상뉴스
+						</button>
+					</div>
+					<div class="cards press" id="press0" role="tabpanel" aria-labelledby="tab-press0" tabindex="0"
+						data-collection="press0"></div>
+					<div class="cards press" hidden="" id="press1" role="tabpanel" aria-labelledby="tab-press1"
+						tabindex="0" data-collection="press1"></div>
+					<div class="cards press" hidden="" id="press2" role="tabpanel" aria-labelledby="tab-press2"
+						tabindex="0" data-collection="press2"></div>
+					<div class="cards press" hidden="" id="press3" role="tabpanel" aria-labelledby="tab-press3"
+						tabindex="0" data-collection="press3"></div>
+				</div>
+			</div>
+		</section>
+		<!-- End: 도서관 소식 -->
+		<!-- Start: 누리소통망 -->
+		<section class="social">
+			<div class="contents-wrap">
+				<h2 class="tit social-tit">누리소통망</h2>
+				<div class="social-channels">
+					<img class="channel-icon" src="assets/icons/channel-youtube.svg" alt="유튜브" />
+					<img class="channel-icon" src="assets/icons/channel-instagram.svg" alt="인스타그램" />
+					<img class="channel-icon" src="assets/icons/channel-blog.svg" alt="네이버 블로그" />
+					<img class="channel-icon" src="assets/icons/channel-facebook.svg" alt="페이스북" />
+					<img class="channel-icon" src="assets/icons/channel-x.svg" alt="X" />
+					<img class="channel-icon" src="assets/icons/channel-kakao.png" alt="카카오 채널" />
+				</div>
+			</div>
+			<div class="contents-wrap social-stories" data-collection="social"></div>
+		</section>
+		<!-- End: 누리소통망 -->
+	</main>
+	<!-- Start: 푸터 -->
+	<footer class="site-footer" aria-label="도서관 정보">
+		<div class="footer-bar">
+			<div class="contents-wrap">
+				<button class="org-toggle" aria-expanded="false" aria-controls="related-orgs" type="button">
+					관련단체 <span class="toggle-icon" aria-hidden="true">＋</span>
+				</button>
+				<div role="dialog" aria-modal="true" class="org-panel" id="related-orgs" hidden aria-label="관련단체">
+					<h2 class="tit org-tit">관련단체</h2>
+					<ul class="org-list footer-list">
+						<li class="org-item">국립어린이청소년도서관</li>
+						<li class="org-item">국립세종도서관</li>
+						<li class="org-item">국립장애인도서관</li>
+						<li class="org-item">공공데이터포털</li>
+						<li class="org-item">국민권익위원회</li>
+						<li class="org-item">정부24</li>
+						<li class="org-item">문화체육관광부</li>
+						<li class="org-item">한국언론진흥재단</li>
+						<li class="org-item">외규장각 의궤</li>
+						<li class="org-item">국회도서관</li>
+						<li class="org-item">국가도서관위원회</li>
+						<li class="org-item">법원도서관</li>
+						<li class="org-item">간행물윤리위원회</li>
+						<li class="org-item">한국도서관협회</li>
+						<li class="org-item">한국문학예술저작권협회</li>
+						<li class="org-item">국가도서관통계시스템</li>
+						<li class="org-item">(사)공공도서관협의회</li>
+						<li class="org-item">한글도서관</li>
+					</ul>
+					<button class="close" type="button" aria-label="관련단체 닫기">
+						<img class="close-icon" src="assets/icons/close.svg" alt="" />
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="contents-wrap footer-inner">
+			<img class="footer-logo" src="assets/images/footer-logo.png" alt="국립중앙도서관" />
+			<div class="footer-info">
+				<address class="contact-address">
+					(06579) 서울특별시 서초구 반포대로 201 국립중앙도서관 (반포동)
+					<p class="desc contact-desc">
+						<strong class="contact-detail">대표전화 02-590-0500</strong> (운영시간: 09:00~18:00, 휴관일 / 공휴일 제외)
+					</p>
+					<strong class="contact-detail">팩스 02-590-0530</strong>
+				</address>
+				<div class="footer-services">
+					<ul class="service-list footer-list">
+						<li class="service-item">원격헬프데스크</li>
+						<li class="service-item">뷰어프로그램 안내</li>
+						<li class="service-item">찾아오시는 길</li>
+						<li class="service-item">누리집안내지도</li>
+					</ul>
+					<ul class="social-list footer-list" aria-label="누리소통망">
+						<li><img class="channel-icon" alt="유튜브" src="assets/icons/social-youtube.png" /></li>
+						<li><img class="channel-icon" alt="인스타그램" src="assets/icons/social-instagram.png" /></li>
+						<li><img class="channel-icon" alt="블로그" src="assets/icons/social-blog.png" /></li>
+						<li><img class="channel-icon" alt="페이스북" src="assets/icons/social-facebook.png" /></li>
+						<li><img class="channel-icon" alt="X" src="assets/icons/social-x.png" /></li>
+						<li><img class="channel-icon" alt="카카오톡 채널" src="assets/icons/social-kakao.png" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">
+				<ul class="policy-list footer-list">
+					<li class="policy-item">개인정보처리방침</li>
+					<li class="policy-item">국립중앙도서관 윤리강령</li>
+					<li class="policy-item">도서관법령</li>
+					<li class="policy-item">이용봉사헌장</li>
+					<li class="policy-item">저작권정책</li>
+				</ul>
+				<div class="footer-marks">
+					<img class="license-mark" src="assets/images/wa-mark.png" alt="참고 사이트의 WA 품질인증마크" /><img
+						class="license-mark" src="assets/images/open-license.jpg" alt="공공누리" />
+				</div>
+				<p class="desc copyright-desc">© National Library of Korea. All rights reserved.</p>
+			</div>
+			<a class="to-top" href="#top">위로</a>
+		</div>
+	</footer>
+	<!-- End: 푸터 -->
+	<!-- Start: 설문 팝업 -->
+	<aside aria-label="누리집 이용 만족도 설문조사" class="survey" hidden="">
+		<a>
+			<img class="survey-image" alt="이용 만족도 설문 예시 이미지" src="assets/images/sample-survey.png" />
+		</a>
+		<div class="survey-controls">
+			<label class="checkbox-label"><input class="checkbox" type="checkbox" /><span>오늘하루 보지 않기</span></label>
+			<button class="close" type="button" aria-label="설문 팝업 닫기">
+				<img class="close-icon" src="assets/icons/close.svg" alt="" width="24" height="24" />
+			</button>
+		</div>
+	</aside>
+	<!-- End: 설문 팝업 -->
+	<!-- Start: 콘텐츠 템플릿 -->
+	<template id="banner-template">
+		<div class="slide swiper-slide">
+			<picture>
+				<source class="banner-source" media="(max-width:768px)" />
+				<img class="banner-image" alt="" />
+			</picture>
+		</div>
+	</template>
+	<template id="hours-template"><span class="month"></span><strong class="date"></strong><span class="hours-desc">도서관
+			운영시간
+			09:00~18:00</span>
+		<p class="desc hours-desc">(야간 도서관 매주 수요일 18:00~21:00)</p>
+		<span class="holidays">휴관일 </span>
+	</template><template id="closed-day-template"><b class="holiday-date"></b></template>
+	<template id="dot-template"><button class="dot-btn" type="button"></button></template>
+	<template id="quick-template"><a class="quick-link"><img class="quick-icon" alt="" /><span
+				class="quick-tit"></span></a></template>
+	<template id="book-panel-template">
+		<div class="book-info">
+			<div class="book-copy" aria-live="polite" aria-atomic="true">
+				<h3 class="tit book-tit"></h3>
+				<p class="desc book-desc"></p>
+			</div>
+			<a class="detail-link">자세히보기</a>
+			<div class="book-controls">
+				<div class="dots"></div>
+				<button type="button" class="book-prev book-control" aria-label="이전 자료"></button>
+				<button type="button" class="book-next book-control" aria-label="다음 자료"></button>
+			</div>
+		</div>
+		<div class="swiper">
+			<div class="swiper-wrapper"></div>
+		</div>
+	</template>
+	<template id="book-slide-template">
+		<div class="swiper-slide"><img class="book-cover" alt="" /></div>
+	</template>
+	<template id="notice-template">
+		<article class="card card-item">
+			<div class="notice-heading"><span class="badge news-badge"></span><strong
+					class="tit notice-tit card-title"></strong></div><time class="notice-date"></time>
+		</article>
+	</template>
+	<template id="press-template">
+		<article class="card card-item">
+			<div class="press-copy"><span class="badge news-badge"></span><strong
+					class="tit press-tit card-title"></strong><span class="detail-link">자세히보기</span></div><img
+				class="press-image" alt="" loading="lazy" />
+		</article>
+	</template>
+	<template id="social-card-template">
+		<article class="card">
+			<div class="card-contents">
+				<div class="social-meta">
+					<img class="icon" width="40" height="40" alt="" />
+					<span class="channel-label"></span><time class="post-date"></time>
+				</div>
+				<div class="card-thumbnail"><img class="thumbnail-image" loading="lazy" alt="" /></div>
+				<p class="desc card-description"></p>
+				<h3 class="tit card-title"></h3>
+			</div>
+		</article>
+	</template>
+	<!-- End: 콘텐츠 템플릿 -->
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/dummydata.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

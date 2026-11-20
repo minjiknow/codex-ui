@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+.search-group {
+    border-radius: var(--radius-medium1);
+}
+.lnb .accordion[aria-current="page"] .submenu-tit {
+    color: var(--color-light-primary-60);
+}
+
 .contents-group.sub {
     flex: 1;
     min-width: 0;
@@ -27,7 +34,7 @@
     content: "";
     width: var(--size-icon-xsmall);
     height: var(--size-icon-xsmall);
-    background: url(../icons/arrow_right.svg) no-repeat;
+    background: url(../../assets/icons/arrow-right.svg) no-repeat;
     background-size: cover;
     margin: 0 var(--gap-2);
 }
@@ -261,5 +268,90 @@ End: 서브 시안2
     }
     .breadcrumb-wrap > .breadcrumb {
         width: 100%;
+    }
+}
+
+/* 전시 목록의 기관 선택, 검색, 보기 전환 배치 */
+.exhibitions {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    margin-top: var(--gap-12);
+}
+.agency-select,
+.mobile-back {
+    display: none;
+}
+.exhibition-filters {
+    display: grid;
+    gap: var(--gap-7);
+    margin-top: var(--gap-10);
+}
+
+.exhibitions > .btn {
+    justify-self: end;
+}
+@media (max-width: 768px) {
+    .exhibitions {
+        margin-top: var(--gap-8);
+    }
+    .exhibitions > .tabs.type1,
+    .sub-titlearea:has(.mobile-back) nav {
+        display: none;
+    }
+    .sub-titlearea:has(.mobile-back) {
+        margin-top: 0;
+    }
+    .sub-titlearea .tit:has(.mobile-back) {
+        position: relative;
+        width: 100%;
+        padding: var(--padding-3);
+        background: var(--color-light-primary-80);
+        color: var(--color-light-gray-0);
+        text-align: center;
+    }
+    .mobile-back {
+        position: absolute;
+        inset: 0 auto 0 0;
+        display: grid;
+        place-items: center;
+        width: var(--number-15);
+        color: inherit;
+    }
+    .agency-select {
+        display: flex;
+    }
+    .agency-select .dropbox {
+        display: flex;
+        align-items: center;
+        min-height: var(--size-height-8);
+    }
+    .agency-select .dropbox,
+    .exhibition-filters .dropbox {
+        max-width: none;
+    }
+    .exhibition-filters {
+        margin-top: var(--gap-4);
+    }
+    .exhibition-filters .card-heading,
+    .exhibition-filters .card-heading .util {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--gap-3);
+    }
+    .exhibition-filters .card-heading .dropbox-wrap,
+    .exhibition-filters .search-group {
+        width: 100%;
+    }
+    .exhibition-filters > .util {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--gap-1);
+    }
+    .exhibition-filters > .util .dropbox-wrap {
+        width: 100%;
+        min-width: 0;
+    }
+    .exhibition-filters > .util .dropbox {
+        min-width: 0;
     }
 }

@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>전시 | 국립중앙도서관</title>
+	<link rel="stylesheet" href="../resource/css/theme.css">
+	<link rel="stylesheet" href="../resource/css/common.css">
+	<link rel="stylesheet" href="../resource/css/main.css">
+	<link rel="stylesheet" href="../resource/css/sub.css">
+	<link rel="stylesheet" href="../resource/css/board-list.css">
+</head>
+
+<body>
+	<a class="skip-link" href="#main-content">본문 바로가기</a>
+	<div class="wrap">
+		<header class="header type2">
+			<div class="contents-wrap">
+				<ul class="topmenus">
+					<li class="topmenu"><a class="none-sub blank" href="https://nlcy.go.kr" target="_blank"
+							rel="noopener" title="새창 열림">국립어린이청소년도서관</a></li>
+					<li class="topmenu"><a class="none-sub blank" href="https://sejong.nl.go.kr" target="_blank"
+							rel="noopener" title="새창 열림">국립세종도서관</a></li>
+					<li class="topmenu"><a class="none-sub" href="https://www.nl.go.kr/">첫 화면</a></li>
+					<li class="topmenu"><a class="none-sub blank" href="https://www.nl.go.kr/EN/main/index.do"
+							target="_blank" rel="noopener" title="새창 열림" lang="en">English</a></li>
+				</ul>
+				<div class="prev-menus">
+					<div class="logo">
+						<a class="logo-link" href="./main2.html" aria-label="문화·체육 첫 화면">
+							<img src="../assets/images/site-logo.svg" alt="">
+						</a>
+					</div>
+					<div class="utils">
+						<div class="util search">
+							<button type="button" class="btn text search-open" aria-haspopup="dialog"
+								aria-controls="search-popup" aria-expanded="false">
+								<span class="icon medium searchicon" aria-hidden="true">
+								</span><span class="tit xsmall util-tit">통합검색</span></button>
+						</div>
+						<div class="util">
+							<a class="btn text" href="https://www.nl.go.kr/NL/contents/N60100000000.do"><span
+									class="icon medium loginicon" aria-hidden="true"></span>로그인</a>
+						</div>
+						<div class="util">
+							<a class="btn text" href="https://www.nl.go.kr/NL/contents/N60300000000.do"><span
+									class="icon medium joinicon" aria-hidden="true"></span>회원가입</a>
+						</div>
+						<div class="util">
+							<a class="btn text" href="https://www.nl.go.kr/NL/contents/N60503000000.do">바구니</a>
+						</div>
+						<div class="util hamburger">
+							<button type="button" class="btn text btn-hamburger" aria-haspopup="dialog"
+								aria-controls="menu-popup" aria-expanded="false"><span class="icon medium hamburgericon"
+									aria-hidden="true"></span>전체메뉴</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="gnb" aria-label="주요 메뉴">
+				<ul class="depth1-menus contents-wrap" data-navigation="mega"></ul>
+			</nav>
+		</header>
+		<div class="menupop" id="menu-popup">
+			<div class="pop-bg" aria-hidden="true">
+			</div>
+			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="menu-popup-title" tabindex="-1">
+				<h2 class="sr-only" id="menu-popup-title">전체메뉴</h2>
+				<div class="menu-head">
+					<div class="topmenu-area">
+						<div class="topmenus"><a class="btn transparent"
+								href="https://www.nl.go.kr/NL/contents/N60300000000.do">회원가입</a><a
+								class="btn transparent" href="https://www.nl.go.kr/EN/main/index.do">English</a></div>
+						<button type="button" class="menu-close" aria-label="전체메뉴 닫기">
+							<span class="pop-close" aria-hidden="true">
+							</span>
+						</button>
+					</div>
+					<a class="login" href="https://www.nl.go.kr/NL/contents/N60100000000.do">
+						<span class="loginicon" aria-hidden="true">
+						</span>로그인을 해주세요
+					</a>
+				</div>
+				<div class="menu-body">
+					<nav class="menu-tabs" aria-label="메뉴 영역 바로가기"></nav>
+					<div class="menu-content" role="region" aria-label="전체 메뉴 목록" tabindex="0">
+						<nav class="gnb" aria-label="전체메뉴 목록">
+							<ul class="depth1-menus contents-wrap" data-navigation="mobile"></ul>
+						</nav>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="pop searchpop" id="search-popup">
+			<div class="pop-bg" aria-hidden="true">
+			</div>
+			<div class="pop-contents" role="dialog" aria-modal="true" aria-labelledby="search-popup-title"
+				tabindex="-1">
+				<button type="button" class="icobtn  transparent search-close" aria-label="검색 닫기">
+					<span class="icon pop-close" aria-hidden="true">
+					</span>
+				</button>
+				<div class="contents-wrap">
+					<div class="search-area">
+						<div class="search-head">
+							<h2 class="pop-maintit" id="search-popup-title">검색어를 입력해주세요.</h2>
+						</div>
+						<div class="search-formarea">
+							<form class="search-group" role="search">
+								<div class="search-wrap">
+									<input type="text" id="search-keyword" name="keyword" maxlength="100"
+										autocomplete="off" aria-labelledby="search-popup-title" placeholder="검색"
+										role="combobox" aria-autocomplete="list" aria-controls="related-search-list"
+										aria-expanded="false">
+									<button type="button" class="icobtn round search-clear" aria-label="검색어 지우기">
+										<span class="icon xsmall delete-word" aria-hidden="true">
+										</span>
+									</button>
+								</div>
+								<button type="submit" class="icobtn transparent" aria-label="검색 실행">
+									<span class="icon large searchicon" aria-hidden="true">
+									</span>
+								</button>
+							</form>
+							<div class="related-searcharea">
+								<ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어"
+									data-content-list="suggestions">
+								</ul>
+								<template data-content-template="shared-suggestion">
+									<li class="related-search">
+										<em class="related-tit tit" data-field-text="highlight"></em><span
+											data-field-text="suffix"></span>
+									</li>
+								</template>
+								<p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
+							</div>
+						</div>
+						<div class="recent-searcharea" role="region" aria-labelledby="recent-search-title">
+							<div class="recent-titlearea">
+								<h3 class="tit" id="recent-search-title">최근 검색어</h3>
+								<button type="button" class="btn delete transparent">전체삭제
+									<span class="icon xsmall delete-all" aria-hidden="true">
+									</span>
+								</button>
+							</div>
+							<ul class="chip-group" data-content-list="shared.recentSearches">
+							</ul>
+							<template data-content-template="shared-recent-search">
+								<li class="chip bg">
+									<button type="button" class="recent-keyword" data-field-text="keyword">
+									</button>
+									<button type="button" class="icobtn transparent round chip-delete"
+										aria-label="검색어 삭제">
+										<span class="icon xsmall delete-word" aria-hidden="true">
+										</span>
+									</button>
+								</li>
+							</template>
+							<p class="chip-empty">최근 검색어가 없습니다.</p>
+						</div>
+					</div>
+					<p class="sr-only search-status" role="status" aria-live="polite">
+					</p>
+				</div>
+			</div>
+		</div>
+		<main class="container" id="main-content" tabindex="-1">
+			<div class="contents-wrap">
+				<div class="subpg">
+					<div class="flex-contents type1">
+						<nav class="lnb" aria-label="교육·문화행사 메뉴">
+							<div class="contents-wrap">
+								<p class="tit lnb-tit">교육·문화행사</p>
+								<ul class="depth1-menus">
+									<li class="depth1-menu">
+										<button type="button" class="depth1 accordion" aria-controls="side-group-0"
+											aria-expanded="false">교육프로그램</button>
+										<ul class="depth2-menus type1" id="side-group-0">
+											<li class="contents-wrap">
+												<div class="depth2-menu">
+													<div class="submenus">
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N30901000000.do"><span
+																	class="submenu-tit type1">디지털 미디어 창작 활용
+																	교육</span></a>
+														</div>
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N31600000000.do"><span
+																	class="submenu-tit type1">인문학 프로그램</span></a>
+														</div>
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N30902000000.do"><span
+																	class="submenu-tit type1">강연·세미나</span></a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="depth1-menu">
+										<button type="button" class="depth1 accordion" aria-controls="side-group-1"
+											aria-expanded="false">문화행사</button>
+										<ul class="depth2-menus type1" id="side-group-1">
+											<li class="contents-wrap">
+												<div class="depth2-menu">
+													<div class="submenus">
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N30905000000.do"><span
+																	class="submenu-tit type1">영화 상영</span></a>
+														</div>
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N30907000000.do"><span
+																	class="submenu-tit type1">해설이 있는 K 컬처</span></a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+									<li class="depth1-menu">
+										<button type="button" class="depth1 accordion open" aria-controls="side-group-2"
+											aria-expanded="true">전시·체험</button>
+										<ul class="depth2-menus type1" id="side-group-2">
+											<li class="contents-wrap">
+												<div class="depth2-menu">
+													<div class="submenus">
+														<div class="depth2-menu">
+															<a class="accordion none is-active" href="./sub3-test.html"
+																aria-current="page"><span
+																	class="submenu-tit type1">전시</span></a>
+														</div>
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N40704000000.do"><span
+																	class="submenu-tit type1">기록매체박물관</span></a>
+														</div>
+														<div class="depth2-menu">
+															<a class="accordion none"
+																href="https://www.nl.go.kr/NL/contents/N41303010000.do"><span
+																	class="submenu-tit type1">실감체험관</span></a>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</nav>
+						<div class="contents-group sub">
+							<div class="sub-titlearea">
+								<nav aria-label="현재 위치">
+									<ul class="breadcrumbs">
+										<li class="breadcrumb"><a href="https://www.nl.go.kr/NL"><span
+													class="icon xsmall homeicon" aria-hidden="true"></span><span
+													class="sr-only">홈</span></a></li>
+										<li class="breadcrumb"><a
+												href="https://www.nl.go.kr/NL/contents/N30000000000.do"><span
+													class="tit breadcrumb-tit">교육·문화행사</span></a></li>
+										<li class="breadcrumb"><a
+												href="https://www.nl.go.kr/NL/contents/N41300000000.do"><span
+													class="tit breadcrumb-tit">전시·체험</span></a></li>
+										<li class="breadcrumb"><a href="./sub3-test.html" aria-current="page"><span
+													class="tit breadcrumb-tit">전시</span></a></li>
+									</ul>
+								</nav>
+								<h1 class="tit xlarge"><a class="mobile-back"
+										href="https://www.nl.go.kr/NL/contents/N41300000000.do"
+										aria-label="전시·체험으로"><span aria-hidden="true">‹</span></a>전시</h1>
+							</div>
+							<section class="exhibitions" aria-label="전시 목록">
+								<div class="agency-select dropbox-wrap w-full">
+									<div class="dropbox" data-value="국립중앙도서관">
+										<button type="button" class="selected-text" data-label="전시 기관"
+											aria-haspopup="listbox" aria-expanded="false">국립중앙도서관</button>
+										<ul class="dropbox-option" hidden>
+											<li data-value="전체">
+												<p class="option-text">전체</p>
+											</li>
+											<li class="selected" data-value="국립중앙도서관">
+												<p class="option-text">국립중앙도서관</p>
+											</li>
+											<li data-value="타 기관">
+												<p class="option-text">타 기관</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="tabs type1" role="group" aria-label="전시 기관">
+									<button type="button" class="tab" data-agency="전체" aria-pressed="false">전체</button>
+									<button type="button" class="tab" data-agency="국립중앙도서관"
+										aria-pressed="true">국립중앙도서관</button>
+									<button type="button" class="tab" data-agency="타 기관" aria-pressed="false">타
+										기관</button>
+								</div>
+								<form class="exhibition-filters" role="search" aria-label="전시 검색">
+									<div class="card-heading exhibition-tools">
+										<p class="desc medium" role="status">전체 <strong class="result-count"></strong>건
+										</p>
+										<div class="util exhibition-tools">
+											<div class="dropbox-wrap">
+												<div class="dropbox type3" data-filter="field" data-value="all">
+													<button type="button" class="selected-text" data-label="검색구분"
+														aria-haspopup="listbox" aria-expanded="false">전체</button>
+													<ul class="dropbox-option" hidden>
+														<li data-value="all" class="selected">
+															<p class="option-text">전체</p>
+														</li>
+														<li data-value="title">
+															<p class="option-text">전시명</p>
+														</li>
+														<li data-value="info">
+															<p class="option-text">내용</p>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="search-group type1">
+												<div class="search-wrap">
+													<input type="text" name="query" aria-label="전시 검색어"
+														placeholder="검색어를 입력해주세요" autocomplete="off">
+													<button type="button" class="icobtn round search-clear"
+														aria-label="검색어 지우기">
+														<span class="icon xsmall delete-word" aria-hidden="true"></span>
+													</button>
+												</div>
+												<button type="submit" class="icobtn transparent"
+													aria-label="검색 실행"><span class="icon searchicon"
+														aria-hidden="true"></span></button>
+											</div>
+										</div>
+									</div>
+									<div class="util exhibition-tools">
+										<div class="dropbox-wrap">
+											<div class="dropbox" data-filter="size" data-value="12">
+												<button type="button" class="selected-text" data-label="목록에 표시할 개수"
+													aria-haspopup="listbox" aria-expanded="false">12개씩</button>
+												<ul class="dropbox-option" hidden>
+													<li data-value="12" class="selected">
+														<p class="option-text">12개씩</p>
+													</li>
+													<li data-value="24">
+														<p class="option-text">24개씩</p>
+													</li>
+													<li data-value="36">
+														<p class="option-text">36개씩</p>
+													</li>
+													<li data-value="48">
+														<p class="option-text">48개씩</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropbox-wrap">
+											<div class="dropbox" data-filter="status" data-value="전체">
+												<button type="button" class="selected-text" data-label="전시 상태"
+													aria-haspopup="listbox" aria-expanded="false">전시 전체</button>
+												<ul class="dropbox-option" hidden>
+													<li data-value="전체" class="selected">
+														<p class="option-text">전시 전체</p>
+													</li>
+													<li data-value="전시중">
+														<p class="option-text">전시중</p>
+													</li>
+													<li data-value="전시종료">
+														<p class="option-text">전시종료</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="dropbox-wrap">
+											<div class="dropbox" data-filter="order" data-value="desc">
+												<button type="button" class="selected-text" data-label="정렬기준"
+													aria-haspopup="listbox" aria-expanded="false">최신순</button>
+												<ul class="dropbox-option" hidden>
+													<li data-value="desc" class="selected">
+														<p class="option-text">최신순</p>
+													</li>
+													<li data-value="asc">
+														<p class="option-text">등록순</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+
+									</div>
+								</form>
+								<div class="view-tools">
+									<div class="tabs" role="group" aria-label="전시 표시 방식">
+										<button type="button" class="tab type1" data-view="grid"
+											aria-pressed="true">썸네일</button>
+										<button type="button" class="tab type1" data-view="list"
+											aria-pressed="false">리스트</button>
+									</div>
+								</div>
+								<ul class="cards type1" data-layout="grid"></ul>
+								<p class="desc empty" hidden>검색 결과가 없습니다.</p>
+								<template class="exhibition-card">
+									<li class="card-banner"><a class="card-banner-link">
+											<div class="card-banner-img"><img alt="" loading="lazy"></div>
+											<div class="card-banner-contents">
+												<div><span class="badge small"></span> <span class="desc agency"></span>
+												</div>
+												<h2 class="tit small card-title"></h2>
+												<div><strong class="tit xxsmall detail-label">전시기간</strong> <span
+														class="desc period"></span></div>
+												<div><strong class="tit xxsmall detail-label">전시장소</strong> <span
+														class="desc place"></span></div>
+												<div class="department-row"><strong class="tit xxsmall">담당부서</strong>
+													<span class="desc department"></span>
+												</div>
+											</div>
+										</a></li>
+								</template>
+								<nav class="page-tools" aria-label="전시 목록 페이지">
+									<button class="icobtn large" type="button" data-page="first"><img
+											src="../assets/icons/page-first.svg" alt=""><span class="sr-only">첫 페이지로
+											이동</span></button>
+									<button class="icobtn large" type="button" data-page="prev"><img
+											src="../assets/icons/page-previous.svg" alt=""><span class="sr-only">이전 페이지로
+											이동</span></button>
+									<form class="page-jump" aria-label="페이지 번호로 이동">
+										<input class="current-page" type="number" inputmode="numeric" min="1" step="1"
+											required aria-label="이동할 페이지 번호">
+										<span>/ <span class="total-pages"></span></span>
+										<button class="btn page-go" type="submit">이동</button>
+									</form>
+									<button class="icobtn large" type="button" data-page="next"><img
+											src="../assets/icons/page-next.svg" alt=""><span class="sr-only">다음 페이지로
+											이동</span></button>
+									<button class="icobtn large" type="button" data-page="last"><img
+											src="../assets/icons/page-last.svg" alt=""><span class="sr-only">마지막 페이지로
+											이동</span></button>
+								</nav>
+								<a class="btn primary medium more"
+									href="https://www.nl.go.kr/NL/contents/N20104000000.do">온라인 전시</a>
+								<p class="desc">국립중앙도서관 전시 목록 중 20건을 담은 정적 미리보기입니다.</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<button type="button" class="btn scroll-top" aria-label="맨 위로 이동" hidden>
+				<span class="icon" aria-hidden="true">
+				</span>
+				<span>위로</span>
+			</button>
+			<div class="footer-wrap">
+				<div class="contents-wrap">
+					<div class="footer-logo">
+						<img src="../assets/images/site-logo.svg" alt="">
+					</div>
+					<ul class="footer-contents">
+						<li class="footer-content">
+							<p class="desc addr">주소를 입력해주세요</p>
+							<div class="footer-infogroup">
+								<p class="footer-info">
+									<span class="tit footer-tit">기관명</span>
+									<span class="desc footer-desc">OOO기관</span>
+								</p>
+								<p class="footer-info">
+									<span class="tit footer-tit">전화번호</span>
+									<span class="desc footer-desc">02-0000-0000</span>
+								</p>
+								<p class="footer-info">
+									<span class="tit footer-tit">팩스번호</span>
+									<span class="desc footer-desc">02-0000-0000</span>
+								</p>
+								<p class="footer-info">
+									<span class="tit footer-tit">사업자등록번호</span>
+									<span class="desc footer-desc">000-00-00000</span>
+								</p>
+							</div>
+						</li>
+						<li class="footer-content">
+							<a class="btn transparent more" href="#">유틸리티 링크</a>
+							<a class="btn transparent more" href="#">유틸리티 링크</a>
+						</li>
+					</ul>
+					<div class="footer-bottom">
+						<div class="footer-links-group">
+							<ul class="footer-links left">
+								<li class="footer-link">
+									<a href="" class="footer-desc">개인정보처리방침</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">이용약관</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">위치기반서비스 이용약관</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">저작권정책</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">고객서비스현장</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">자주 묻는 질문</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트1</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트2</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트3</a>
+								</li>
+								<li class="footer-link">
+									<a href="" class="footer-desc">테스트4</a>
+								</li>
+							</ul>
+							<ul class="footer-links right">
+							</ul>
+						</div>
+						<p class="footer-copyright desc">© 2026 Knowwheresoft All rights
+							reserved.</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="../resource/js/dummydata.js"></script>
+	<script src="../resource/js/template-data.js"></script>
+	<script src="../resource/js/common.js"></script>
+	<script src="../resource/js/board-list.js"></script>
+	<script src="../resource/js/sub3.js"></script>
+</body>
+
+</html>

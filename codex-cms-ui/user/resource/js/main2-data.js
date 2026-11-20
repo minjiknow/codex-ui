@@ -298,6 +298,72 @@ window.CMSData = {
             }
         },
         "main2": {
+            "search": {
+                "suggestions": [
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": ""
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "시설"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "예술회관"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "센터"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "행사"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": " 강좌"
+                    }
+                ],
+                "mainSuggestions": [
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": ""
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "시설"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "예술회관"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "센터"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "행사"
+                    },
+                    {
+                        "template": "shared-suggestion",
+                        "highlight": "문화",
+                        "suffix": "강좌"
+                    }
+                ]
+            },
             "news-1": [
                 {
                     "id": "news-1-1",
@@ -455,35 +521,35 @@ window.CMSData = {
                     "template": "main2-service",
                     "title": "공연·전시",
                     "description": "가까운 공연장과 전시 공간을 찾아 문화생활을 즐겨보세요.",
-                    "image": "../resource/images/quick-menu-3-icon.png",
+                    "image": "../assets/images/quick-menu-3-icon.png",
                     "href": "#"
                 },
                 {
                     "template": "main2-service",
                     "title": "도서·문화공간",
                     "description": "도서관과 문화센터의 공간 및 프로그램을 확인해 보세요.",
-                    "image": "../resource/images/quick-menu-1-icon.png",
+                    "image": "../assets/images/quick-menu-1-icon.png",
                     "href": "#"
                 },
                 {
                     "template": "main2-service",
                     "title": "생활체육",
                     "description": "일상에서 참여할 수 있는 운동 프로그램을 살펴보세요.",
-                    "image": "../resource/images/quick-menu-4-icon.png",
+                    "image": "../assets/images/quick-menu-4-icon.png",
                     "href": "#"
                 },
                 {
                     "template": "main2-service",
                     "title": "체육시설",
                     "description": "체육센터와 종합운동장 이용 정보를 확인해 보세요.",
-                    "image": "../resource/images/quick-menu-2-icon.png",
+                    "image": "../assets/images/quick-menu-2-icon.png",
                     "href": "#"
                 },
                 {
                     "template": "main2-service",
                     "title": "시설대관",
                     "description": "문화·체육시설 대관 절차와 이용 방법을 알아보세요.",
-                    "image": "../resource/images/quick-menu-7-icon.png",
+                    "image": "../assets/images/quick-menu-7-icon.png",
                     "href": "#"
                 }
             ],

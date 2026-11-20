@@ -31,33 +31,33 @@
                     <div class="prev-menus">
                         <div class="logo">
                             <a class="logo-link" href="./main2.html" aria-label="문화·체육 첫 화면">
-                                <img src="../resource/images/site-logo.svg" alt="">
+                                <img src="../assets/images/site-logo.svg" alt="">
                             </a>
                         </div>
                         <div class="utils">
                             <div class="util search">
-                                <button type="button" class="btn transparent search-open" aria-haspopup="dialog" aria-controls="search-popup" aria-expanded="false">
-                                    <span class="icon searchicon" aria-hidden="true">
+                                <button type="button" class="btn text search-open" aria-haspopup="dialog" aria-controls="search-popup" aria-expanded="false">
+                                    <span class="icon medium searchicon" aria-hidden="true">
                                     </span><span class="tit xsmall util-tit">통합검색</span></button>
                             </div>
                             <div class="util">
-                                <button type="button" class="btn transparent">
-                                    <span class="icon loginicon" aria-hidden="true">
+                                <button type="button" class="btn text">
+                                    <span class="icon medium loginicon" aria-hidden="true">
                                     </span><span class="tit xsmall util-tit">로그인</span></button>
                             </div>
                             <div class="util">
-                                <button type="button" class="btn transparent">
-                                    <span class="icon joinicon" aria-hidden="true">
+                                <button type="button" class="btn text">
+                                    <span class="icon medium joinicon" aria-hidden="true">
                                     </span><span class="tit xsmall util-tit">회원가입</span></button>
                             </div>
                             <div class="util">
-                                <button type="button" class="btn transparent">
-                                    <span class="icon mypageicon" aria-hidden="true">
+                                <button type="button" class="btn text">
+                                    <span class="icon medium mypageicon" aria-hidden="true">
                                     </span><span class="tit xsmall util-tit">내 정보</span></button>
                             </div>
                             <div class="util hamburger">
-                                <button type="button" class="btn transparent btn-hamburger" aria-haspopup="dialog" aria-controls="menu-popup" aria-expanded="false">
-                                    <span class="icon hamburgericon" aria-hidden="true">
+                                <button type="button" class="btn text btn-hamburger" aria-haspopup="dialog" aria-controls="menu-popup" aria-expanded="false">
+                                    <span class="icon medium hamburgericon" aria-hidden="true">
                                     </span><span class="tit xsmall util-tit">전체메뉴</span></button>
                             </div>
                         </div>
@@ -157,14 +157,11 @@
                                     </button>
                                 </form>
                                 <div class="related-searcharea">
-                                    <ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions">
+                                    <ul class="related-searchs" id="related-search-list" role="listbox" aria-label="연관 검색어" data-content-list="pages.main2.search.suggestions">
                                     </ul>
                                     <template data-content-template="shared-suggestion">
                                         <li class="related-search">
-                                            <em class="related-tit tit" data-field-text="highlight">
-                                            </em>
-                                            <span data-field-text="suffix">
-                                            </span>
+                                            <em class="related-tit tit" data-field-text="highlight"></em><span data-field-text="suffix"></span>
                                         </li>
                                     </template>
                                     <p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
@@ -208,7 +205,7 @@
                             <div class="search-area">
                                 <div class="search-formarea">
                                     <form class="search-group type1" role="search" aria-label="메인 통합검색">
-                                        <div class="dropbox none">
+                                        <div class="dropbox none type1">
                                             <button type="button" class="selected-text" data-label="검색 분류" aria-haspopup="listbox" aria-expanded="false">전체</button>
                                             <ul class="dropbox-option">
                                                 <li>
@@ -237,8 +234,8 @@
                                             </span>
                                         </button>
                                     </form>
-                                    <div class="related-searcharea">
-                                        <ul class="related-searchs" id="main-search-suggestions" role="listbox" aria-label="연관 검색어" data-content-list="pages.main1.search.suggestions">
+                                    <div class="related-searcharea type1">
+                                        <ul class="related-searchs" id="main-search-suggestions" role="listbox" aria-label="연관 검색어" data-content-list="pages.main2.search.mainSuggestions">
                                         </ul>
                                         <p class="search-no-results">연관 검색어가 없습니다. 입력한 검색어로 검색해 보세요.</p>
                                     </div>
@@ -249,10 +246,10 @@
                         </div>
                         <div class="quickmenu-tabs" data-tabs>
                             <div class="quicktabs" role="tablist" aria-label="퀵 메뉴 분류">
-                                <button type="button" class="tab type2 active" role="tab" id="quick-tab-0" aria-controls="quick-panel-0" aria-selected="true">전체</button>
-                                <button type="button" class="tab type2" role="tab" id="quick-tab-1" aria-controls="quick-panel-1" aria-selected="false">시설</button>
-                                <button type="button" class="tab type2" role="tab" id="quick-tab-2" aria-controls="quick-panel-2" aria-selected="false">문화·행사</button>
-                                <button type="button" class="tab type2" role="tab" id="quick-tab-3" aria-controls="quick-panel-3" aria-selected="false">체육·대관</button>
+                                <button type="button" class="btn tab type2 active" role="tab" id="quick-tab-0" aria-controls="quick-panel-0" aria-selected="true">전체</button>
+                                <button type="button" class="btn tab type2" role="tab" id="quick-tab-1" aria-controls="quick-panel-1" aria-selected="false">시설</button>
+                                <button type="button" class="btn tab type2" role="tab" id="quick-tab-2" aria-controls="quick-panel-2" aria-selected="false">문화·행사</button>
+                                <button type="button" class="btn tab type2" role="tab" id="quick-tab-3" aria-controls="quick-panel-3" aria-selected="false">체육·대관</button>
                             </div>
                             <div class="tabcontents" role="tabpanel" id="quick-panel-0" aria-labelledby="quick-tab-0" >
                                 <div class="swiper quickMenuSwiper" id="quick-swiper-0" aria-label="퀵 메뉴">
@@ -415,7 +412,7 @@
                                             <span class="tit large txt-secondary">문화시설</span>과 가까운<br>
                                             <span class="tit large txt-secondary">체육시설</span>을 확인해보세요.</h2>
                                         <div class="title-img">
-                                            <img src="../resource/images/main2-facility-illustration.png" alt="">
+                                            <img src="../assets/images/main2-facility-illustration.png" alt="">
                                         </div>
                                     </div>
                                     <div class="flex-contents type1">
@@ -522,7 +519,7 @@
                                             <span>가까운 체육시설과 프로그램을 찾아보세요.</span>
                                             <span class="sports-banner-more">자세히</span>
                                         </span>
-                                        <img class="sports-banner-image" src="../resource/images/main1-hero-banner-5.png" alt="">
+                                        <img class="sports-banner-image" src="../assets/images/main1-hero-banner-5.png" alt="">
                                     </a>
                                 </div>
                                 <div class="swiper-slide">
@@ -532,7 +529,7 @@
                                             <span>우리 동네 문화시설과 생활체육 정보를 만나보세요.</span>
                                             <span class="sports-banner-more">자세히</span>
                                         </span>
-                                        <img class="sports-banner-image" src="../resource/images/main2-culture-banner.png" alt="">
+                                        <img class="sports-banner-image" src="../assets/images/main2-culture-banner.png" alt="">
                                     </a>
                                 </div>
                             </div>
@@ -747,7 +744,7 @@
                 <div class="footer-wrap">
                     <div class="contents-wrap">
                         <div class="footer-logo">
-                            <img src="../resource/images/site-logo.svg" alt="">
+                            <img src="../assets/images/site-logo.svg" alt="">
                         </div>
                         <ul class="footer-contents">
                             <li class="footer-content">

@@ -257,12 +257,6 @@
             const href = item.getAttribute("href");
             if (item.matches("a") && (!href || href === "#")) event.preventDefault();
 
-            navigation.querySelectorAll(".is-active").forEach((other) => {
-                other.classList.remove("is-active");
-                other.removeAttribute("aria-current");
-                other.removeAttribute("aria-pressed");
-            });
-
             const isAccordion = item.matches("button.accordion:not(.none)");
             const group = item.closest(".depth1-menu, .depth2-menu");
             // 말단 링크의 상위 아코디언은 유지하고 같은 단계의 다른 메뉴만 접습니다.
@@ -275,6 +269,11 @@
             }
 
             if (isAccordion) return;
+            navigation.querySelectorAll(".is-active").forEach((other) => {
+                other.classList.remove("is-active");
+                other.removeAttribute("aria-current");
+                other.removeAttribute("aria-pressed");
+            });
             item.classList.add("is-active");
             item.setAttribute(item.matches("button") ? "aria-pressed" : "aria-current", item.matches("button") ? "true" : "page");
         });
@@ -446,8 +445,8 @@
             const activeButton = Array.from(depthOnes).find((button) => button.classList.contains("active"));
             if (!activeButton) return;
             event.preventDefault();
-            closeMenus();
             activeButton.focus();
+            closeMenus();
         });
         scope.listen(navigation, "focusout", (event) => {
             if (!navigation.contains(event.relatedTarget)) closeMenus();

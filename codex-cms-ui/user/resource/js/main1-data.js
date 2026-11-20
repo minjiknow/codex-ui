@@ -264,7 +264,7 @@ window.CMSData = {
         "main1": {
             "banner-1": [
                 {
-                    "heroImage": "../resource/images/main1-hero-banner-1.png",
+                    "heroImage": "../assets/images/main1-hero-banner-1.png",
                     "href": "",
                     "title": "일상 가까이에서 만나는 문화",
                     "description": "다양한 문화공간에서 새로운 배움과 여유를 만나보세요.",
@@ -272,7 +272,7 @@ window.CMSData = {
                     "template": "main1-banner-1"
                 },
                 {
-                    "heroImage": "../resource/images/main1-hero-banner-2.png",
+                    "heroImage": "../assets/images/main1-hero-banner-2.png",
                     "href": "",
                     "title": "건강한 일상을 위한 체육공간",
                     "description": "누구나 편리하게 이용할 수 있는 체육시설에서 활기찬 하루를 시작해보세요.",
@@ -280,7 +280,7 @@ window.CMSData = {
                     "template": "main1-banner-2"
                 },
                 {
-                    "heroImage": "../resource/images/main1-hero-banner-3.png",
+                    "heroImage": "../assets/images/main1-hero-banner-3.png",
                     "href": "",
                     "title": "문화로 채우는 특별한 하루",
                     "description": "다채로운 공연과 전시를 통해 새로운 문화 경험을 만나보세요.",
@@ -288,7 +288,7 @@ window.CMSData = {
                     "template": "main1-banner-3"
                 },
                 {
-                    "heroImage": "../resource/images/main1-hero-banner-4.png",
+                    "heroImage": "../assets/images/main1-hero-banner-4.png",
                     "href": "",
                     "title": "함께 움직이고 즐기는 생활체육",
                     "description": "일상 속 가까운 공간에서 건강하고 활기찬 생활체육을 즐겨보세요.",
@@ -296,7 +296,7 @@ window.CMSData = {
                     "template": "main1-banner-4"
                 },
                 {
-                    "heroImage": "../resource/images/main1-hero-banner-5.png",
+                    "heroImage": "../assets/images/main1-hero-banner-5.png",
                     "href": "",
                     "title": "필요한 공간을 편리하게 이용하세요",
                     "description": "문화행사와 체육활동에 필요한 시설을 확인하고 편리하게 이용해보세요.",

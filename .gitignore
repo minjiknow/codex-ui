@@ -3,6 +3,7 @@
 .env.*
 node_modules/
 .impeccable/
+UI-ProSkill/.agents/
 .hallmark/
 qa/
 codex-cms-ui/dist/

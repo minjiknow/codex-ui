@@ -1,4 +1,14 @@
 .git
+UI-ProSkill/.agents
+UI-ProSkill/.prettierrc.json
+UI-ProSkill/skills-lock.json
+UI-ProSkill/design-qa.md
+UI-ProSkill/DESIGN.md
+.env
+.env.*
+**/.env
+**/.env.*
+**/node_modules
 .impeccable
 **/.impeccable
 **/.hallmark
